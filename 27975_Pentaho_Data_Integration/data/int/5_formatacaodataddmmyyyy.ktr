@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
-    <name>desformatacaodedadosdata</name>
+    <name>formatacaodataddmmyyyy</name>
     <description/>
     <extended_description/>
     <trans_version/>
@@ -427,9 +427,9 @@
     <clusterschemas>
     </clusterschemas>
     <created_user>-</created_user>
-    <created_date>2025/10/10 13:30:28.581</created_date>
+    <created_date>2025/10/10 13:36:12.646</created_date>
     <modified_user>-</modified_user>
-    <modified_date>2025/10/10 13:30:28.581</modified_date>
+    <modified_date>2025/10/10 13:36:12.646</modified_date>
     <key_for_session_key>H4sIAAAAAAAA/wMAAAAAAAAAAAA=</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
@@ -437,24 +437,19 @@
   </notepads>
   <order>
     <hop>
-      <from>CSV file input</from>
+      <from>Get data from XML</from>
       <to>Select values Date</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Select values Date</from>
-      <to>Regex evaluation</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>Regex evaluation</from>
       <to>XML output</to>
       <enabled>Y</enabled>
     </hop>
   </order>
   <step>
-    <name>CSV file input</name>
-    <type>CsvInput</type>
+    <name>Get data from XML</name>
+    <type>getXMLData</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -463,297 +458,207 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>C:\IPCA\github\ISI25_TP01_27975_27966\27975_Pentaho_Data_Integration\data\input\sales_data_sample.csv</filename>
-    <filename_field/>
+    <include>N</include>
+    <include_field/>
+    <rownum>N</rownum>
+    <addresultfile>N</addresultfile>
+    <namespaceaware>N</namespaceaware>
+    <ignorecomments>N</ignorecomments>
+    <readurl>N</readurl>
+    <validating>N</validating>
+    <usetoken>N</usetoken>
+    <IsIgnoreEmptyFile>N</IsIgnoreEmptyFile>
+    <doNotFailIfNoFile>Y</doNotFailIfNoFile>
     <rownum_field/>
-    <include_filename>N</include_filename>
-    <separator>,</separator>
-    <enclosure>"</enclosure>
-    <header>Y</header>
-    <buffer_size>50000</buffer_size>
-    <lazy_conversion>Y</lazy_conversion>
-    <add_filename_result>N</add_filename_result>
-    <parallel>N</parallel>
-    <newline_possible>N</newline_possible>
-    <format>mixed</format>
-    <encoding/>
+    <encoding>UTF-8</encoding>
+    <file>
+      <name>${Internal.Entry.Current.Directory}\output\Customer.xml</name>
+      <filemask/>
+      <exclude_filemask/>
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+    </file>
     <fields>
       <field>
-        <name>ORDERNUMBER</name>
-        <type>Integer</type>
-        <format>#</format>
-        <currency>€</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>QUANTITYORDERED</name>
-        <type>Integer</type>
-        <format>#</format>
-        <currency>€</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>PRICEEACH</name>
-        <type>BigNumber</type>
-        <format>#.###</format>
-        <currency>€</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>ORDERLINENUMBER</name>
-        <type>Integer</type>
-        <format>#</format>
-        <currency>€</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
         <name>SALES</name>
-        <type>BigNumber</type>
-        <format>#.###</format>
-        <currency>€</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>ORDERDATE</name>
-        <type>String</type>
+        <xpath>SALES</xpath>
+        <element_type>node</element_type>
+        <result_type>valueof</result_type>
+        <type>Number</type>
         <format/>
-        <currency>€</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>15</length>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>STATUS</name>
-        <type>String</type>
-        <format/>
-        <currency>€</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>10</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>QTR_ID</name>
-        <type>Integer</type>
-        <format>#</format>
-        <currency>€</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>MONTH_ID</name>
-        <type>Integer</type>
-        <format>#</format>
-        <currency>€</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>YEAR_ID</name>
-        <type>Integer</type>
-        <format>#</format>
-        <currency>€</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>PRODUCTLINE</name>
-        <type>String</type>
-        <format/>
-        <currency>€</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>12</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>MSRP</name>
-        <type>Integer</type>
-        <format>#</format>
-        <currency>€</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>PRODUCTCODE</name>
-        <type>String</type>
-        <format/>
-        <currency>€</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>8</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
+        <repeat>N</repeat>
       </field>
       <field>
         <name>CUSTOMERNAME</name>
+        <xpath>CUSTOMERNAME</xpath>
+        <element_type>node</element_type>
+        <result_type>valueof</result_type>
         <type>String</type>
         <format/>
-        <currency>€</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>30</length>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
+        <repeat>N</repeat>
       </field>
       <field>
-        <name>PHONE</name>
+        <name>PRODUCTCODE</name>
+        <xpath>PRODUCTCODE</xpath>
+        <element_type>node</element_type>
+        <result_type>valueof</result_type>
         <type>String</type>
         <format/>
-        <currency>€</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>16</length>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
+        <repeat>N</repeat>
       </field>
       <field>
-        <name>ADDRESSLINE1</name>
-        <type>String</type>
+        <name>QTR_ID</name>
+        <xpath>QTR_ID</xpath>
+        <element_type>node</element_type>
+        <result_type>valueof</result_type>
+        <type>Integer</type>
         <format/>
-        <currency>€</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>40</length>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
+        <repeat>N</repeat>
       </field>
       <field>
-        <name>ADDRESSLINE2</name>
-        <type>String</type>
+        <name>MONTH_ID</name>
+        <xpath>MONTH_ID</xpath>
+        <element_type>node</element_type>
+        <result_type>valueof</result_type>
+        <type>Integer</type>
         <format/>
-        <currency>€</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>9</length>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
+        <repeat>N</repeat>
       </field>
       <field>
-        <name>CITY</name>
-        <type>String</type>
+        <name>YEAR_ID</name>
+        <xpath>YEAR_ID</xpath>
+        <element_type>node</element_type>
+        <result_type>valueof</result_type>
+        <type>Integer</type>
         <format/>
-        <currency>€</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>14</length>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>STATE</name>
-        <type>String</type>
-        <format/>
-        <currency>€</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>10</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>POSTALCODE</name>
-        <type>String</type>
-        <format/>
-        <currency>€</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>8</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>COUNTRY</name>
-        <type>String</type>
-        <format/>
-        <currency>€</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>9</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
+        <repeat>N</repeat>
       </field>
       <field>
         <name>TERRITORY</name>
+        <xpath>TERRITORY</xpath>
+        <element_type>node</element_type>
+        <result_type>valueof</result_type>
         <type>String</type>
         <format/>
-        <currency>€</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>5</length>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
+        <repeat>N</repeat>
       </field>
       <field>
-        <name>CONTACTLASTNAME</name>
-        <type>String</type>
+        <name>ORDERNUMBER</name>
+        <xpath>ORDERNUMBER</xpath>
+        <element_type>node</element_type>
+        <result_type>valueof</result_type>
+        <type>Integer</type>
         <format/>
-        <currency>€</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>10</length>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
+        <repeat>N</repeat>
       </field>
       <field>
-        <name>CONTACTFIRSTNAME</name>
-        <type>String</type>
+        <name>QUANTITYORDERED</name>
+        <xpath>QUANTITYORDERED</xpath>
+        <element_type>node</element_type>
+        <result_type>valueof</result_type>
+        <type>Integer</type>
         <format/>
-        <currency>€</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>9</length>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>STATUS</name>
+        <xpath>STATUS</xpath>
+        <element_type>node</element_type>
+        <result_type>valueof</result_type>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
       </field>
       <field>
         <name>DEALSIZE</name>
+        <xpath>DEALSIZE</xpath>
+        <element_type>node</element_type>
+        <result_type>valueof</result_type>
         <type>String</type>
         <format/>
-        <currency>€</currency>
-        <decimal>,</decimal>
-        <group>.</group>
-        <length>6</length>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
         <precision>-1</precision>
         <trim_type>none</trim_type>
+        <repeat>N</repeat>
       </field>
     </fields>
+    <limit>0</limit>
+    <loopxpath>Rows/Row</loopxpath>
+    <IsInFields>N</IsInFields>
+    <IsAFile>N</IsAFile>
+    <XmlField/>
+    <prunePath/>
+    <shortFileFieldName/>
+    <pathFieldName/>
+    <hiddenFieldName/>
+    <lastModificationTimeFieldName/>
+    <uriNameFieldName/>
+    <rootUriNameFieldName/>
+    <extensionFieldName/>
+    <sizeFieldName/>
     <attributes/>
     <cluster_schema/>
     <remotesteps>
@@ -763,47 +668,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>100</xloc>
-      <yloc>110</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Regex evaluation</name>
-    <type>RegexEval</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <script>^(0[1-9]|1[0-2])[/\-](0[1-9]|[12][0-9]|3[01])[/\-]\d{4}</script>
-    <matcher/>
-    <resultfieldname>result</resultfieldname>
-    <usevar>N</usevar>
-    <allowcapturegroups>N</allowcapturegroups>
-    <replacefields>Y</replacefields>
-    <canoneq>N</canoneq>
-    <caseinsensitive>N</caseinsensitive>
-    <comment>N</comment>
-    <dotall>N</dotall>
-    <multiline>N</multiline>
-    <unicode>N</unicode>
-    <unix>N</unix>
-    <fields>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>368</xloc>
+      <xloc>96</xloc>
       <yloc>112</yloc>
       <draw>Y</draw>
     </GUI>
@@ -830,7 +695,7 @@
         <type>Date</type>
         <length>-2</length>
         <precision>-2</precision>
-        <conversion_mask>MM/dd/yyyy</conversion_mask>
+        <conversion_mask>dd/MM/yyyy</conversion_mask>
         <date_format_lenient>false</date_format_lenient>
         <date_format_locale/>
         <date_format_timezone/>
@@ -851,8 +716,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>240</xloc>
-      <yloc>112</yloc>
+      <xloc>265</xloc>
+      <yloc>129</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -872,7 +737,7 @@
     <xml_main_element>Rows</xml_main_element>
     <xml_repeat_element>Row</xml_repeat_element>
     <file>
-      <name>C:\IPCA\github\ISI25_TP01_27975_27966\27975_Pentaho_Data_Integration\data\output\desformatado</name>
+      <name>C:\IPCA\github\ISI25_TP01_27975_27966\27975_Pentaho_Data_Integration\data\output\formatacao</name>
       <extention>xml</extention>
       <servlet_output>N</servlet_output>
       <do_not_open_newfile_init>N</do_not_open_newfile_init>
@@ -897,8 +762,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>512</xloc>
-      <yloc>112</yloc>
+      <xloc>528</xloc>
+      <yloc>128</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
