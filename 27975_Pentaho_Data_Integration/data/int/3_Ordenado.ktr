@@ -438,37 +438,37 @@
   <order>
     <hop>
       <from>Sort rows</from>
-      <to>XML output</to>
+      <to>XML output FactSales Ordenado</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Get data from XML</from>
+      <from>Get data from XML FactSales</from>
       <to>Sort rows</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Sort rows 2</from>
-      <to>XML output 2</to>
+      <from>Sort rows </from>
+      <to>XML output Territory Ordenado</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Get data from XML 2</from>
-      <to>Sort rows 2</to>
+      <from>Get data from XML Territoy </from>
+      <to>Sort rows </to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Sort rows 3</from>
-      <to>XML output 3</to>
+      <from>Sort rows   </from>
+      <to>XML output Date Ordenado</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Get data from XML 3</from>
-      <to>Sort rows 3</to>
+      <from>Get data from XML Date</from>
+      <to>Sort rows   </to>
       <enabled>Y</enabled>
     </hop>
   </order>
   <step>
-    <name>Get data from XML</name>
+    <name>Get data from XML FactSales</name>
     <type>getXMLData</type>
     <description/>
     <distribute>Y</distribute>
@@ -694,7 +694,7 @@
     </GUI>
   </step>
   <step>
-    <name>Get data from XML 2</name>
+    <name>Get data from XML Territoy </name>
     <type>getXMLData</type>
     <description/>
     <distribute>Y</distribute>
@@ -779,13 +779,13 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>256</xloc>
+      <xloc>304</xloc>
       <yloc>48</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Get data from XML 3</name>
+    <name>Get data from XML Date</name>
     <type>getXMLData</type>
     <description/>
     <distribute>Y</distribute>
@@ -900,7 +900,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>416</xloc>
+      <xloc>496</xloc>
       <yloc>48</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1028,7 +1028,7 @@
     </GUI>
   </step>
   <step>
-    <name>Sort rows 2</name>
+    <name>Sort rows </name>
     <type>SortRows</type>
     <description/>
     <distribute>Y</distribute>
@@ -1072,13 +1072,13 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>256</xloc>
+      <xloc>304</xloc>
       <yloc>240</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Sort rows 3</name>
+    <name>Sort rows   </name>
     <type>SortRows</type>
     <description/>
     <distribute>Y</distribute>
@@ -1138,13 +1138,13 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>416</xloc>
+      <xloc>496</xloc>
       <yloc>240</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>XML output</name>
+    <name>XML output FactSales Ordenado</name>
     <type>XMLOutput</type>
     <description/>
     <distribute>Y</distribute>
@@ -1190,7 +1190,7 @@
     </GUI>
   </step>
   <step>
-    <name>XML output 2</name>
+    <name>XML output Territory Ordenado</name>
     <type>XMLOutput</type>
     <description/>
     <distribute>Y</distribute>
@@ -1230,13 +1230,13 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>256</xloc>
+      <xloc>304</xloc>
       <yloc>432</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>XML output 3</name>
+    <name>XML output Date Ordenado</name>
     <type>XMLOutput</type>
     <description/>
     <distribute>Y</distribute>
@@ -1276,7 +1276,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>416</xloc>
+      <xloc>496</xloc>
       <yloc>432</yloc>
       <draw>Y</draw>
     </GUI>
