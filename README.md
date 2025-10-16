@@ -33,14 +33,13 @@ O projeto foi desenvolvido e documentado utilizando as seguintes ferramentas:
 
 O repositório está organizado na pasta raiz `tp01-<número de aluno>/` e segue a seguinte estrutura:
 
-ISI25_TP01_27975_27966/
-         README.md
-         doc/ISI25_TP01_27975_27966_doc.pdf
-         numeroaluno_PlataformaUsada/ (27966 - Knime ou 27975_Pentaho_Data_Integration)
-         dataint/             transformações e  jobs usados para o ETL  (data-integration)
-         data/input/      ficheiros com os dados de entrada
-         data/output/   dados de saída... para onde devem ser encaminhados os ficheiros de saída...  
-
+-ISI25_TP01_27975_27966/
+         - README.md
+         - doc/ISI25_TP01_27975_27966_doc.pdf
+         - numeroaluno_PlataformaUsada/ (27966 - Knime ou 27975_Pentaho_Data_Integration)
+         - dataint/       -      transformações e  jobs usados para o ETL  (data-integration)
+         - data/input/    -      ficheiros com os dados de entrada
+         - data/output/   -      dados de saída... para onde devem ser encaminhados os ficheiros de saída...  
 
 ## 4. Execução do Projeto (Pentaho PDI)
 
