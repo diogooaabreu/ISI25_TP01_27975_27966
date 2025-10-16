@@ -1,0 +1,22 @@
+{
+  "version" : "5.7.0.v202509011500",
+  "projects" : [ {
+    "name" : "isi",
+    "active" : true,
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "relativePath" : "isi"
+    }
+  } ],
+  "mostRecentlyUsedProjects" : [ {
+    "name" : "isi",
+    "timeUsed" : "2025-10-16T13:46:37.4951568+01:00",
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "projectType" : "WORKFLOW",
+      "relativePath" : "isi"
+    }
+  } ]
+}
