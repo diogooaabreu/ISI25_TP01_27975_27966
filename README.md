@@ -2,31 +2,32 @@
 
 **Trabalho Prático I** - Integração de Sistemas de Informação (ISI)
 **Licenciatura em Engenharia de Sistemas Informáticos (LESI)**
-[cite_start]**Ano Letivo:** 2025/2026 [cite: 261]
+
+**Ano Letivo:** 2025/2026 
 
 | Aluno | Número |
 | :--- | :--- |
-| Diogo Manuel Pereira Abreu | [cite_start]27975 [cite: 257] |
-| Paulo Ricardo Fernandes Gonçalves | [cite_start]27966 [cite: 258] |
+| Diogo Manuel Pereira Abreu | 27975 |
+| Paulo Ricardo Fernandes Gonçalves |27966 |
 
 ## 1. Enquadramento e Objetivos
 
-[cite_start]Este projeto demonstra a implementação de um fluxo **ETL (Extract, Transform, Load)** completo, focado na conversão de dados de clientes de um ficheiro no formato CSV para múltiplos ficheiros no formato XML[cite: 288, 307].
+Este projeto demonstra a implementação de um fluxo **ETL (Extract, Transform, Load)** completo, focado na conversão de dados de clientes de um ficheiro no formato CSV para múltiplos ficheiros no formato XML
 
-[cite_start]O fluxo de trabalho aborda os seguintes objetivos e processos de transformação[cite: 288, 289, 290, 291]:
-* [cite_start]**Limpeza e Normalização de Dados**[cite: 289].
-* [cite_start]**Validação de Campos** utilizando Expressões Regulares (Regex)[cite: 290].
-* [cite_start]**Geração de Logs** do processo ETL[cite: 291].
-* [cite_start]**Demonstrar um fluxo ETL completo** com o Pentaho e no Knime[cite: 293].
-* [cite_start]**Explorar as capacidades de transformação** da ferramenta[cite: 295].
+O fluxo de trabalho aborda os seguintes objetivos e processos de transformação
+* **Limpeza e Normalização de Dados**
+* **Validação de Campos** utilizando Expressões Regulares (Regex)
+* **Geração de Logs** do processo ETL
+* **Demonstrar um fluxo ETL completo** com o Pentaho e no Knime
+* **Explorar as capacidades de transformação** da ferramenta
 
 ## 2. Ferramentas Utilizadas
 
 O projeto foi desenvolvido e documentado utilizando as seguintes ferramentas:
 
-* [cite_start]**Knime** (Kettle)[cite: 429].
-* [cite_start]**Pentaho Data Integration (PDI) 9.4** (Kettle)[cite: 429].
-* [cite_start]**Git** para controlo de versão[cite: 430].
+* **Knime**.
+* **Pentaho Data Integration (PDI) 9.4** (Kettle).
+* **Git** para controlo de versão.
 
 ## 3. Organização do Repositório
 
@@ -52,13 +53,13 @@ O processo de ETL é orquestrado pelo Job principal e deve ser executado atravé
 
 ### 4.2. Fluxo de Trabalho do Job
 
-O Job principal (`job.kjb`) executa as transformações na seguinte sequência[cite: 402]:
+O Job principal (`job.kjb`) executa as transformações na seguinte sequência:
 
-1.  `Transformação de CSV para XML`[cite: 406].
-2.  `Transformação de Criação de Tabelas`[cite: 407].
-3.  `Transformação de Ordenar Dados nas Tabelas`[cite: 408].
-4.  `Transformação do campo data em MM/dd/yyyy`[cite: 409].
-5.  `Transformação do campo data em dd/mm/yyyy`[cite: 410].
+1.  `Transformação de CSV para XML`.
+2.  `Transformação de Criação de Tabelas`.
+3.  `Transformação de Ordenar Dados nas Tabelas`.
+4.  `Transformação do campo data em MM/dd/yyyy`.
+5.  `Transformação do campo data em dd/mm/yyyy`.
 
 ### 4.3. Passos de Execução
 
