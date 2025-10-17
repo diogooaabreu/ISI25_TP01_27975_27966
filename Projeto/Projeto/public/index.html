@@ -1,65 +1,733 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gráfico - Pentaho</title>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 50px auto;
-      text-align: center;
-    }
-    canvas {
-      margin-top: 40px;
-    }
-  </style>
-</head>
-<body>
-  <h1>Gráfico dos Dados do Pentaho</h1>
-  <canvas id="grafico"></canvas>
-
-  <script>
-    async function carregarGrafico() {
-  try {
-    const resposta = await fetch("/api/dados");
-    const dados = await resposta.json();
-
-    // O seu array está dentro de "data"
-    const registros = dados.data;
-
-    const labels = registros.map(d => d.Genre);
-    const valores = registros.map(d => d.Total_Pedidos);
-
-    new Chart(document.getElementById("grafico"), {
-      type: "bar",
-      data: {
-        labels,
-        datasets: [
-          {
-            label: "Total de Pedidos por Gênero",
-            data: valores,
-            backgroundColor: "rgba(75, 192, 192, 0.6)",
-            borderColor: "rgba(75, 192, 192, 1)",
-            borderWidth: 1
-          }
-        ]
-      },
-      options: {
-        responsive: true,
-        scales: { y: { beginAtZero: true } }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard de Vendas - Análise Dinâmica</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f5f7fa;
+        color: #333;
       }
-    });
-  } catch (erro) {
-    console.error("Erro ao carregar dados:", erro);
-    document.body.innerHTML += "<p style='color:red;'>Erro ao carregar os dados.</p>";
-  }
-}
+      .header {
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 20px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .loading {
+        text-align: center;
+        padding: 40px;
+        font-size: 18px;
+        color: #666;
+      }
+      .chart-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        gap: 25px;
+        margin-top: 30px;
+      }
+      .chart-wrapper {
+        background: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .chart-wrapper h3 {
+        margin-top: 0;
+        color: #444;
+        border-bottom: 2px solid #f0f0f0;
+        padding-bottom: 10px;
+      }
+      canvas {
+        width: 100% !important;
+      }
+      .filters {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .filter-group {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      .filter-group label {
+        font-size: 12px;
+        font-weight: bold;
+        color: #666;
+      }
+      select,
+      button {
+        padding: 8px 12px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        background: white;
+      }
+      button {
+        background: #667eea;
+        color: white;
+        border: none;
+        cursor: pointer;
+        align-self: flex-end;
+      }
+      button:hover {
+        background: #5a6fd8;
+      }
+      .error {
+        background: #fee;
+        color: #c33;
+        padding: 15px;
+        border-radius: 5px;
+        margin: 10px 0;
+        border-left: 4px solid #c33;
+      }
+      @media (max-width: 768px) {
+        .chart-container {
+          grid-template-columns: 1fr;
+        }
+        .chart-wrapper {
+          min-width: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>📊 Dashboard de Análise de Vendas</h1>
+      <p>Carregando dados dinamicamente do servidor...</p>
+    </div>
 
+    <div id="loadingMessage" class="loading">
+      <p>🔄 Carregando dados do servidor...</p>
+    </div>
 
-    carregarGrafico();
-  </script>
-</body>
+    <div id="errorMessage" class="error" style="display: none"></div>
+
+    <div id="dashboardContent" style="display: none">
+      <div class="filters">
+        <div class="filter-group">
+          <label for="yearFilter">Ano</label>
+          <select id="yearFilter">
+            <option value="all">Todos os Anos</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="territoryFilter">Território</label>
+          <select id="territoryFilter">
+            <option value="all">Todos os Territórios</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="statusFilter">Status</label>
+          <select id="statusFilter">
+            <option value="all">Todos os Status</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="dealSizeFilter">Tamanho do Negócio</label>
+          <select id="dealSizeFilter">
+            <option value="all">Todos os Tamanhos</option>
+          </select>
+        </div>
+        <button onclick="aplicarFiltros()">🔍 Aplicar Filtros</button>
+        <button onclick="resetarFiltros()">🔄 Limpar Filtros</button>
+      </div>
+
+      <div class="chart-container">
+        <div class="chart-wrapper">
+          <h3>📈 Vendas por Ano e Status</h3>
+          <canvas id="graficoVendasStatus"></canvas>
+        </div>
+        <div class="chart-wrapper">
+          <h3>🌍 Vendas por Território</h3>
+          <canvas id="graficoTerritorio"></canvas>
+        </div>
+        <div class="chart-wrapper">
+          <h3>📦 Distribuição por Tamanho do Negócio</h3>
+          <canvas id="graficoDealSize"></canvas>
+        </div>
+        <div class="chart-wrapper">
+          <h3>📅 Vendas por Trimestre</h3>
+          <canvas id="graficoTrimestre"></canvas>
+        </div>
+        <div class="chart-wrapper">
+          <h3>📊 Top 10 Clientes por Vendas</h3>
+          <canvas id="graficoTopClientes"></canvas>
+        </div>
+        <div class="chart-wrapper">
+          <h3>🔄 Evolução Mensal de Vendas</h3>
+          <canvas id="graficoEvolucaoMensal"></canvas>
+        </div>
+        <div class="chart-wrapper">
+          <h3>📦 Top 10 Produtos Mais Vendidos</h3>
+          <canvas id="graficoTopProdutos"></canvas>
+        </div>
+        <div class="chart-wrapper">
+          <h3>🎯 Quantidade vs Valor de Vendas</h3>
+          <canvas id="graficoQuantidadeValor"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Variáveis globais
+      let dadosCompletos = [];
+      let dadosFiltrados = [];
+      let charts = {}; // Para armazenar referências dos gráficos
+
+      // Função para carregar dados da API
+      async function carregarDados() {
+        try {
+          const resposta = await fetch("/api/dados");
+
+          if (!resposta.ok) {
+            throw new Error(`Erro HTTP: ${resposta.status}`);
+          }
+
+          const dados = await resposta.json();
+
+          if (!dados.data || !Array.isArray(dados.data)) {
+            throw new Error("Estrutura de dados inválida");
+          }
+
+          dadosCompletos = dados.data;
+          dadosFiltrados = [...dadosCompletos];
+
+          // Esconder loading e mostrar conteúdo
+          document.getElementById("loadingMessage").style.display = "none";
+          document.getElementById("dashboardContent").style.display = "block";
+          document.getElementById("errorMessage").style.display = "none";
+
+          // Atualizar header
+          document.querySelector(
+            ".header p"
+          ).textContent = `Dados carregados: ${dadosCompletos.length} registros de vendas`;
+
+          inicializarDashboard();
+        } catch (erro) {
+          console.error("Erro ao carregar dados:", erro);
+          document.getElementById("loadingMessage").style.display = "none";
+          document.getElementById("errorMessage").style.display = "block";
+          document.getElementById("errorMessage").innerHTML = `
+          <strong>Erro ao carregar dados:</strong> ${erro.message}
+          <br><br>
+          <button onclick="carregarDados()" style="background: #c33; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">
+            🔄 Tentar Novamente
+          </button>
+        `;
+        }
+      }
+
+      function formatarMoeda(valor) {
+        return new Intl.NumberFormat("pt-BR", {
+          style: "currency",
+          currency: "USD",
+          minimumFractionDigits: 0,
+          maximumFractionDigits: 0,
+        }).format(valor);
+      }
+
+      function popularFiltros() {
+        const registros = dadosCompletos;
+
+        if (registros.length === 0) return;
+
+        // Ano
+        const anos = [...new Set(registros.map((d) => d.YEAR_ID))].sort();
+        const yearFilter = document.getElementById("yearFilter");
+        yearFilter.innerHTML = '<option value="all">Todos os Anos</option>';
+        anos.forEach((ano) => {
+          const option = document.createElement("option");
+          option.value = ano;
+          option.textContent = ano;
+          yearFilter.appendChild(option);
+        });
+
+        // Território
+        const territorios = [
+          ...new Set(registros.map((d) => d.TERRITORY)),
+        ].sort();
+        const territoryFilter = document.getElementById("territoryFilter");
+        territoryFilter.innerHTML =
+          '<option value="all">Todos os Territórios</option>';
+        territorios.forEach((territorio) => {
+          const option = document.createElement("option");
+          option.value = territorio;
+          option.textContent = territorio;
+          territoryFilter.appendChild(option);
+        });
+
+        // Status
+        const status = [...new Set(registros.map((d) => d.STATUS))].sort();
+        const statusFilter = document.getElementById("statusFilter");
+        statusFilter.innerHTML = '<option value="all">Todos os Status</option>';
+        status.forEach((st) => {
+          const option = document.createElement("option");
+          option.value = st;
+          option.textContent = st;
+          statusFilter.appendChild(option);
+        });
+
+        // Deal Size
+        const dealSizes = [...new Set(registros.map((d) => d.DEALSIZE))].sort();
+        const dealSizeFilter = document.getElementById("dealSizeFilter");
+        dealSizeFilter.innerHTML =
+          '<option value="all">Todos os Tamanhos</option>';
+        dealSizes.forEach((size) => {
+          const option = document.createElement("option");
+          option.value = size;
+          option.textContent = size;
+          dealSizeFilter.appendChild(option);
+        });
+      }
+
+      function aplicarFiltros() {
+        const yearFilter = document.getElementById("yearFilter").value;
+        const territoryFilter =
+          document.getElementById("territoryFilter").value;
+        const statusFilter = document.getElementById("statusFilter").value;
+        const dealSizeFilter = document.getElementById("dealSizeFilter").value;
+
+        dadosFiltrados = dadosCompletos.filter((registro) => {
+          return (
+            (yearFilter === "all" || registro.YEAR_ID == yearFilter) &&
+            (territoryFilter === "all" ||
+              registro.TERRITORY === territoryFilter) &&
+            (statusFilter === "all" || registro.STATUS === statusFilter) &&
+            (dealSizeFilter === "all" || registro.DEALSIZE === dealSizeFilter)
+          );
+        });
+
+        criarGraficos();
+      }
+
+      function resetarFiltros() {
+        document.getElementById("yearFilter").value = "all";
+        document.getElementById("territoryFilter").value = "all";
+        document.getElementById("statusFilter").value = "all";
+        document.getElementById("dealSizeFilter").value = "all";
+
+        dadosFiltrados = [...dadosCompletos];
+        criarGraficos();
+      }
+
+      function destruirGraficos() {
+        // Destruir gráficos existentes
+        Object.values(charts).forEach((chart) => {
+          if (chart) chart.destroy();
+        });
+        charts = {};
+      }
+
+      function criarGraficos() {
+        const registros = dadosFiltrados;
+
+        // Destruir gráficos anteriores
+        destruirGraficos();
+
+        if (registros.length === 0) {
+          // Mostrar mensagem de nenhum dado
+          document
+            .querySelectorAll(".chart-wrapper canvas")
+            .forEach((canvas) => {
+              const ctx = canvas.getContext("2d");
+              ctx.font = "16px Arial";
+              ctx.fillStyle = "#666";
+              ctx.textAlign = "center";
+              ctx.fillText(
+                "Nenhum dado para mostrar",
+                canvas.width / 2,
+                canvas.height / 2
+              );
+            });
+          return;
+        }
+
+        try {
+          // Gráfico 1: Vendas por Ano e Status
+          const vendasPorAnoStatus = {};
+          registros.forEach((d) => {
+            const key = `${d.YEAR_ID}-${d.STATUS}`;
+            if (!vendasPorAnoStatus[key]) vendasPorAnoStatus[key] = 0;
+            vendasPorAnoStatus[key] += d.SALES;
+          });
+
+          const anos = [...new Set(registros.map((d) => d.YEAR_ID))].sort();
+          const status = [...new Set(registros.map((d) => d.STATUS))].sort();
+
+          charts.vendasStatus = new Chart(
+            document.getElementById("graficoVendasStatus"),
+            {
+              type: "bar",
+              data: {
+                labels: anos,
+                datasets: status.map((st, index) => ({
+                  label: st,
+                  data: anos.map(
+                    (ano) => vendasPorAnoStatus[`${ano}-${st}`] || 0
+                  ),
+                  backgroundColor: `hsl(${index * 60}, 70%, 60%)`,
+                  borderWidth: 1,
+                })),
+              },
+              options: {
+                responsive: true,
+                scales: {
+                  y: {
+                    beginAtZero: true,
+                    title: { display: true, text: "Vendas (USD)" },
+                  },
+                },
+                plugins: {
+                  tooltip: {
+                    callbacks: {
+                      label: (context) => formatarMoeda(context.parsed.y),
+                    },
+                  },
+                },
+              },
+            }
+          );
+
+          // Gráfico 2: Vendas por Território
+          const vendasPorTerritorio = {};
+          registros.forEach((d) => {
+            vendasPorTerritorio[d.TERRITORY] =
+              (vendasPorTerritorio[d.TERRITORY] || 0) + d.SALES;
+          });
+
+          charts.territorio = new Chart(
+            document.getElementById("graficoTerritorio"),
+            {
+              type: "doughnut",
+              data: {
+                labels: Object.keys(vendasPorTerritorio),
+                datasets: [
+                  {
+                    data: Object.values(vendasPorTerritorio),
+                    backgroundColor: [
+                      "#FF6384",
+                      "#36A2EB",
+                      "#FFCE56",
+                      "#4BC0C0",
+                      "#9966FF",
+                      "#FF9F40",
+                    ],
+                  },
+                ],
+              },
+              options: {
+                responsive: true,
+                plugins: {
+                  tooltip: {
+                    callbacks: {
+                      label: (context) =>
+                        `${context.label}: ${formatarMoeda(context.parsed)}`,
+                    },
+                  },
+                },
+              },
+            }
+          );
+
+          // Gráfico 3: Distribuição por Deal Size
+          const dealSizeDist = {};
+          registros.forEach((d) => {
+            dealSizeDist[d.DEALSIZE] = (dealSizeDist[d.DEALSIZE] || 0) + 1;
+          });
+
+          charts.dealSize = new Chart(
+            document.getElementById("graficoDealSize"),
+            {
+              type: "pie",
+              data: {
+                labels: Object.keys(dealSizeDist),
+                datasets: [
+                  {
+                    data: Object.values(dealSizeDist),
+                    backgroundColor: ["#FF6384", "#36A2EB", "#FFCE56"],
+                  },
+                ],
+              },
+              options: {
+                responsive: true,
+              },
+            }
+          );
+
+          // Gráfico 4: Vendas por Trimestre
+          const vendasPorTrimestre = {};
+          registros.forEach((d) => {
+            const key = `${d.YEAR_ID}-T${d.QTR_ID}`;
+            vendasPorTrimestre[key] = (vendasPorTrimestre[key] || 0) + d.SALES;
+          });
+
+          const trimestresOrdenados = Object.keys(vendasPorTrimestre).sort();
+
+          charts.trimestre = new Chart(
+            document.getElementById("graficoTrimestre"),
+            {
+              type: "line",
+              data: {
+                labels: trimestresOrdenados,
+                datasets: [
+                  {
+                    label: "Vendas por Trimestre",
+                    data: trimestresOrdenados.map(
+                      (key) => vendasPorTrimestre[key]
+                    ),
+                    borderColor: "#36A2EB",
+                    backgroundColor: "rgba(54, 162, 235, 0.1)",
+                    borderWidth: 2,
+                    tension: 0.1,
+                    fill: true,
+                  },
+                ],
+              },
+              options: {
+                responsive: true,
+                scales: {
+                  y: {
+                    beginAtZero: true,
+                    title: { display: true, text: "Vendas (USD)" },
+                  },
+                },
+                plugins: {
+                  tooltip: {
+                    callbacks: {
+                      label: (context) => formatarMoeda(context.parsed.y),
+                    },
+                  },
+                },
+              },
+            }
+          );
+
+          // Gráfico 5: Top 10 Clientes
+          const vendasPorCliente = {};
+          registros.forEach((d) => {
+            vendasPorCliente[d.CUSTOMERNAME] =
+              (vendasPorCliente[d.CUSTOMERNAME] || 0) + d.SALES;
+          });
+
+          const topClientes = Object.entries(vendasPorCliente)
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 10);
+
+          charts.topClientes = new Chart(
+            document.getElementById("graficoTopClientes"),
+            {
+              type: "bar",
+              data: {
+                labels: topClientes.map(
+                  ([cliente]) =>
+                    cliente.substring(0, 20) +
+                    (cliente.length > 20 ? "..." : "")
+                ),
+                datasets: [
+                  {
+                    label: "Vendas por Cliente",
+                    data: topClientes.map(([, vendas]) => vendas),
+                    backgroundColor: "#4BC0C0",
+                  },
+                ],
+              },
+              options: {
+                responsive: true,
+                indexAxis: "y",
+                scales: {
+                  x: {
+                    beginAtZero: true,
+                    title: { display: true, text: "Vendas (USD)" },
+                  },
+                },
+                plugins: {
+                  tooltip: {
+                    callbacks: {
+                      label: (context) => formatarMoeda(context.parsed.x),
+                    },
+                  },
+                },
+              },
+            }
+          );
+
+          // Gráfico 6: Evolução Mensal
+          const meses = [
+            "Jan",
+            "Fev",
+            "Mar",
+            "Abr",
+            "Mai",
+            "Jun",
+            "Jul",
+            "Ago",
+            "Set",
+            "Out",
+            "Nov",
+            "Dez",
+          ];
+          const vendasPorMesAno = {};
+
+          registros.forEach((d) => {
+            const chave = `${d.YEAR_ID}-${String(d.MONTH_ID).padStart(2, "0")}`;
+            vendasPorMesAno[chave] = (vendasPorMesAno[chave] || 0) + d.SALES;
+          });
+
+          const mesesOrdenados = Object.keys(vendasPorMesAno).sort();
+
+          charts.evolucaoMensal = new Chart(
+            document.getElementById("graficoEvolucaoMensal"),
+            {
+              type: "line",
+              data: {
+                labels: mesesOrdenados.map((data) => {
+                  const [ano, mes] = data.split("-");
+                  return `${meses[parseInt(mes) - 1]}/${ano}`;
+                }),
+                datasets: [
+                  {
+                    label: "Vendas Mensais",
+                    data: mesesOrdenados.map((key) => vendasPorMesAno[key]),
+                    borderColor: "#FF6384",
+                    backgroundColor: "rgba(255, 99, 132, 0.1)",
+                    borderWidth: 2,
+                    tension: 0.1,
+                    fill: true,
+                  },
+                ],
+              },
+              options: {
+                responsive: true,
+                scales: {
+                  y: {
+                    beginAtZero: true,
+                    title: { display: true, text: "Vendas (USD)" },
+                  },
+                },
+                plugins: {
+                  tooltip: {
+                    callbacks: {
+                      label: (context) => formatarMoeda(context.parsed.y),
+                    },
+                  },
+                },
+              },
+            }
+          );
+
+          // Gráfico 7: Top 10 Produtos
+          const vendasPorProduto = {};
+          registros.forEach((d) => {
+            vendasPorProduto[d.PRODUCTCODE] =
+              (vendasPorProduto[d.PRODUCTCODE] || 0) + d.SALES;
+          });
+
+          const topProdutos = Object.entries(vendasPorProduto)
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 10);
+
+          charts.topProdutos = new Chart(
+            document.getElementById("graficoTopProdutos"),
+            {
+              type: "bar",
+              data: {
+                labels: topProdutos.map(([produto]) => produto),
+                datasets: [
+                  {
+                    label: "Vendas por Produto",
+                    data: topProdutos.map(([, vendas]) => vendas),
+                    backgroundColor: "#9966FF",
+                  },
+                ],
+              },
+              options: {
+                responsive: true,
+                scales: {
+                  y: {
+                    beginAtZero: true,
+                    title: { display: true, text: "Vendas (USD)" },
+                  },
+                },
+                plugins: {
+                  tooltip: {
+                    callbacks: {
+                      label: (context) => formatarMoeda(context.parsed.y),
+                    },
+                  },
+                },
+              },
+            }
+          );
+
+          // Gráfico 8: Quantidade vs Valor
+          charts.quantidadeValor = new Chart(
+            document.getElementById("graficoQuantidadeValor"),
+            {
+              type: "scatter",
+              data: {
+                datasets: [
+                  {
+                    label: "Relação Qtd vs Valor",
+                    data: registros.map((d) => ({
+                      x: d.QUANTITYORDERED,
+                      y: d.SALES,
+                    })),
+                    backgroundColor: "rgba(255, 159, 64, 0.6)",
+                    borderColor: "rgba(255, 159, 64, 1)",
+                    borderWidth: 1,
+                  },
+                ],
+              },
+              options: {
+                responsive: true,
+                scales: {
+                  x: {
+                    title: { display: true, text: "Quantidade Pedida" },
+                  },
+                  y: {
+                    title: { display: true, text: "Valor da Venda (USD)" },
+                  },
+                },
+                plugins: {
+                  tooltip: {
+                    callbacks: {
+                      label: (context) =>
+                        `Qtd: ${context.parsed.x}, Valor: ${formatarMoeda(
+                          context.parsed.y
+                        )}`,
+                    },
+                  },
+                },
+              },
+            }
+          );
+        } catch (erro) {
+          console.error("Erro ao criar gráficos:", erro);
+        }
+      }
+
+      function inicializarDashboard() {
+        popularFiltros();
+        criarGraficos();
+      }
+
+      // Inicializar quando a página carregar
+      document.addEventListener("DOMContentLoaded", carregarDados);
+    </script>
+  </body>
 </html>

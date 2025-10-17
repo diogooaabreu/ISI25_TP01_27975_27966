@@ -8,7 +8,7 @@ const PORT = 3000;
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/api/dados", (req, res) => {
-  const caminho = path.join(__dirname, "dados.json");
+  const caminho = path.join(__dirname, "factsalessite_0.json");
   fs.readFile(caminho, "utf8", (err, data) => {
     if (err) return res.status(500).json({ erro: "Erro ao ler dados.json" });
     try {
@@ -20,4 +20,6 @@ app.get("/api/dados", (req, res) => {
   });
 });
 
-app.listen(PORT, () => console.log(`Servidor rodando em http://localhost:${PORT}`));
+app.listen(PORT, () =>
+  console.log(`Servidor rodando em http://localhost:${PORT}`)
+);
