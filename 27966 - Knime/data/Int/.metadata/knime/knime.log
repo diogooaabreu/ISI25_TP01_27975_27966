@@ -1,0 +1,1341 @@
+2025-10-16 13:46:01,801 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2025-10-16 13:46:01,805 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2025-10-16 13:46:01,805 : INFO  : main :  : NodeLogger :  :  : # Welcome to KNIME Analytics Platform v5.7.0.v202509011500 (Build September 09, 2025)   #
+2025-10-16 13:46:01,805 : INFO  : main :  : NodeLogger :  :  : # Based on Eclipse, http://www.eclipse.org                                              #
+2025-10-16 13:46:01,805 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2025-10-16 13:46:01,805 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2025-10-16 13:46:01,805 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2025-10-16 13:46:01,805 : INFO  : main :  : NodeLogger :  :  : # Copyright by KNIME AG, Zurich, Switzerland and others.                                #
+2025-10-16 13:46:01,805 : INFO  : main :  : NodeLogger :  :  : # Website: http://www.knime.com                                                         #
+2025-10-16 13:46:01,805 : INFO  : main :  : NodeLogger :  :  : # E-mail: contact@knime.com                                                             #
+2025-10-16 13:46:01,805 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2025-10-16 13:46:01,805 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2025-10-16 13:46:01,805 : INFO  : main :  : NodeLogger :  :  : # For more details see the KNIME log file:                                              #
+2025-10-16 13:46:01,805 : INFO  : main :  : NodeLogger :  :  : # C:\IPCA\ISI25_TP01_27975_27966\27966 - Knime\data\Int\.metadata\knime\knime.log
+2025-10-16 13:46:01,805 : INFO  : main :  : NodeLogger :  :  : #---------------------------------------------------------------------------------------#
+2025-10-16 13:46:01,818 : INFO  : main :  : NodeLogger :  :  : # logging date=quinta out. 16 13:46:01 WEST 2025
+2025-10-16 13:46:01,818 : INFO  : main :  : NodeLogger :  :  : # java.version=17.0.5
+2025-10-16 13:46:01,818 : INFO  : main :  : NodeLogger :  :  : # java.vm.version=17.0.5+8
+2025-10-16 13:46:01,818 : INFO  : main :  : NodeLogger :  :  : # java.vendor=Eclipse Adoptium
+2025-10-16 13:46:01,818 : INFO  : main :  : NodeLogger :  :  : # os.name=Windows 11
+2025-10-16 13:46:01,818 : INFO  : main :  : NodeLogger :  :  : # os.arch=amd64
+2025-10-16 13:46:01,818 : INFO  : main :  : NodeLogger :  :  : # number of CPUs=12
+2025-10-16 13:46:01,822 : INFO  : main :  : NodeLogger :  :  : # assertions=off
+2025-10-16 13:46:01,832 : INFO  : main :  : NodeLogger :  :  : # host=Paulinho4k
+2025-10-16 13:46:01,834 : INFO  : main :  : NodeLogger :  :  : # username=paulo
+2025-10-16 13:46:01,834 : INFO  : main :  : NodeLogger :  :  : # max mem=8112MB
+2025-10-16 13:46:01,836 : INFO  : main :  : NodeLogger :  :  : # application=org.knime.product.KNIME_APPLICATION
+2025-10-16 13:46:01,844 : INFO  : main :  : NodeLogger :  :  : # KNID=11-7e5f67b417ba1764-01-ee61f9aa0e724fbb
+2025-10-16 13:46:01,844 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2025-10-16 13:46:01,844 : DEBUG : main :  : KNIMELogger :  :  : 12 messages were logged before logging was initialized; see below...
+2025-10-16 13:45:47,947 : DEBUG : main :  : EclipseProxyServiceInitializer :  :  : (1/3) Opened OSGi service tracker for 'org.eclipse.core.net.proxy.IProxyService'
+2025-10-16 13:45:48,019 : DEBUG : main :  : ApplicationHealth :  :  : Registering JMX bean for org.knime.core:type=Execution,name=GlobalPool
+2025-10-16 13:45:48,022 : DEBUG : main :  : ApplicationHealth :  :  : Registering JMX bean for org.knime.core:type=Execution,name=NodeStates
+2025-10-16 13:45:48,022 : DEBUG : main :  : ApplicationHealth :  :  : Registering JMX bean for org.knime.core:type=Memory,name=ObjectInstances
+2025-10-16 13:45:48,034 : DEBUG : main :  : IEarlyStartup :  :  : Running application "org.knime.product.KNIME_APPLICATION"
+2025-10-16 13:45:48,034 : DEBUG : main :  : IEarlyStartup :  :  : Moving from stage <none> to stage EARLIEST
+2025-10-16 13:45:48,034 : DEBUG : main :  : IEarlyStartup :  :  : Executing startup hook `org.knime.core.node.logging.JavaUtilLoggingAdapter#run()` at stage EARLIEST
+2025-10-16 13:45:48,036 : DEBUG : main :  : IEarlyStartup :  :  : Executing startup hook `org.knime.js.cef.CEFEarlyStartup#run()` at stage EARLIEST
+2025-10-16 13:45:48,420 : DEBUG : main :  : KNIMEApplication :  :  : Checking for instance location
+2025-10-16 13:46:01,564 : DEBUG : main :  : KNIMEApplication :  :  : Instance location set
+2025-10-16 13:46:01,629 : DEBUG : main :  : IEarlyStartup :  :  : Moving from stage EARLIEST to stage AFTER_PROFILES_SET
+2025-10-16 13:46:01,629 : DEBUG : main :  : IEarlyStartup :  :  : Executing startup hook `org.knime.core.node.logging.KNIMELogger$EarlyStartupInitializer#run()` at stage AFTER_PROFILES_SET
+2025-10-16 13:46:01,844 : DEBUG : main :  : KNIMELogger :  :  : End of buffered log messages
+2025-10-16 13:46:01,844 : DEBUG : main :  : IEarlyStartup :  :  : Executing startup hook `org.knime.core.eclipseUtil.EclipseProxyServiceInitializer#run()` at stage AFTER_PROFILES_SET
+2025-10-16 13:46:02,059 : DEBUG : main :  : NativeProxyProviderWrapper :  :  : Invoked default constructor in class "class org.eclipse.core.internal.net.ProxyManager" via reflectionto forcibly create new instance
+2025-10-16 13:46:02,065 : DEBUG : main :  : NativeProxyProviderWrapper :  :  : Forcibly set field "preferenceManager" in class "class org.eclipse.core.internal.net.ProxyManager" to "org.eclipse.core.internal.net.PreferenceManager@27e199ce" via reflection
+2025-10-16 13:46:02,074 : DEBUG : main :  : NativeProxyProviderWrapper :  :  : Forcibly set field "nativeProxyProvider" in class "class org.eclipse.core.internal.net.ProxyManager" to "org.knime.core.eclipseUtil.NativeProxyProviderWrapper@6238d5e0" via reflection
+2025-10-16 13:46:02,074 : DEBUG : main :  : EclipseProxyServiceInitializer :  :  : (3/3) Successfully installed proxy support
+2025-10-16 13:46:02,074 : DEBUG : main :  : EclipseProxyServiceInitializer :  :  : (2/3) Initialized OSGi service 'org.eclipse.core.net.proxy.IProxyService'
+2025-10-16 13:46:02,074 : DEBUG : main :  : IEarlyStartup :  :  : Executing startup hook `org.knime.core.internal.MountTableInitializerEarlyStartup#run()` at stage AFTER_PROFILES_SET
+2025-10-16 13:46:03,184 : DEBUG : main :  : WorkbenchMountTable :  :  : Mounted Explorer Temp Space 'knime-temp-space' - com.knime.explorer.tempspace
+2025-10-16 13:46:03,212 : DEBUG : main :  : IEarlyStartup :  :  : Executing startup hook `org.knime.ui.java.OnEarlyStartup#run()` at stage AFTER_PROFILES_SET
+2025-10-16 13:46:03,267 : DEBUG : KNIME-Worker-0 :  : NodeFactoryProvider :  :  : Duplicate node factory id: org.knime.base.node.preproc.filter.column.FilterColumnNodeFactory
+2025-10-16 13:46:03,267 : DEBUG : KNIME-Worker-0 :  : NodeFactoryProvider :  :  : Duplicate node factory id: org.knime.base.node.preproc.joiner.NewJoinerNodeFactory
+2025-10-16 13:46:03,267 : DEBUG : KNIME-Worker-0 :  : NodeFactoryProvider :  :  : Duplicate node factory id: org.knime.base.node.preproc.split.SplitNodeFactory
+2025-10-16 13:46:03,269 : DEBUG : KNIME-Worker-0 :  : NodeFactoryProvider :  :  : Duplicate node factory id: org.knime.base.filehandling.filemetainfo.FileMetaInfoNodeFactory
+2025-10-16 13:46:03,269 : DEBUG : KNIME-Worker-0 :  : NodeFactoryProvider :  :  : Duplicate node factory id: org.knime.distmatrix.knn.KnnDistNodeFactory
+2025-10-16 13:46:03,280 : DEBUG : KNIME-Worker-0 :  : NodeFactoryProvider :  :  : Collected NodeFactory extensions... found 1007 nodes (337 deprecated, 20 hidden) in 0,0s
+2025-10-16 13:46:03,616 : DEBUG : KNIME-Worker-0 :  : NodeFactoryProvider :  :  : Collected NodeSetFactory extensions... found 3 node sets with 25 nodes in 0,3s
+2025-10-16 13:46:03,806 : DEBUG : Node Repository Initializer :  : NodeSpecCache :  :  : Computing node specifications for KNIME AP Core feature
+2025-10-16 13:46:04,329 : DEBUG : Node Repository Initializer :  : NodeSpecCache :  :  : Computing node specifications for KNIME Distance Matrix Extension
+2025-10-16 13:46:04,484 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.base.node.mine.treeensemble2.distance.RandomForestDistanceFactory'
+2025-10-16 13:46:04,486 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distmatrix.calculate.measure.MatrixDistanceFactory'
+2025-10-16 13:46:04,491 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.base.distance.measure.OldDistanceWrapperDistanceFactory'
+2025-10-16 13:46:04,494 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.string.levenshtein.LevenshteinDistanceFactory'
+2025-10-16 13:46:04,494 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.string.tversky.TverskyDistanceFactory'
+2025-10-16 13:46:04,494 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.bitvector.cosine.CosineDistanceFactory'
+2025-10-16 13:46:04,498 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.bitvector.tversky.TverskyDistanceFactory'
+2025-10-16 13:46:04,498 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.base.distance.bytevector.CosineDistanceMeasureFactory'
+2025-10-16 13:46:04,504 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.base.distance.bytevector.EuclideanDistanceMeasureFactory'
+2025-10-16 13:46:04,504 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.base.distance.bytevector.ManhattanDistanceMeasureFactory'
+2025-10-16 13:46:04,506 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.base.distance.bytevector.PNormDistanceMeasureFactory'
+2025-10-16 13:46:04,506 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.numerical.lnorm.LNormDistanceFactory'
+2025-10-16 13:46:04,511 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.numerical.cosine.CosineDistanceFactory'
+2025-10-16 13:46:04,511 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.jsnippet.JSnippetDistanceFactory'
+2025-10-16 13:46:04,514 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.jsnippet.aggregated.AggregatedDistanceFactory'
+2025-10-16 13:46:04,515 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.mahalanobis.MahalanobisDistanceFactory'
+2025-10-16 13:46:04,515 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.string.jarowinkler.JaroWinklerDistanceFactory'
+2025-10-16 13:46:04,559 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.bitvector.tversky.TverskyDistanceFactory
+2025-10-16 13:46:04,594 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.bitvector.tversky.TverskyDistanceFactory
+2025-10-16 13:46:04,598 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.bitvector.tversky.TverskyDistanceFactory
+2025-10-16 13:46:04,598 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.bitvector.tversky.TverskyDistanceFactory
+2025-10-16 13:46:04,602 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.bitvector.cosine.CosineDistanceFactory
+2025-10-16 13:46:04,604 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.bitvector.cosine.CosineDistanceFactory
+2025-10-16 13:46:04,604 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.bitvector.cosine.CosineDistanceFactory
+2025-10-16 13:46:04,606 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.bitvector.cosine.CosineDistanceFactory
+2025-10-16 13:46:04,648 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.jarowinkler.JaroWinklerDistanceFactory
+2025-10-16 13:46:04,648 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.jarowinkler.JaroWinklerDistanceFactory
+2025-10-16 13:46:04,650 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.jarowinkler.JaroWinklerDistanceFactory
+2025-10-16 13:46:04,652 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.jarowinkler.JaroWinklerDistanceFactory
+2025-10-16 13:46:04,654 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.tversky.TverskyDistanceFactory
+2025-10-16 13:46:04,654 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.tversky.TverskyDistanceFactory
+2025-10-16 13:46:04,654 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.tversky.TverskyDistanceFactory
+2025-10-16 13:46:04,658 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.tversky.TverskyDistanceFactory
+2025-10-16 13:46:04,662 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.levenshtein.LevenshteinDistanceFactory
+2025-10-16 13:46:04,664 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.levenshtein.LevenshteinDistanceFactory
+2025-10-16 13:46:04,664 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.levenshtein.LevenshteinDistanceFactory
+2025-10-16 13:46:04,666 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.levenshtein.LevenshteinDistanceFactory
+2025-10-16 13:46:04,694 : DEBUG : Node Repository Initializer :  : HiLiteHandler :  :  : Adding hilite translator to handler 67197801-37c0-4e8c-9147-8dfb116e089f
+2025-10-16 13:46:04,900 : DEBUG : Node Repository Initializer :  : HiLiteHandler :  :  : Adding hilite translator to handler ce59534d-ab9b-4a8d-90fb-2596180075ec
+2025-10-16 13:46:05,030 : DEBUG : Node Repository Initializer :  : HiLiteHandler :  :  : Adding hilite translator to handler d3b594bf-5c54-46ab-8ed5-70bbd35139b5
+2025-10-16 13:46:05,154 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.numerical.lnorm.LNormDistanceFactory
+2025-10-16 13:46:05,154 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.numerical.lnorm.LNormDistanceFactory
+2025-10-16 13:46:05,157 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.numerical.lnorm.LNormDistanceFactory
+2025-10-16 13:46:05,157 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.numerical.lnorm.LNormDistanceFactory
+2025-10-16 13:46:05,157 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.numerical.cosine.CosineDistanceFactory
+2025-10-16 13:46:05,162 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.numerical.cosine.CosineDistanceFactory
+2025-10-16 13:46:05,162 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.numerical.cosine.CosineDistanceFactory
+2025-10-16 13:46:05,164 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.numerical.cosine.CosineDistanceFactory
+2025-10-16 13:46:05,174 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.EuclideanDistanceMeasureFactory
+2025-10-16 13:46:05,174 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.EuclideanDistanceMeasureFactory
+2025-10-16 13:46:05,174 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.EuclideanDistanceMeasureFactory
+2025-10-16 13:46:05,174 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.EuclideanDistanceMeasureFactory
+2025-10-16 13:46:05,178 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.CosineDistanceMeasureFactory
+2025-10-16 13:46:05,178 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.CosineDistanceMeasureFactory
+2025-10-16 13:46:05,178 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.CosineDistanceMeasureFactory
+2025-10-16 13:46:05,182 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.CosineDistanceMeasureFactory
+2025-10-16 13:46:05,184 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.PNormDistanceMeasureFactory
+2025-10-16 13:46:05,184 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.PNormDistanceMeasureFactory
+2025-10-16 13:46:05,186 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.PNormDistanceMeasureFactory
+2025-10-16 13:46:05,186 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.PNormDistanceMeasureFactory
+2025-10-16 13:46:05,188 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.ManhattanDistanceMeasureFactory
+2025-10-16 13:46:05,190 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.ManhattanDistanceMeasureFactory
+2025-10-16 13:46:05,190 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.ManhattanDistanceMeasureFactory
+2025-10-16 13:46:05,190 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.ManhattanDistanceMeasureFactory
+2025-10-16 13:46:05,282 : DEBUG : Node Repository Initializer :  : NodeSpecCache :  :  : Computing node specifications for KNIME Quick Forms
+2025-10-16 13:46:06,224 : DEBUG : Node Repository Initializer :  : MoleculeSketcherRegistry :  :  : Added molecule sketcher 'org.knime.ext.js.molecule.Ketcher_2_7_2' from 'org.knime.ext.js'
+2025-10-16 13:46:06,235 : DEBUG : Node Repository Initializer :  : NodeSpecCache :  :  : Computing node specifications for KNIME File Handling Nodes
+2025-10-16 13:46:06,968 : DEBUG : Node Repository Initializer :  : ExtensionPoints :  :  : Loading executable extensions of extension point: org.knime.database.RowFilter
+2025-10-16 13:46:06,984 : DEBUG : Node Repository Initializer :  : ExtensionPoints :  :  : Executable extension initializer has been created
+2025-10-16 13:46:06,984 : DEBUG : Node Repository Initializer :  : ExtensionPoints :  :  : Executable is instance of MSAccessRowFilterInitializer
+2025-10-16 13:46:07,000 : DEBUG : Node Repository Initializer :  : ExtensionPoints :  :  : Loading extensions of extension point: org.knime.database.DBType
+2025-10-16 13:46:07,025 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=h2, name=H2, description=null)
+2025-10-16 13:46:07,025 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=msaccess, name=Microsoft Access, description=null)
+2025-10-16 13:46:07,034 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2025-10-16 13:46:07,034 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=mysql, name=MySQL, description=null)
+2025-10-16 13:46:07,034 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=postgres, name=PostgreSQL, description=null)
+2025-10-16 13:46:07,034 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=sqlite, name=SQLite, description=null)
+2025-10-16 13:46:07,034 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=db2, name=IBM Db2, description=null)
+2025-10-16 13:46:07,034 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=oracle, name=Oracle, description=null)
+2025-10-16 13:46:07,034 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=saphana, name=SAP HANA, description=null)
+2025-10-16 13:46:07,034 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=teradata, name=Teradata, description=null)
+2025-10-16 13:46:07,034 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2025-10-16 13:46:07,044 : DEBUG : Node Repository Initializer :  : ExtensionPoints :  :  : Executable extension initializer has been created
+2025-10-16 13:46:07,044 : DEBUG : Node Repository Initializer :  : ExtensionPoints :  :  : Executable is instance of SQLiteRowFilterInitializer
+2025-10-16 13:46:07,050 : DEBUG : Node Repository Initializer :  : ExtensionPoints :  :  : Executable extension initializer has been created
+2025-10-16 13:46:07,050 : DEBUG : Node Repository Initializer :  : ExtensionPoints :  :  : Executable is instance of OracleRowFilterInitializer
+2025-10-16 13:46:07,090 : DEBUG : Node Repository Initializer :  : MicrosoftAuthenticationPlugin :  :  : Failed to initialize the JAX-RS 1.x RuntimeDelegate. Provided error message: java.lang.ClassNotFoundException: com.sun.ws.rs.ext.RuntimeDelegateImpl cannot be found by javax.ws.rs.jsr311-api_1.1.1
+2025-10-16 13:46:07,461 : INFO  : main :  : StringHistory :  :  : History file 'C:\IPCA\ISI25_TP01_27975_27966\27966 - Knime\data\Int\.metadata\knime\history_database_drivers.txt' does not exist.
+2025-10-16 13:46:07,461 : INFO  : main :  : StringHistory :  :  : History file 'C:\IPCA\ISI25_TP01_27975_27966\27966 - Knime\data\Int\.metadata\knime\history_database_urls.txt' does not exist.
+2025-10-16 13:46:07,462 : DEBUG : main :  : DatabaseConnectionSettings :  :  : Settings database timeout to 15 seconds
+2025-10-16 13:46:07,462 : DEBUG : main :  : DatabaseConnectionSettings :  :  : Database concurrency (sync via database connection) is true.
+2025-10-16 13:46:07,464 : DEBUG : main :  : KNIMECorePlugin :  :  : Setting KNIME max thread count to 24
+2025-10-16 13:46:07,464 : DEBUG : main :  : KNIMECorePlugin :  :  : Setting KNIME temp dir to "C:\Users\paulo\AppData\Local\Temp"
+2025-10-16 13:46:37,239 : WARN  : ModalContext :  : Node : SQLite Connector : 3:41 : DB Connection no longer available. Go to advanced settings to enable connection restoration.
+2025-10-16 13:48:21,571 : ERROR : KNIME-Worker-1-SQLite Connector 3:41 :  : NodeStateChangeListener : SQLite Connector : 3:41 : Caught an exception while notifying node state listeners, skipping throwing to preserve the state change
+java.lang.NullPointerException: Cannot invoke "org.eclipse.ui.IWorkbenchWindow.getShell()" because the return value of "org.eclipse.ui.IWorkbench.getActiveWorkbenchWindow()" is null
+	at org.knime.ui.java.api.NodeAPI.getAppBoundsAsAWTRec(NodeAPI.java:171)
+	at org.knime.ui.java.api.PortAPI.lambda$2(PortAPI.java:116)
+	at org.knime.gateway.api.util.CoreUtil$1.stateChanged(CoreUtil.java:798)
+	at org.knime.core.node.workflow.NodeStateChangeListener.callStateChanged(NodeStateChangeListener.java:83)
+	at org.knime.core.node.workflow.NodeContainer.notifyStateChangeListeners(NodeContainer.java:958)
+	at org.knime.core.node.workflow.NodeContainer.setInternalState(NodeContainer.java:1030)
+	at org.knime.core.node.workflow.NativeNodeContainer.setInternalState(NativeNodeContainer.java:235)
+	at org.knime.core.node.workflow.NodeContainer.setInternalState(NodeContainer.java:1004)
+	at org.knime.core.node.workflow.NativeNodeContainer.performStateTransitionEXECUTED(NativeNodeContainer.java:556)
+	at org.knime.core.node.workflow.WorkflowManager.doAfterExecution(WorkflowManager.java:3741)
+	at org.knime.core.node.workflow.NodeContainer.notifyParentExecuteFinished(NodeContainer.java:689)
+	at org.knime.core.node.workflow.NodeExecutionJob$AfterRunRunnable.run(NodeExecutionJob.java:385)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at org.knime.core.util.ThreadPool.runInvisible(ThreadPool.java:656)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:223)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:120)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:125)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:252)
+2025-10-16 13:48:31,362 : ERROR : KNIME-Worker-1-Send Email 3:48 :  : Node : Send Email : 3:48 : Execute failed: This error occurred while communicating with the SMTP server: "Couldn't connect to host, port: smtp.gmai.com, 587; timeout 2000". Try adjusting the SMTP timeout settings.
+org.knime.core.node.InvalidSettingsException: This error occurred while communicating with the SMTP server: "Couldn't connect to host, port: smtp.gmai.com, 587; timeout 2000". Try adjusting the SMTP timeout settings.
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:701)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:680)
+	at org.knime.base.node.util.sendmail.SendMailNodeModel.execute(SendMailNodeModel.java:95)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:605)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1331)
+	at org.knime.core.node.Node.execute(Node.java:1038)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:617)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:120)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:125)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:252)
+Caused by: com.sun.mail.util.MailConnectException: Couldn't connect to host, port: smtp.gmai.com, 587; timeout 2000;
+  nested exception is:
+	java.net.SocketTimeoutException: Connect timed out
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2210)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:722)
+	at javax.mail.Service.connect(Service.java:342)
+	at javax.mail.Service.connect(Service.java:222)
+	at javax.mail.Service.connect(Service.java:243)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.sendMail(SendMailConfiguration.java:882)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:696)
+	... 15 more
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:333)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:214)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2160)
+	... 21 more
+2025-10-16 13:50:49,265 : ERROR : KNIME-Worker-3-Send Email 3:48 :  : Node : Send Email : 3:48 : Execute failed: This error occurred while communicating with the SMTP server: "Couldn't connect to host, port: smtp.gmai.com, 587; timeout 2000". Try adjusting the SMTP timeout settings.
+org.knime.core.node.InvalidSettingsException: This error occurred while communicating with the SMTP server: "Couldn't connect to host, port: smtp.gmai.com, 587; timeout 2000". Try adjusting the SMTP timeout settings.
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:701)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:680)
+	at org.knime.base.node.util.sendmail.SendMailNodeModel.execute(SendMailNodeModel.java:95)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:605)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1331)
+	at org.knime.core.node.Node.execute(Node.java:1038)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:617)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:120)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:125)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:252)
+Caused by: com.sun.mail.util.MailConnectException: Couldn't connect to host, port: smtp.gmai.com, 587; timeout 2000;
+  nested exception is:
+	java.net.SocketTimeoutException: Connect timed out
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2210)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:722)
+	at javax.mail.Service.connect(Service.java:342)
+	at javax.mail.Service.connect(Service.java:222)
+	at javax.mail.Service.connect(Service.java:243)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.sendMail(SendMailConfiguration.java:882)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:696)
+	... 15 more
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:333)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:214)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2160)
+	... 21 more
+2025-10-16 13:51:50,513 : ERROR : KNIME-Worker-3-Send Email 3:48 :  : Node : Send Email : 3:48 : Execute failed: This error occurred while communicating with the SMTP server: "Couldn't connect to host, port: smtp.gmai.com, 587; timeout 2000". Try adjusting the SMTP timeout settings.
+org.knime.core.node.InvalidSettingsException: This error occurred while communicating with the SMTP server: "Couldn't connect to host, port: smtp.gmai.com, 587; timeout 2000". Try adjusting the SMTP timeout settings.
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:701)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:680)
+	at org.knime.base.node.util.sendmail.SendMailNodeModel.execute(SendMailNodeModel.java:95)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:605)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1331)
+	at org.knime.core.node.Node.execute(Node.java:1038)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:617)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:120)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:125)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:252)
+Caused by: com.sun.mail.util.MailConnectException: Couldn't connect to host, port: smtp.gmai.com, 587; timeout 2000;
+  nested exception is:
+	java.net.SocketTimeoutException: Connect timed out
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2210)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:722)
+	at javax.mail.Service.connect(Service.java:342)
+	at javax.mail.Service.connect(Service.java:222)
+	at javax.mail.Service.connect(Service.java:243)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.sendMail(SendMailConfiguration.java:882)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:696)
+	... 15 more
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:333)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:214)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2160)
+	... 21 more
+2025-10-16 13:51:59,244 : ERROR : Thread-24730 :  : KnimeBrowserView :  :  : %cerror%c Error captured hook ::  
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      TypeError: Cannot read properties of null (reading 'shadowRoot') (source: https://org.knime.ui.java/assets/index-x-MeUoTE.js; line: 138)
+2025-10-16 13:52:05,207 : ERROR : KNIME-Worker-3-Send Email 3:48 :  : Node : Send Email : 3:48 : Execute failed: This error occurred while communicating with the SMTP server: "Couldn't connect to host, port: smtp.gmai.com, 587; timeout 2000". Try adjusting the SMTP timeout settings.
+org.knime.core.node.InvalidSettingsException: This error occurred while communicating with the SMTP server: "Couldn't connect to host, port: smtp.gmai.com, 587; timeout 2000". Try adjusting the SMTP timeout settings.
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:701)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:680)
+	at org.knime.base.node.util.sendmail.SendMailNodeModel.execute(SendMailNodeModel.java:95)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:605)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1331)
+	at org.knime.core.node.Node.execute(Node.java:1038)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:617)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:120)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:125)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:252)
+Caused by: com.sun.mail.util.MailConnectException: Couldn't connect to host, port: smtp.gmai.com, 587; timeout 2000;
+  nested exception is:
+	java.net.SocketTimeoutException: Connect timed out
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2210)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:722)
+	at javax.mail.Service.connect(Service.java:342)
+	at javax.mail.Service.connect(Service.java:222)
+	at javax.mail.Service.connect(Service.java:243)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.sendMail(SendMailConfiguration.java:882)
+	at org.knime.base.node.util.sendmail.SendMailConfiguration.send(SendMailConfiguration.java:696)
+	... 15 more
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(Unknown Source)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source)
+	at java.base/java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.base/java.net.Socket.connect(Unknown Source)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:333)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:214)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2160)
+	... 21 more
+2025-10-16 13:57:48,395 : ERROR : KNIME-Worker-6-Excel Writer 3:54 :  : Node : Excel Writer : 3:54 : Execute failed: The maximum length of cell contents (text) is 32767 characters
+java.lang.IllegalArgumentException: The maximum length of cell contents (text) is 32767 characters
+	at org.apache.poi.ss.usermodel.CellBase.checkLength(CellBase.java:292)
+	at org.apache.poi.ss.usermodel.CellBase.setCellValue(CellBase.java:273)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.cell.StringCellWriter.fill(AbstractCellWriter.java:449)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.cell.AbstractCellWriter.write(AbstractCellWriter.java:97)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.cellcoordinate.ExcelSheetWriter.writeRowToSheet(ExcelSheetWriter.java:140)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.table.AbstractExcelTableWriter.writeTable(AbstractExcelTableWriter.java:124)
+	at org.knime.ext.poi3.node.io.filehandling.excel.ExcelMultiRowInputWriter.writeTables(ExcelMultiRowInputWriter.java:138)
+	at org.knime.ext.poi3.node.io.filehandling.excel.ExcelMultiRowInputWriter.writeTables(ExcelMultiRowInputWriter.java:103)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.ExcelTableWriterNodeModel.write(ExcelTableWriterNodeModel.java:193)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.ExcelTableWriterNodeModel.execute(ExcelTableWriterNodeModel.java:160)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:605)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1331)
+	at org.knime.core.node.Node.execute(Node.java:1038)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:617)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:120)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:125)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:252)
+2025-10-16 13:57:50,425 : ERROR : KNIME-Worker-7-Excel Writer 3:53 :  : Node : Excel Writer : 3:53 : Execute failed: The maximum length of cell contents (text) is 32767 characters
+java.lang.IllegalArgumentException: The maximum length of cell contents (text) is 32767 characters
+	at org.apache.poi.ss.usermodel.CellBase.checkLength(CellBase.java:292)
+	at org.apache.poi.ss.usermodel.CellBase.setCellValue(CellBase.java:273)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.cell.StringCellWriter.fill(AbstractCellWriter.java:449)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.cell.AbstractCellWriter.write(AbstractCellWriter.java:97)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.cellcoordinate.ExcelSheetWriter.writeRowToSheet(ExcelSheetWriter.java:140)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.table.AbstractExcelTableWriter.writeTable(AbstractExcelTableWriter.java:124)
+	at org.knime.ext.poi3.node.io.filehandling.excel.ExcelMultiRowInputWriter.writeTables(ExcelMultiRowInputWriter.java:138)
+	at org.knime.ext.poi3.node.io.filehandling.excel.ExcelMultiRowInputWriter.writeTables(ExcelMultiRowInputWriter.java:103)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.ExcelTableWriterNodeModel.write(ExcelTableWriterNodeModel.java:193)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.ExcelTableWriterNodeModel.execute(ExcelTableWriterNodeModel.java:160)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:605)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1331)
+	at org.knime.core.node.Node.execute(Node.java:1038)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:617)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:120)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:125)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:252)
+2025-10-16 13:57:52,107 : ERROR : KNIME-Worker-6-Excel Writer 3:52 :  : Node : Excel Writer : 3:52 : Execute failed: The maximum length of cell contents (text) is 32767 characters
+java.lang.IllegalArgumentException: The maximum length of cell contents (text) is 32767 characters
+	at org.apache.poi.ss.usermodel.CellBase.checkLength(CellBase.java:292)
+	at org.apache.poi.ss.usermodel.CellBase.setCellValue(CellBase.java:273)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.cell.StringCellWriter.fill(AbstractCellWriter.java:449)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.cell.AbstractCellWriter.write(AbstractCellWriter.java:97)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.cellcoordinate.ExcelSheetWriter.writeRowToSheet(ExcelSheetWriter.java:140)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.table.AbstractExcelTableWriter.writeTable(AbstractExcelTableWriter.java:124)
+	at org.knime.ext.poi3.node.io.filehandling.excel.ExcelMultiRowInputWriter.writeTables(ExcelMultiRowInputWriter.java:138)
+	at org.knime.ext.poi3.node.io.filehandling.excel.ExcelMultiRowInputWriter.writeTables(ExcelMultiRowInputWriter.java:103)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.ExcelTableWriterNodeModel.write(ExcelTableWriterNodeModel.java:193)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.ExcelTableWriterNodeModel.execute(ExcelTableWriterNodeModel.java:160)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:605)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1331)
+	at org.knime.core.node.Node.execute(Node.java:1038)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:617)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:120)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:125)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:252)
+2025-10-16 13:59:33,078 : ERROR : KNIME-Worker-8-Excel Writer 3:54 :  : Node : Excel Writer : 3:54 : Execute failed: The maximum length of cell contents (text) is 32767 characters
+java.lang.IllegalArgumentException: The maximum length of cell contents (text) is 32767 characters
+	at org.apache.poi.ss.usermodel.CellBase.checkLength(CellBase.java:292)
+	at org.apache.poi.ss.usermodel.CellBase.setCellValue(CellBase.java:273)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.cell.StringCellWriter.fill(AbstractCellWriter.java:449)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.cell.AbstractCellWriter.write(AbstractCellWriter.java:97)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.cellcoordinate.ExcelSheetWriter.writeRowToSheet(ExcelSheetWriter.java:140)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.table.AbstractExcelTableWriter.writeTable(AbstractExcelTableWriter.java:124)
+	at org.knime.ext.poi3.node.io.filehandling.excel.ExcelMultiRowInputWriter.writeTables(ExcelMultiRowInputWriter.java:138)
+	at org.knime.ext.poi3.node.io.filehandling.excel.ExcelMultiRowInputWriter.writeTables(ExcelMultiRowInputWriter.java:103)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.ExcelTableWriterNodeModel.write(ExcelTableWriterNodeModel.java:193)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.ExcelTableWriterNodeModel.execute(ExcelTableWriterNodeModel.java:160)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:605)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1331)
+	at org.knime.core.node.Node.execute(Node.java:1038)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:617)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:120)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:125)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:252)
+2025-10-16 13:59:40,507 : ERROR : KNIME-Worker-9-Excel Writer 3:54 :  : Node : Excel Writer : 3:54 : Execute failed: The maximum length of cell contents (text) is 32767 characters
+java.lang.IllegalArgumentException: The maximum length of cell contents (text) is 32767 characters
+	at org.apache.poi.ss.usermodel.CellBase.checkLength(CellBase.java:292)
+	at org.apache.poi.ss.usermodel.CellBase.setCellValue(CellBase.java:273)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.cell.StringCellWriter.fill(AbstractCellWriter.java:449)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.cell.AbstractCellWriter.write(AbstractCellWriter.java:97)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.cellcoordinate.ExcelSheetWriter.writeRowToSheet(ExcelSheetWriter.java:140)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.table.AbstractExcelTableWriter.writeTable(AbstractExcelTableWriter.java:124)
+	at org.knime.ext.poi3.node.io.filehandling.excel.ExcelMultiRowInputWriter.writeTables(ExcelMultiRowInputWriter.java:138)
+	at org.knime.ext.poi3.node.io.filehandling.excel.ExcelMultiRowInputWriter.writeTables(ExcelMultiRowInputWriter.java:103)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.ExcelTableWriterNodeModel.write(ExcelTableWriterNodeModel.java:193)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.ExcelTableWriterNodeModel.execute(ExcelTableWriterNodeModel.java:160)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:605)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1331)
+	at org.knime.core.node.Node.execute(Node.java:1038)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:617)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:120)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:125)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:252)
+2025-10-16 14:01:38,902 : WARN  : comm-pool-thread-4 :  : Node : DB Query Reader : 3:53 : Please enter a SQL statement
+2025-10-16 14:02:09,625 : ERROR : KNIME-Worker-10-DB Query Reader 3:53 :  : Node : DB Query Reader : 3:53 : Execute failed: [SQLITE_ERROR] SQL error or missing database (near "Order": syntax error)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (near "Order": syntax error)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:132)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:86)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:84)
+	at org.knime.database.connection.wrappers.AbstractStatementWrapper.executeQuery(AbstractStatementWrapper.java:93)
+	at org.knime.database.connection.wrappers.AbstractStatementWrapper.executeQuery(AbstractStatementWrapper.java:93)
+	at org.knime.database.connection.wrappers.AbstractStatementWrapper.executeQuery(AbstractStatementWrapper.java:93)
+	at org.knime.database.connection.impl.monitored.MonitoredStatement.executeQuery(MonitoredStatement.java:82)
+	at org.knime.database.connection.wrappers.AbstractStatementWrapper.executeQuery(AbstractStatementWrapper.java:93)
+	at org.knime.database.agent.reader.impl.DefaultDBReader.read(DefaultDBReader.java:154)
+	at org.knime.database.node.io.reader.query.DBQueryReaderNodeModel.execute(DBQueryReaderNodeModel.java:166)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:605)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1331)
+	at org.knime.core.node.Node.execute(Node.java:1038)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:617)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:120)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:125)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:252)
+2025-10-16 14:06:19,869 : ERROR : KNIME-Worker-11-DB Query Reader 3:53 :  : Node : DB Query Reader : 3:53 : Execute failed: [SQLITE_ERROR] SQL error or missing database (near "Order": syntax error)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (near "Order": syntax error)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:132)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:86)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:84)
+	at org.knime.database.connection.wrappers.AbstractStatementWrapper.executeQuery(AbstractStatementWrapper.java:93)
+	at org.knime.database.connection.wrappers.AbstractStatementWrapper.executeQuery(AbstractStatementWrapper.java:93)
+	at org.knime.database.connection.wrappers.AbstractStatementWrapper.executeQuery(AbstractStatementWrapper.java:93)
+	at org.knime.database.connection.impl.monitored.MonitoredStatement.executeQuery(MonitoredStatement.java:82)
+	at org.knime.database.connection.wrappers.AbstractStatementWrapper.executeQuery(AbstractStatementWrapper.java:93)
+	at org.knime.database.agent.reader.impl.DefaultDBReader.read(DefaultDBReader.java:154)
+	at org.knime.database.node.io.reader.query.DBQueryReaderNodeModel.execute(DBQueryReaderNodeModel.java:166)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:605)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1331)
+	at org.knime.core.node.Node.execute(Node.java:1038)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:617)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:120)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:125)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:252)
+2025-10-16 14:12:30,081 : ERROR : main :  : KNIMEApplicationWorkbenchAdvisor : String Manipulation : 3:51 : Uncaught exception in event loop
+java.lang.NullPointerException: Cannot invoke "org.eclipse.swt.widgets.Shell.setCursor(org.eclipse.swt.graphics.Cursor)" because the return value of "org.knime.workbench.ui.wrapper.WrappedNodeDialog.getShell()" is null
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doApply(WrappedNodeDialog.java:668)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog$6.widgetSelected(WrappedNodeDialog.java:515)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.open(WrappedNodeDialog.java:198)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openDialog(NodeContainerEditPart.java:967)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:869)
+	at org.knime.ui.java.api.NodeAPI.openNodeDialog(NodeAPI.java:105)
+	at jdk.internal.reflect.GeneratedMethodAccessor217.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.knime.ui.java.api.DesktopAPI.invokeMethod(DesktopAPI.java:214)
+	at org.knime.ui.java.api.DesktopAPI.lambda$1(DesktopAPI.java:184)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:213)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+2025-10-16 14:12:43,895 : WARN  : Thread-123260 :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.data_value/uiext-data_value/org.knime.core.data.json.JSONValue/CodeValueView.html; line: 0)
+2025-10-16 14:20:55,923 : WARN  : comm-pool-thread-7 :  : Node : Row Filter : 3:60 : At least one filter criterion is needed.
+2025-10-16 14:21:59,168 : WARN  : KNIME-Worker-16-Row Filter 3:60 :  : Node : Row Filter : 3:60 : Node created an empty data table.
+2025-10-16 14:24:37,788 : WARN  : comm-pool-thread-9 :  : JsonRpcErrorResolver :  :  : An unexpected json rpc error occurred
+java.lang.IllegalStateException: No rpc data service available: Node DB Writer 3:42 (CONFIGURED); port 1; view index 0; 
+Request: {"jsonrpc":"2.0","method":"getTable","params":[["JSON","XML","CUSTOMERNAME","PHONE","CONTACTLASTNAME","CONTACTFIRSTNAME","CUSTOMERID","Write Status","Write Error"],0,14,[null,null,null,null,null,null,null,null,null],false,false,true,false],"id":27}
+	at org.knime.core.webui.node.DataServiceManager.callRpcDataService(DataServiceManager.java:151)
+	at org.knime.gateway.impl.webui.service.DefaultPortService.callPortDataService(DefaultPortService.java:166)
+	at org.knime.gateway.impl.webui.jsonrpc.service.JsonRpcPortServiceWrapper.callPortDataService(JsonRpcPortServiceWrapper.java:85)
+	at jdk.internal.reflect.GeneratedMethodAccessor202.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.invoke(JsonRpcBasicServer.java:478)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleObject(JsonRpcBasicServer.java:349)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleJsonNodeRequest(JsonRpcBasicServer.java:274)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleRequest(JsonRpcBasicServer.java:242)
+	at org.knime.gateway.impl.jsonrpc.JsonRpcRequestHandler.handle(JsonRpcRequestHandler.java:106)
+	at org.knime.ui.java.browser.lifecycle.Init.lambda$16(Init.java:311)
+	at com.equo.comm.common.MessageHandler.processReceivedEventMessage(MessageHandler.java:131)
+	at com.equo.comm.ee.provider.service.ChromiumService.receiveMessage(ChromiumService.java:98)
+	at com.equo.comm.ee.provider.CommunicationManagerChromiumImpl.receiveMessage(CommunicationManagerChromiumImpl.java:48)
+	at com.equo.chromium.swt.internal.spi.CommRouterHandler.handleRequest(CommRouterHandler.java:33)
+	at com.equo.chromium.swt.internal.spi.CommRouterHandler.lambda$1(CommRouterHandler.java:51)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-10-16 14:24:37,855 : ERROR : Thread-184608 :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No rpc data service available: Node DB Writer 3:42 (CONFIGURED); port 1; view index 0; 
+Request: {"jsonrpc":"2.0","method":"getTable","params":[["JSON","XML","CUSTOMERNAME","PHONE","CONTACTLASTNAME","CONTACTFIRSTNAME","CUSTOMERID","Write Status","Write Error"],0,14,[null,null,null,null,null,null,null,null,null],false,false,true,false],"id":27} (source: https://org.knime.ui.java/assets/index-x-MeUoTE.js; line: 138)
+2025-10-16 14:24:37,858 : ERROR : Thread-184610 :  : KnimeBrowserView :  :  : Error: No rpc data service available: Node DB Writer 3:42 (CONFIGURED); port 1; view index 0; 
+Request: {"jsonrpc":"2.0","method":"getTable","params":[["JSON","XML","CUSTOMERNAME","PHONE","CONTACTLASTNAME","CONTACTFIRSTNAME","CUSTOMERID","Write Status","Write Error"],0,14,[null,null,null,null,null,null,null,null,null],false,false,true,false],"id":27} (source: https://org.knime.core.ui.port/uiext/tableview/dist/TableViewApp-vH9WnETr.js; line: 1218)
+2025-10-16 14:26:11,945 : ERROR : KNIME-Worker-18-CSV Reader 3:1 :  : Node : CSV Reader : 3:1 : Execute failed: The specified file C:\Users\paulo\Desktop\ProjetoISI\sales_data_sample.csv does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file C:\Users\paulo\Desktop\ProjetoISI\sales_data_sample.csv does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:274)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:224)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.AbstractFileChooserPathAccessor.getRootPath(AbstractFileChooserPathAccessor.java:318)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.AbstractFileChooserPathAccessor.getFSPaths(AbstractFileChooserPathAccessor.java:225)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:605)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1331)
+	at org.knime.core.node.Node.execute(Node.java:1038)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:617)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:120)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:125)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:252)
+2025-10-16 14:26:12,885 : ERROR : KNIME-Worker-17-CSV Reader 3:1 :  : Node : CSV Reader : 3:1 : Execute failed: The specified file C:\Users\paulo\Desktop\ProjetoISI\sales_data_sample.csv does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file C:\Users\paulo\Desktop\ProjetoISI\sales_data_sample.csv does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:274)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:224)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.AbstractFileChooserPathAccessor.getRootPath(AbstractFileChooserPathAccessor.java:318)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.AbstractFileChooserPathAccessor.getFSPaths(AbstractFileChooserPathAccessor.java:225)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:605)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1331)
+	at org.knime.core.node.Node.execute(Node.java:1038)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:617)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:120)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:125)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:252)
+2025-10-16 14:26:13,743 : ERROR : KNIME-Worker-18-CSV Reader 3:1 :  : Node : CSV Reader : 3:1 : Execute failed: The specified file C:\Users\paulo\Desktop\ProjetoISI\sales_data_sample.csv does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file C:\Users\paulo\Desktop\ProjetoISI\sales_data_sample.csv does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:274)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:224)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.AbstractFileChooserPathAccessor.getRootPath(AbstractFileChooserPathAccessor.java:318)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.AbstractFileChooserPathAccessor.getFSPaths(AbstractFileChooserPathAccessor.java:225)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:605)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1331)
+	at org.knime.core.node.Node.execute(Node.java:1038)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:617)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:120)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:125)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:252)
+2025-10-16 14:26:18,563 : ERROR : KNIME-Worker-17-CSV Reader 3:1 :  : Node : CSV Reader : 3:1 : Execute failed: The specified file C:\Users\paulo\Desktop\ProjetoISI\sales_data_sample.csv does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file C:\Users\paulo\Desktop\ProjetoISI\sales_data_sample.csv does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:274)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:224)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.AbstractFileChooserPathAccessor.getRootPath(AbstractFileChooserPathAccessor.java:318)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.AbstractFileChooserPathAccessor.getFSPaths(AbstractFileChooserPathAccessor.java:225)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:605)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1331)
+	at org.knime.core.node.Node.execute(Node.java:1038)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:617)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:120)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:125)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:252)
+2025-10-16 14:26:19,913 : ERROR : KNIME-Worker-18-CSV Reader 3:1 :  : Node : CSV Reader : 3:1 : Execute failed: The specified file C:\Users\paulo\Desktop\ProjetoISI\sales_data_sample.csv does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file C:\Users\paulo\Desktop\ProjetoISI\sales_data_sample.csv does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:274)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:224)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.AbstractFileChooserPathAccessor.getRootPath(AbstractFileChooserPathAccessor.java:318)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.AbstractFileChooserPathAccessor.getFSPaths(AbstractFileChooserPathAccessor.java:225)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:605)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1331)
+	at org.knime.core.node.Node.execute(Node.java:1038)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:617)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:120)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:125)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:252)
+2025-10-16 14:26:21,411 : ERROR : KNIME-Worker-17-CSV Reader 3:1 :  : Node : CSV Reader : 3:1 : Execute failed: The specified file C:\Users\paulo\Desktop\ProjetoISI\sales_data_sample.csv does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file C:\Users\paulo\Desktop\ProjetoISI\sales_data_sample.csv does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:274)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:224)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.AbstractFileChooserPathAccessor.getRootPath(AbstractFileChooserPathAccessor.java:318)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.AbstractFileChooserPathAccessor.getFSPaths(AbstractFileChooserPathAccessor.java:225)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:605)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1331)
+	at org.knime.core.node.Node.execute(Node.java:1038)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:617)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:120)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:125)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:252)
+2025-10-16 14:26:22,536 : ERROR : KNIME-Worker-18-CSV Reader 3:1 :  : Node : CSV Reader : 3:1 : Execute failed: The specified file C:\Users\paulo\Desktop\ProjetoISI\sales_data_sample.csv does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file C:\Users\paulo\Desktop\ProjetoISI\sales_data_sample.csv does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:274)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:224)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.AbstractFileChooserPathAccessor.getRootPath(AbstractFileChooserPathAccessor.java:318)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.AbstractFileChooserPathAccessor.getFSPaths(AbstractFileChooserPathAccessor.java:225)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:605)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1331)
+	at org.knime.core.node.Node.execute(Node.java:1038)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:617)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:120)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:125)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:252)
+2025-10-16 14:29:31,757 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2025-10-16 14:29:31,762 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2025-10-16 14:29:31,762 : INFO  : main :  : NodeLogger :  :  : # Welcome to KNIME Analytics Platform v5.7.0.v202509011500 (Build September 09, 2025)   #
+2025-10-16 14:29:31,762 : INFO  : main :  : NodeLogger :  :  : # Based on Eclipse, http://www.eclipse.org                                              #
+2025-10-16 14:29:31,762 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2025-10-16 14:29:31,762 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2025-10-16 14:29:31,762 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2025-10-16 14:29:31,762 : INFO  : main :  : NodeLogger :  :  : # Copyright by KNIME AG, Zurich, Switzerland and others.                                #
+2025-10-16 14:29:31,762 : INFO  : main :  : NodeLogger :  :  : # Website: http://www.knime.com                                                         #
+2025-10-16 14:29:31,762 : INFO  : main :  : NodeLogger :  :  : # E-mail: contact@knime.com                                                             #
+2025-10-16 14:29:31,762 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2025-10-16 14:29:31,762 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2025-10-16 14:29:31,762 : INFO  : main :  : NodeLogger :  :  : # For more details see the KNIME log file:                                              #
+2025-10-16 14:29:31,762 : INFO  : main :  : NodeLogger :  :  : # C:\IPCA\ISI25_TP01_27975_27966\27966 - Knime\data\Int\.metadata\knime\knime.log
+2025-10-16 14:29:31,762 : INFO  : main :  : NodeLogger :  :  : #---------------------------------------------------------------------------------------#
+2025-10-16 14:29:31,776 : INFO  : main :  : NodeLogger :  :  : # logging date=quinta out. 16 14:29:31 WEST 2025
+2025-10-16 14:29:31,776 : INFO  : main :  : NodeLogger :  :  : # java.version=17.0.5
+2025-10-16 14:29:31,776 : INFO  : main :  : NodeLogger :  :  : # java.vm.version=17.0.5+8
+2025-10-16 14:29:31,776 : INFO  : main :  : NodeLogger :  :  : # java.vendor=Eclipse Adoptium
+2025-10-16 14:29:31,776 : INFO  : main :  : NodeLogger :  :  : # os.name=Windows 11
+2025-10-16 14:29:31,776 : INFO  : main :  : NodeLogger :  :  : # os.arch=amd64
+2025-10-16 14:29:31,776 : INFO  : main :  : NodeLogger :  :  : # number of CPUs=12
+2025-10-16 14:29:31,776 : INFO  : main :  : NodeLogger :  :  : # assertions=off
+2025-10-16 14:29:31,785 : INFO  : main :  : NodeLogger :  :  : # host=Paulinho4k
+2025-10-16 14:29:31,787 : INFO  : main :  : NodeLogger :  :  : # username=paulo
+2025-10-16 14:29:31,787 : INFO  : main :  : NodeLogger :  :  : # max mem=8112MB
+2025-10-16 14:29:31,787 : INFO  : main :  : NodeLogger :  :  : # application=org.knime.product.KNIME_APPLICATION
+2025-10-16 14:29:31,801 : INFO  : main :  : NodeLogger :  :  : # KNID=11-7e5f67b417ba1764-01-ee61f9aa0e724fbb
+2025-10-16 14:29:31,801 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2025-10-16 14:29:31,802 : DEBUG : main :  : KNIMELogger :  :  : 12 messages were logged before logging was initialized; see below...
+2025-10-16 14:29:27,975 : DEBUG : main :  : EclipseProxyServiceInitializer :  :  : (1/3) Opened OSGi service tracker for 'org.eclipse.core.net.proxy.IProxyService'
+2025-10-16 14:29:28,056 : DEBUG : main :  : ApplicationHealth :  :  : Registering JMX bean for org.knime.core:type=Execution,name=GlobalPool
+2025-10-16 14:29:28,060 : DEBUG : main :  : ApplicationHealth :  :  : Registering JMX bean for org.knime.core:type=Execution,name=NodeStates
+2025-10-16 14:29:28,060 : DEBUG : main :  : ApplicationHealth :  :  : Registering JMX bean for org.knime.core:type=Memory,name=ObjectInstances
+2025-10-16 14:29:28,069 : DEBUG : main :  : IEarlyStartup :  :  : Running application "org.knime.product.KNIME_APPLICATION"
+2025-10-16 14:29:28,069 : DEBUG : main :  : IEarlyStartup :  :  : Moving from stage <none> to stage EARLIEST
+2025-10-16 14:29:28,073 : DEBUG : main :  : IEarlyStartup :  :  : Executing startup hook `org.knime.core.node.logging.JavaUtilLoggingAdapter#run()` at stage EARLIEST
+2025-10-16 14:29:28,077 : DEBUG : main :  : IEarlyStartup :  :  : Executing startup hook `org.knime.js.cef.CEFEarlyStartup#run()` at stage EARLIEST
+2025-10-16 14:29:28,424 : DEBUG : main :  : KNIMEApplication :  :  : Checking for instance location
+2025-10-16 14:29:31,543 : DEBUG : main :  : KNIMEApplication :  :  : Instance location set
+2025-10-16 14:29:31,633 : DEBUG : main :  : IEarlyStartup :  :  : Moving from stage EARLIEST to stage AFTER_PROFILES_SET
+2025-10-16 14:29:31,633 : DEBUG : main :  : IEarlyStartup :  :  : Executing startup hook `org.knime.core.node.logging.KNIMELogger$EarlyStartupInitializer#run()` at stage AFTER_PROFILES_SET
+2025-10-16 14:29:31,802 : DEBUG : main :  : KNIMELogger :  :  : End of buffered log messages
+2025-10-16 14:29:31,802 : DEBUG : main :  : IEarlyStartup :  :  : Executing startup hook `org.knime.core.eclipseUtil.EclipseProxyServiceInitializer#run()` at stage AFTER_PROFILES_SET
+2025-10-16 14:29:32,023 : DEBUG : main :  : NativeProxyProviderWrapper :  :  : Invoked default constructor in class "class org.eclipse.core.internal.net.ProxyManager" via reflectionto forcibly create new instance
+2025-10-16 14:29:32,027 : DEBUG : main :  : NativeProxyProviderWrapper :  :  : Forcibly set field "preferenceManager" in class "class org.eclipse.core.internal.net.ProxyManager" to "org.eclipse.core.internal.net.PreferenceManager@37e7c4cc" via reflection
+2025-10-16 14:29:32,035 : DEBUG : main :  : NativeProxyProviderWrapper :  :  : Forcibly set field "nativeProxyProvider" in class "class org.eclipse.core.internal.net.ProxyManager" to "org.knime.core.eclipseUtil.NativeProxyProviderWrapper@30b3d899" via reflection
+2025-10-16 14:29:32,035 : DEBUG : main :  : EclipseProxyServiceInitializer :  :  : (3/3) Successfully installed proxy support
+2025-10-16 14:29:32,036 : DEBUG : main :  : EclipseProxyServiceInitializer :  :  : (2/3) Initialized OSGi service 'org.eclipse.core.net.proxy.IProxyService'
+2025-10-16 14:29:32,036 : DEBUG : main :  : IEarlyStartup :  :  : Executing startup hook `org.knime.core.internal.MountTableInitializerEarlyStartup#run()` at stage AFTER_PROFILES_SET
+2025-10-16 14:29:33,147 : DEBUG : main :  : WorkbenchMountTable :  :  : Mounted Explorer Temp Space 'knime-temp-space' - com.knime.explorer.tempspace
+2025-10-16 14:29:33,164 : DEBUG : main :  : IEarlyStartup :  :  : Executing startup hook `org.knime.ui.java.OnEarlyStartup#run()` at stage AFTER_PROFILES_SET
+2025-10-16 14:29:33,210 : DEBUG : KNIME-Worker-0 :  : NodeFactoryProvider :  :  : Duplicate node factory id: org.knime.base.node.preproc.filter.column.FilterColumnNodeFactory
+2025-10-16 14:29:33,211 : DEBUG : KNIME-Worker-0 :  : NodeFactoryProvider :  :  : Duplicate node factory id: org.knime.base.node.preproc.joiner.NewJoinerNodeFactory
+2025-10-16 14:29:33,211 : DEBUG : KNIME-Worker-0 :  : NodeFactoryProvider :  :  : Duplicate node factory id: org.knime.base.node.preproc.split.SplitNodeFactory
+2025-10-16 14:29:33,213 : DEBUG : KNIME-Worker-0 :  : NodeFactoryProvider :  :  : Duplicate node factory id: org.knime.base.filehandling.filemetainfo.FileMetaInfoNodeFactory
+2025-10-16 14:29:33,215 : DEBUG : KNIME-Worker-0 :  : NodeFactoryProvider :  :  : Duplicate node factory id: org.knime.distmatrix.knn.KnnDistNodeFactory
+2025-10-16 14:29:33,223 : DEBUG : KNIME-Worker-0 :  : NodeFactoryProvider :  :  : Collected NodeFactory extensions... found 1007 nodes (337 deprecated, 20 hidden) in 0,0s
+2025-10-16 14:29:33,572 : DEBUG : KNIME-Worker-0 :  : NodeFactoryProvider :  :  : Collected NodeSetFactory extensions... found 3 node sets with 25 nodes in 0,3s
+2025-10-16 14:29:33,790 : DEBUG : Node Repository Initializer :  : NodeSpecCache :  :  : Computing node specifications for KNIME AP Core feature
+2025-10-16 14:29:34,333 : DEBUG : Node Repository Initializer :  : NodeSpecCache :  :  : Computing node specifications for KNIME Distance Matrix Extension
+2025-10-16 14:29:34,488 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.base.node.mine.treeensemble2.distance.RandomForestDistanceFactory'
+2025-10-16 14:29:34,492 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distmatrix.calculate.measure.MatrixDistanceFactory'
+2025-10-16 14:29:34,493 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.base.distance.measure.OldDistanceWrapperDistanceFactory'
+2025-10-16 14:29:34,496 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.string.levenshtein.LevenshteinDistanceFactory'
+2025-10-16 14:29:34,498 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.string.tversky.TverskyDistanceFactory'
+2025-10-16 14:29:34,500 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.bitvector.cosine.CosineDistanceFactory'
+2025-10-16 14:29:34,502 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.bitvector.tversky.TverskyDistanceFactory'
+2025-10-16 14:29:34,503 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.base.distance.bytevector.CosineDistanceMeasureFactory'
+2025-10-16 14:29:34,505 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.base.distance.bytevector.EuclideanDistanceMeasureFactory'
+2025-10-16 14:29:34,506 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.base.distance.bytevector.ManhattanDistanceMeasureFactory'
+2025-10-16 14:29:34,507 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.base.distance.bytevector.PNormDistanceMeasureFactory'
+2025-10-16 14:29:34,511 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.numerical.lnorm.LNormDistanceFactory'
+2025-10-16 14:29:34,512 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.numerical.cosine.CosineDistanceFactory'
+2025-10-16 14:29:34,513 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.jsnippet.JSnippetDistanceFactory'
+2025-10-16 14:29:34,515 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.jsnippet.aggregated.AggregatedDistanceFactory'
+2025-10-16 14:29:34,517 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.mahalanobis.MahalanobisDistanceFactory'
+2025-10-16 14:29:34,518 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.string.jarowinkler.JaroWinklerDistanceFactory'
+2025-10-16 14:29:34,575 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.EuclideanDistanceMeasureFactory
+2025-10-16 14:29:34,603 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.EuclideanDistanceMeasureFactory
+2025-10-16 14:29:34,607 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.EuclideanDistanceMeasureFactory
+2025-10-16 14:29:34,609 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.EuclideanDistanceMeasureFactory
+2025-10-16 14:29:34,611 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.CosineDistanceMeasureFactory
+2025-10-16 14:29:34,613 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.CosineDistanceMeasureFactory
+2025-10-16 14:29:34,614 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.CosineDistanceMeasureFactory
+2025-10-16 14:29:34,615 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.CosineDistanceMeasureFactory
+2025-10-16 14:29:34,616 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.PNormDistanceMeasureFactory
+2025-10-16 14:29:34,618 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.PNormDistanceMeasureFactory
+2025-10-16 14:29:34,619 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.PNormDistanceMeasureFactory
+2025-10-16 14:29:34,620 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.PNormDistanceMeasureFactory
+2025-10-16 14:29:34,622 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.ManhattanDistanceMeasureFactory
+2025-10-16 14:29:34,623 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.ManhattanDistanceMeasureFactory
+2025-10-16 14:29:34,625 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.ManhattanDistanceMeasureFactory
+2025-10-16 14:29:34,626 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.ManhattanDistanceMeasureFactory
+2025-10-16 14:29:34,706 : DEBUG : Node Repository Initializer :  : HiLiteHandler :  :  : Adding hilite translator to handler d9e51443-a456-49d8-9dd6-c26acc319de3
+2025-10-16 14:29:34,950 : DEBUG : Node Repository Initializer :  : HiLiteHandler :  :  : Adding hilite translator to handler 15167223-9afc-4172-9e8a-9842b1776be8
+2025-10-16 14:29:34,987 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.bitvector.tversky.TverskyDistanceFactory
+2025-10-16 14:29:34,989 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.bitvector.tversky.TverskyDistanceFactory
+2025-10-16 14:29:34,990 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.bitvector.tversky.TverskyDistanceFactory
+2025-10-16 14:29:34,992 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.bitvector.tversky.TverskyDistanceFactory
+2025-10-16 14:29:34,993 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.bitvector.cosine.CosineDistanceFactory
+2025-10-16 14:29:34,994 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.bitvector.cosine.CosineDistanceFactory
+2025-10-16 14:29:34,995 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.bitvector.cosine.CosineDistanceFactory
+2025-10-16 14:29:34,997 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.bitvector.cosine.CosineDistanceFactory
+2025-10-16 14:29:35,078 : DEBUG : Node Repository Initializer :  : HiLiteHandler :  :  : Adding hilite translator to handler 58d4e1f1-3684-464d-a265-dbb85be2363c
+2025-10-16 14:29:35,114 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.numerical.lnorm.LNormDistanceFactory
+2025-10-16 14:29:35,116 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.numerical.lnorm.LNormDistanceFactory
+2025-10-16 14:29:35,117 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.numerical.lnorm.LNormDistanceFactory
+2025-10-16 14:29:35,119 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.numerical.lnorm.LNormDistanceFactory
+2025-10-16 14:29:35,120 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.numerical.cosine.CosineDistanceFactory
+2025-10-16 14:29:35,122 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.numerical.cosine.CosineDistanceFactory
+2025-10-16 14:29:35,123 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.numerical.cosine.CosineDistanceFactory
+2025-10-16 14:29:35,125 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.numerical.cosine.CosineDistanceFactory
+2025-10-16 14:29:35,218 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.jarowinkler.JaroWinklerDistanceFactory
+2025-10-16 14:29:35,219 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.jarowinkler.JaroWinklerDistanceFactory
+2025-10-16 14:29:35,220 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.jarowinkler.JaroWinklerDistanceFactory
+2025-10-16 14:29:35,222 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.jarowinkler.JaroWinklerDistanceFactory
+2025-10-16 14:29:35,224 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.tversky.TverskyDistanceFactory
+2025-10-16 14:29:35,227 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.tversky.TverskyDistanceFactory
+2025-10-16 14:29:35,228 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.tversky.TverskyDistanceFactory
+2025-10-16 14:29:35,229 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.tversky.TverskyDistanceFactory
+2025-10-16 14:29:35,231 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.levenshtein.LevenshteinDistanceFactory
+2025-10-16 14:29:35,232 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.levenshtein.LevenshteinDistanceFactory
+2025-10-16 14:29:35,233 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.levenshtein.LevenshteinDistanceFactory
+2025-10-16 14:29:35,234 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.levenshtein.LevenshteinDistanceFactory
+2025-10-16 14:29:35,252 : DEBUG : Node Repository Initializer :  : NodeSpecCache :  :  : Computing node specifications for KNIME Quick Forms
+2025-10-16 14:29:36,008 : DEBUG : Node Repository Initializer :  : MoleculeSketcherRegistry :  :  : Added molecule sketcher 'org.knime.ext.js.molecule.Ketcher_2_7_2' from 'org.knime.ext.js'
+2025-10-16 14:29:36,016 : DEBUG : Node Repository Initializer :  : NodeSpecCache :  :  : Computing node specifications for KNIME File Handling Nodes
+2025-10-16 14:29:36,328 : DEBUG : Node Repository Initializer :  : ExtensionPoints :  :  : Loading executable extensions of extension point: org.knime.database.RowFilter
+2025-10-16 14:29:36,339 : DEBUG : Node Repository Initializer :  : ExtensionPoints :  :  : Executable extension initializer has been created
+2025-10-16 14:29:36,339 : DEBUG : Node Repository Initializer :  : ExtensionPoints :  :  : Executable is instance of MSAccessRowFilterInitializer
+2025-10-16 14:29:36,352 : DEBUG : Node Repository Initializer :  : ExtensionPoints :  :  : Loading extensions of extension point: org.knime.database.DBType
+2025-10-16 14:29:36,369 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=h2, name=H2, description=null)
+2025-10-16 14:29:36,370 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=msaccess, name=Microsoft Access, description=null)
+2025-10-16 14:29:36,375 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2025-10-16 14:29:36,375 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=mysql, name=MySQL, description=null)
+2025-10-16 14:29:36,375 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=postgres, name=PostgreSQL, description=null)
+2025-10-16 14:29:36,375 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=sqlite, name=SQLite, description=null)
+2025-10-16 14:29:36,376 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=db2, name=IBM Db2, description=null)
+2025-10-16 14:29:36,376 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=oracle, name=Oracle, description=null)
+2025-10-16 14:29:36,377 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=saphana, name=SAP HANA, description=null)
+2025-10-16 14:29:36,377 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=teradata, name=Teradata, description=null)
+2025-10-16 14:29:36,377 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2025-10-16 14:29:36,383 : DEBUG : Node Repository Initializer :  : ExtensionPoints :  :  : Executable extension initializer has been created
+2025-10-16 14:29:36,383 : DEBUG : Node Repository Initializer :  : ExtensionPoints :  :  : Executable is instance of SQLiteRowFilterInitializer
+2025-10-16 14:29:36,390 : DEBUG : Node Repository Initializer :  : ExtensionPoints :  :  : Executable extension initializer has been created
+2025-10-16 14:29:36,390 : DEBUG : Node Repository Initializer :  : ExtensionPoints :  :  : Executable is instance of OracleRowFilterInitializer
+2025-10-16 14:29:36,430 : DEBUG : Node Repository Initializer :  : MicrosoftAuthenticationPlugin :  :  : Failed to initialize the JAX-RS 1.x RuntimeDelegate. Provided error message: java.lang.ClassNotFoundException: com.sun.ws.rs.ext.RuntimeDelegateImpl cannot be found by javax.ws.rs.jsr311-api_1.1.1
+2025-10-16 14:29:36,950 : INFO  : main :  : StringHistory :  :  : History file 'C:\IPCA\ISI25_TP01_27975_27966\27966 - Knime\data\Int\.metadata\knime\history_database_drivers.txt' does not exist.
+2025-10-16 14:29:36,950 : INFO  : main :  : StringHistory :  :  : History file 'C:\IPCA\ISI25_TP01_27975_27966\27966 - Knime\data\Int\.metadata\knime\history_database_urls.txt' does not exist.
+2025-10-16 14:29:36,951 : DEBUG : main :  : DatabaseConnectionSettings :  :  : Settings database timeout to 15 seconds
+2025-10-16 14:29:36,952 : DEBUG : main :  : DatabaseConnectionSettings :  :  : Database concurrency (sync via database connection) is true.
+2025-10-16 14:29:36,955 : DEBUG : main :  : KNIMECorePlugin :  :  : Setting KNIME max thread count to 24
+2025-10-16 14:29:36,956 : DEBUG : main :  : KNIMECorePlugin :  :  : Setting KNIME temp dir to "C:\Users\paulo\AppData\Local\Temp"
+2025-10-16 14:29:45,974 : WARN  : ModalContext :  : Node : SQLite Connector : 3:41 : DB Connection no longer available. Go to advanced settings to enable connection restoration.
+2025-10-16 14:32:26,653 : ERROR : KNIME-Worker-1-SQLite Connector 3:41 :  : NodeStateChangeListener : SQLite Connector : 3:41 : Caught an exception while notifying node state listeners, skipping throwing to preserve the state change
+java.lang.NullPointerException: Cannot invoke "org.eclipse.ui.IWorkbenchWindow.getShell()" because the return value of "org.eclipse.ui.IWorkbench.getActiveWorkbenchWindow()" is null
+	at org.knime.ui.java.api.NodeAPI.getAppBoundsAsAWTRec(NodeAPI.java:171)
+	at org.knime.ui.java.api.PortAPI.lambda$2(PortAPI.java:116)
+	at org.knime.gateway.api.util.CoreUtil$1.stateChanged(CoreUtil.java:798)
+	at org.knime.core.node.workflow.NodeStateChangeListener.callStateChanged(NodeStateChangeListener.java:83)
+	at org.knime.core.node.workflow.NodeContainer.notifyStateChangeListeners(NodeContainer.java:958)
+	at org.knime.core.node.workflow.NodeContainer.setInternalState(NodeContainer.java:1030)
+	at org.knime.core.node.workflow.NativeNodeContainer.setInternalState(NativeNodeContainer.java:235)
+	at org.knime.core.node.workflow.NodeContainer.setInternalState(NodeContainer.java:1004)
+	at org.knime.core.node.workflow.NativeNodeContainer.performStateTransitionEXECUTED(NativeNodeContainer.java:556)
+	at org.knime.core.node.workflow.WorkflowManager.doAfterExecution(WorkflowManager.java:3741)
+	at org.knime.core.node.workflow.NodeContainer.notifyParentExecuteFinished(NodeContainer.java:689)
+	at org.knime.core.node.workflow.NodeExecutionJob$AfterRunRunnable.run(NodeExecutionJob.java:385)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at org.knime.core.util.ThreadPool.runInvisible(ThreadPool.java:656)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:223)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:120)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:125)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:252)
+2025-10-16 14:32:33,647 : ERROR : KNIME-Worker-1-DB Query Reader 3:53 :  : Node : DB Query Reader : 3:53 : Execute failed: [SQLITE_ERROR] SQL error or missing database (no such table: Order)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: Order)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:132)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:86)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:84)
+	at org.knime.database.connection.wrappers.AbstractStatementWrapper.executeQuery(AbstractStatementWrapper.java:93)
+	at org.knime.database.connection.wrappers.AbstractStatementWrapper.executeQuery(AbstractStatementWrapper.java:93)
+	at org.knime.database.connection.wrappers.AbstractStatementWrapper.executeQuery(AbstractStatementWrapper.java:93)
+	at org.knime.database.connection.impl.monitored.MonitoredStatement.executeQuery(MonitoredStatement.java:82)
+	at org.knime.database.connection.wrappers.AbstractStatementWrapper.executeQuery(AbstractStatementWrapper.java:93)
+	at org.knime.database.agent.reader.impl.DefaultDBReader.read(DefaultDBReader.java:154)
+	at org.knime.database.node.io.reader.query.DBQueryReaderNodeModel.execute(DBQueryReaderNodeModel.java:166)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:605)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1331)
+	at org.knime.core.node.Node.execute(Node.java:1038)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:617)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:120)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:125)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:252)
+2025-10-16 14:32:44,455 : ERROR : KNIME-Worker-1-SQLite Connector 3:41 :  : NodeStateChangeListener : SQLite Connector : 3:41 : Caught an exception while notifying node state listeners, skipping throwing to preserve the state change
+java.lang.NullPointerException: Cannot invoke "org.eclipse.ui.IWorkbenchWindow.getShell()" because the return value of "org.eclipse.ui.IWorkbench.getActiveWorkbenchWindow()" is null
+	at org.knime.ui.java.api.NodeAPI.getAppBoundsAsAWTRec(NodeAPI.java:171)
+	at org.knime.ui.java.api.PortAPI.lambda$2(PortAPI.java:116)
+	at org.knime.gateway.api.util.CoreUtil$1.stateChanged(CoreUtil.java:798)
+	at org.knime.core.node.workflow.NodeStateChangeListener.callStateChanged(NodeStateChangeListener.java:83)
+	at org.knime.core.node.workflow.NodeContainer.notifyStateChangeListeners(NodeContainer.java:958)
+	at org.knime.core.node.workflow.NodeContainer.setInternalState(NodeContainer.java:1030)
+	at org.knime.core.node.workflow.NativeNodeContainer.setInternalState(NativeNodeContainer.java:235)
+	at org.knime.core.node.workflow.NodeContainer.setInternalState(NodeContainer.java:1004)
+	at org.knime.core.node.workflow.NativeNodeContainer.performStateTransitionEXECUTED(NativeNodeContainer.java:556)
+	at org.knime.core.node.workflow.WorkflowManager.doAfterExecution(WorkflowManager.java:3741)
+	at org.knime.core.node.workflow.NodeContainer.notifyParentExecuteFinished(NodeContainer.java:689)
+	at org.knime.core.node.workflow.NodeExecutionJob$AfterRunRunnable.run(NodeExecutionJob.java:385)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at org.knime.core.util.ThreadPool.runInvisible(ThreadPool.java:656)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:223)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:120)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:125)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:252)
+2025-10-16 14:32:46,141 : ERROR : KNIME-Worker-1-DB Query Reader 3:53 :  : Node : DB Query Reader : 3:53 : Execute failed: [SQLITE_ERROR] SQL error or missing database (no such table: Order)
+org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: Order)
+	at org.sqlite.core.DB.newSQLException(DB.java:1179)
+	at org.sqlite.core.DB.newSQLException(DB.java:1190)
+	at org.sqlite.core.DB.throwex(DB.java:1150)
+	at org.sqlite.core.NativeDB.prepare_utf8(Native Method)
+	at org.sqlite.core.NativeDB.prepare(NativeDB.java:132)
+	at org.sqlite.core.DB.prepare(DB.java:264)
+	at org.sqlite.jdbc3.JDBC3Statement.lambda$executeQuery$1(JDBC3Statement.java:86)
+	at org.sqlite.jdbc3.JDBC3Statement.withConnectionTimeout(JDBC3Statement.java:454)
+	at org.sqlite.jdbc3.JDBC3Statement.executeQuery(JDBC3Statement.java:84)
+	at org.knime.database.connection.wrappers.AbstractStatementWrapper.executeQuery(AbstractStatementWrapper.java:93)
+	at org.knime.database.connection.wrappers.AbstractStatementWrapper.executeQuery(AbstractStatementWrapper.java:93)
+	at org.knime.database.connection.wrappers.AbstractStatementWrapper.executeQuery(AbstractStatementWrapper.java:93)
+	at org.knime.database.connection.impl.monitored.MonitoredStatement.executeQuery(MonitoredStatement.java:82)
+	at org.knime.database.connection.wrappers.AbstractStatementWrapper.executeQuery(AbstractStatementWrapper.java:93)
+	at org.knime.database.agent.reader.impl.DefaultDBReader.read(DefaultDBReader.java:154)
+	at org.knime.database.node.io.reader.query.DBQueryReaderNodeModel.execute(DBQueryReaderNodeModel.java:166)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:605)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1331)
+	at org.knime.core.node.Node.execute(Node.java:1038)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:617)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:120)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:125)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:252)
+2025-10-16 14:33:00,980 : ERROR : Thread-13038 :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No port view available at index 1 for current state of node DB Writer 3:45. (source: https://org.knime.ui.java/assets/index-x-MeUoTE.js; line: 138)
+2025-10-16 14:33:00,980 : ERROR : Thread-13040 :  : KnimeBrowserView :  :  : %cerror%c UIExtension Lifecycle :: failed to initialize 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: https://org.knime.ui.java/assets/index-x-MeUoTE.js; line: 138)
+2025-10-16 14:35:03,195 : ERROR : Thread-23356 :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No port view available at index 1 for current state of node DB Writer 3:46. (source: https://org.knime.ui.java/assets/index-x-MeUoTE.js; line: 138)
+2025-10-16 14:35:03,196 : ERROR : Thread-23358 :  : KnimeBrowserView :  :  : %cerror%c UIExtension Lifecycle :: failed to initialize 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: https://org.knime.ui.java/assets/index-x-MeUoTE.js; line: 138)
+2025-10-16 14:35:42,127 : ERROR : Thread-31588 :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No port view available at index 1 for current state of node DB Writer 3:46. (source: https://org.knime.ui.java/assets/index-x-MeUoTE.js; line: 138)
+2025-10-16 14:35:42,129 : ERROR : Thread-31590 :  : KnimeBrowserView :  :  : %cerror%c UIExtension Lifecycle :: failed to initialize 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: https://org.knime.ui.java/assets/index-x-MeUoTE.js; line: 138)
+2025-10-16 14:35:43,217 : ERROR : Thread-31765 :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No port view available at index 1 for current state of node DB Writer 3:45. (source: https://org.knime.ui.java/assets/index-x-MeUoTE.js; line: 138)
+2025-10-16 14:35:43,217 : ERROR : Thread-31767 :  : KnimeBrowserView :  :  : %cerror%c UIExtension Lifecycle :: failed to initialize 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object Object] (source: https://org.knime.ui.java/assets/index-x-MeUoTE.js; line: 138)
+2025-10-16 14:35:43,281 : WARN  : comm-pool-thread-2 :  : JsonRpcErrorResolver :  :  : An unexpected json rpc error occurred
+java.lang.IllegalStateException: No rpc data service available: Node DB Writer 3:42 (CONFIGURED); port 1; view index 0; 
+Request: {"jsonrpc":"2.0","method":"getTable","params":[["JSON","XML","CUSTOMERNAME","PHONE","CONTACTLASTNAME","CONTACTFIRSTNAME","CUSTOMERID","Write Status","Write Error"],0,14,[null,null,null,null,null,null,null,null,null],false,false,true,false],"id":18}
+	at org.knime.core.webui.node.DataServiceManager.callRpcDataService(DataServiceManager.java:151)
+	at org.knime.gateway.impl.webui.service.DefaultPortService.callPortDataService(DefaultPortService.java:166)
+	at org.knime.gateway.impl.webui.jsonrpc.service.JsonRpcPortServiceWrapper.callPortDataService(JsonRpcPortServiceWrapper.java:85)
+	at jdk.internal.reflect.GeneratedMethodAccessor211.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.invoke(JsonRpcBasicServer.java:478)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleObject(JsonRpcBasicServer.java:349)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleJsonNodeRequest(JsonRpcBasicServer.java:274)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleRequest(JsonRpcBasicServer.java:242)
+	at org.knime.gateway.impl.jsonrpc.JsonRpcRequestHandler.handle(JsonRpcRequestHandler.java:106)
+	at org.knime.ui.java.browser.lifecycle.Init.lambda$16(Init.java:311)
+	at com.equo.comm.common.MessageHandler.processReceivedEventMessage(MessageHandler.java:131)
+	at com.equo.comm.ee.provider.service.ChromiumService.receiveMessage(ChromiumService.java:98)
+	at com.equo.comm.ee.provider.CommunicationManagerChromiumImpl.receiveMessage(CommunicationManagerChromiumImpl.java:48)
+	at com.equo.chromium.swt.internal.spi.CommRouterHandler.handleRequest(CommRouterHandler.java:33)
+	at com.equo.chromium.swt.internal.spi.CommRouterHandler.lambda$1(CommRouterHandler.java:51)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-10-16 14:35:43,292 : ERROR : Thread-31778 :  : KnimeBrowserView :  :  : %cerror%c RPC Client:: Error RPC request 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No rpc data service available: Node DB Writer 3:42 (CONFIGURED); port 1; view index 0; 
+Request: {"jsonrpc":"2.0","method":"getTable","params":[["JSON","XML","CUSTOMERNAME","PHONE","CONTACTLASTNAME","CONTACTFIRSTNAME","CUSTOMERID","Write Status","Write Error"],0,14,[null,null,null,null,null,null,null,null,null],false,false,true,false],"id":18} (source: https://org.knime.ui.java/assets/index-x-MeUoTE.js; line: 138)
+2025-10-16 14:35:43,296 : ERROR : Thread-31780 :  : KnimeBrowserView :  :  : Error: No rpc data service available: Node DB Writer 3:42 (CONFIGURED); port 1; view index 0; 
+Request: {"jsonrpc":"2.0","method":"getTable","params":[["JSON","XML","CUSTOMERNAME","PHONE","CONTACTLASTNAME","CONTACTFIRSTNAME","CUSTOMERID","Write Status","Write Error"],0,14,[null,null,null,null,null,null,null,null,null],false,false,true,false],"id":18} (source: https://org.knime.core.ui.port/uiext/tableview/dist/TableViewApp-vH9WnETr.js; line: 1218)
+2025-10-16 14:48:48,261 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2025-10-16 14:48:48,264 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2025-10-16 14:48:48,265 : INFO  : main :  : NodeLogger :  :  : # Welcome to KNIME Analytics Platform v5.7.0.v202509011500 (Build September 09, 2025)   #
+2025-10-16 14:48:48,265 : INFO  : main :  : NodeLogger :  :  : # Based on Eclipse, http://www.eclipse.org                                              #
+2025-10-16 14:48:48,265 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2025-10-16 14:48:48,265 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2025-10-16 14:48:48,265 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2025-10-16 14:48:48,265 : INFO  : main :  : NodeLogger :  :  : # Copyright by KNIME AG, Zurich, Switzerland and others.                                #
+2025-10-16 14:48:48,265 : INFO  : main :  : NodeLogger :  :  : # Website: http://www.knime.com                                                         #
+2025-10-16 14:48:48,265 : INFO  : main :  : NodeLogger :  :  : # E-mail: contact@knime.com                                                             #
+2025-10-16 14:48:48,265 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2025-10-16 14:48:48,265 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2025-10-16 14:48:48,266 : INFO  : main :  : NodeLogger :  :  : # For more details see the KNIME log file:                                              #
+2025-10-16 14:48:48,266 : INFO  : main :  : NodeLogger :  :  : # C:\IPCA\ISI25_TP01_27975_27966\27966 - Knime\data\Int\.metadata\knime\knime.log
+2025-10-16 14:48:48,266 : INFO  : main :  : NodeLogger :  :  : #---------------------------------------------------------------------------------------#
+2025-10-16 14:48:48,284 : INFO  : main :  : NodeLogger :  :  : # logging date=quinta out. 16 14:48:48 WEST 2025
+2025-10-16 14:48:48,284 : INFO  : main :  : NodeLogger :  :  : # java.version=17.0.5
+2025-10-16 14:48:48,284 : INFO  : main :  : NodeLogger :  :  : # java.vm.version=17.0.5+8
+2025-10-16 14:48:48,285 : INFO  : main :  : NodeLogger :  :  : # java.vendor=Eclipse Adoptium
+2025-10-16 14:48:48,285 : INFO  : main :  : NodeLogger :  :  : # os.name=Windows 11
+2025-10-16 14:48:48,285 : INFO  : main :  : NodeLogger :  :  : # os.arch=amd64
+2025-10-16 14:48:48,285 : INFO  : main :  : NodeLogger :  :  : # number of CPUs=12
+2025-10-16 14:48:48,285 : INFO  : main :  : NodeLogger :  :  : # assertions=off
+2025-10-16 14:48:48,296 : INFO  : main :  : NodeLogger :  :  : # host=Paulinho4k
+2025-10-16 14:48:48,299 : INFO  : main :  : NodeLogger :  :  : # username=paulo
+2025-10-16 14:48:48,299 : INFO  : main :  : NodeLogger :  :  : # max mem=8112MB
+2025-10-16 14:48:48,299 : INFO  : main :  : NodeLogger :  :  : # application=org.knime.product.KNIME_APPLICATION
+2025-10-16 14:48:48,315 : INFO  : main :  : NodeLogger :  :  : # KNID=11-7e5f67b417ba1764-01-ee61f9aa0e724fbb
+2025-10-16 14:48:48,315 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2025-10-16 14:48:48,316 : DEBUG : main :  : KNIMELogger :  :  : 12 messages were logged before logging was initialized; see below...
+2025-10-16 14:48:44,586 : DEBUG : main :  : EclipseProxyServiceInitializer :  :  : (1/3) Opened OSGi service tracker for 'org.eclipse.core.net.proxy.IProxyService'
+2025-10-16 14:48:44,674 : DEBUG : main :  : ApplicationHealth :  :  : Registering JMX bean for org.knime.core:type=Execution,name=GlobalPool
+2025-10-16 14:48:44,677 : DEBUG : main :  : ApplicationHealth :  :  : Registering JMX bean for org.knime.core:type=Execution,name=NodeStates
+2025-10-16 14:48:44,677 : DEBUG : main :  : ApplicationHealth :  :  : Registering JMX bean for org.knime.core:type=Memory,name=ObjectInstances
+2025-10-16 14:48:44,690 : DEBUG : main :  : IEarlyStartup :  :  : Running application "org.knime.product.KNIME_APPLICATION"
+2025-10-16 14:48:44,690 : DEBUG : main :  : IEarlyStartup :  :  : Moving from stage <none> to stage EARLIEST
+2025-10-16 14:48:44,692 : DEBUG : main :  : IEarlyStartup :  :  : Executing startup hook `org.knime.core.node.logging.JavaUtilLoggingAdapter#run()` at stage EARLIEST
+2025-10-16 14:48:44,695 : DEBUG : main :  : IEarlyStartup :  :  : Executing startup hook `org.knime.js.cef.CEFEarlyStartup#run()` at stage EARLIEST
+2025-10-16 14:48:45,113 : DEBUG : main :  : KNIMEApplication :  :  : Checking for instance location
+2025-10-16 14:48:48,014 : DEBUG : main :  : KNIMEApplication :  :  : Instance location set
+2025-10-16 14:48:48,120 : DEBUG : main :  : IEarlyStartup :  :  : Moving from stage EARLIEST to stage AFTER_PROFILES_SET
+2025-10-16 14:48:48,120 : DEBUG : main :  : IEarlyStartup :  :  : Executing startup hook `org.knime.core.node.logging.KNIMELogger$EarlyStartupInitializer#run()` at stage AFTER_PROFILES_SET
+2025-10-16 14:48:48,317 : DEBUG : main :  : KNIMELogger :  :  : End of buffered log messages
+2025-10-16 14:48:48,318 : DEBUG : main :  : IEarlyStartup :  :  : Executing startup hook `org.knime.core.eclipseUtil.EclipseProxyServiceInitializer#run()` at stage AFTER_PROFILES_SET
+2025-10-16 14:48:48,647 : DEBUG : main :  : NativeProxyProviderWrapper :  :  : Invoked default constructor in class "class org.eclipse.core.internal.net.ProxyManager" via reflectionto forcibly create new instance
+2025-10-16 14:48:48,650 : DEBUG : main :  : NativeProxyProviderWrapper :  :  : Forcibly set field "preferenceManager" in class "class org.eclipse.core.internal.net.ProxyManager" to "org.eclipse.core.internal.net.PreferenceManager@37775bb1" via reflection
+2025-10-16 14:48:48,657 : DEBUG : main :  : NativeProxyProviderWrapper :  :  : Forcibly set field "nativeProxyProvider" in class "class org.eclipse.core.internal.net.ProxyManager" to "org.knime.core.eclipseUtil.NativeProxyProviderWrapper@723742b2" via reflection
+2025-10-16 14:48:48,657 : DEBUG : main :  : EclipseProxyServiceInitializer :  :  : (3/3) Successfully installed proxy support
+2025-10-16 14:48:48,657 : DEBUG : main :  : EclipseProxyServiceInitializer :  :  : (2/3) Initialized OSGi service 'org.eclipse.core.net.proxy.IProxyService'
+2025-10-16 14:48:48,657 : DEBUG : main :  : IEarlyStartup :  :  : Executing startup hook `org.knime.core.internal.MountTableInitializerEarlyStartup#run()` at stage AFTER_PROFILES_SET
+2025-10-16 14:48:49,957 : DEBUG : main :  : WorkbenchMountTable :  :  : Mounted Explorer Temp Space 'knime-temp-space' - com.knime.explorer.tempspace
+2025-10-16 14:48:49,975 : DEBUG : main :  : IEarlyStartup :  :  : Executing startup hook `org.knime.ui.java.OnEarlyStartup#run()` at stage AFTER_PROFILES_SET
+2025-10-16 14:48:50,040 : DEBUG : KNIME-Worker-0 :  : NodeFactoryProvider :  :  : Duplicate node factory id: org.knime.base.node.preproc.filter.column.FilterColumnNodeFactory
+2025-10-16 14:48:50,040 : DEBUG : KNIME-Worker-0 :  : NodeFactoryProvider :  :  : Duplicate node factory id: org.knime.base.node.preproc.joiner.NewJoinerNodeFactory
+2025-10-16 14:48:50,040 : DEBUG : KNIME-Worker-0 :  : NodeFactoryProvider :  :  : Duplicate node factory id: org.knime.base.node.preproc.split.SplitNodeFactory
+2025-10-16 14:48:50,042 : DEBUG : KNIME-Worker-0 :  : NodeFactoryProvider :  :  : Duplicate node factory id: org.knime.base.filehandling.filemetainfo.FileMetaInfoNodeFactory
+2025-10-16 14:48:50,043 : DEBUG : KNIME-Worker-0 :  : NodeFactoryProvider :  :  : Duplicate node factory id: org.knime.distmatrix.knn.KnnDistNodeFactory
+2025-10-16 14:48:50,051 : DEBUG : KNIME-Worker-0 :  : NodeFactoryProvider :  :  : Collected NodeFactory extensions... found 1007 nodes (337 deprecated, 20 hidden) in 0,1s
+2025-10-16 14:48:50,501 : DEBUG : KNIME-Worker-0 :  : NodeFactoryProvider :  :  : Collected NodeSetFactory extensions... found 3 node sets with 25 nodes in 0,5s
+2025-10-16 14:48:50,765 : DEBUG : Node Repository Initializer :  : NodeSpecCache :  :  : Computing node specifications for KNIME AP Core feature
+2025-10-16 14:48:51,343 : DEBUG : Node Repository Initializer :  : NodeSpecCache :  :  : Computing node specifications for KNIME Distance Matrix Extension
+2025-10-16 14:48:51,388 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.base.node.mine.treeensemble2.distance.RandomForestDistanceFactory'
+2025-10-16 14:48:51,393 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distmatrix.calculate.measure.MatrixDistanceFactory'
+2025-10-16 14:48:51,394 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.base.distance.measure.OldDistanceWrapperDistanceFactory'
+2025-10-16 14:48:51,397 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.string.levenshtein.LevenshteinDistanceFactory'
+2025-10-16 14:48:51,398 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.string.tversky.TverskyDistanceFactory'
+2025-10-16 14:48:51,400 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.bitvector.cosine.CosineDistanceFactory'
+2025-10-16 14:48:51,401 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.bitvector.tversky.TverskyDistanceFactory'
+2025-10-16 14:48:51,404 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.base.distance.bytevector.CosineDistanceMeasureFactory'
+2025-10-16 14:48:51,404 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.base.distance.bytevector.EuclideanDistanceMeasureFactory'
+2025-10-16 14:48:51,406 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.base.distance.bytevector.ManhattanDistanceMeasureFactory'
+2025-10-16 14:48:51,408 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.base.distance.bytevector.PNormDistanceMeasureFactory'
+2025-10-16 14:48:51,411 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.numerical.lnorm.LNormDistanceFactory'
+2025-10-16 14:48:51,413 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.numerical.cosine.CosineDistanceFactory'
+2025-10-16 14:48:51,415 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.jsnippet.JSnippetDistanceFactory'
+2025-10-16 14:48:51,415 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.jsnippet.aggregated.AggregatedDistanceFactory'
+2025-10-16 14:48:51,416 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.mahalanobis.MahalanobisDistanceFactory'
+2025-10-16 14:48:51,418 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.string.jarowinkler.JaroWinklerDistanceFactory'
+2025-10-16 14:48:51,549 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.numerical.lnorm.LNormDistanceFactory
+2025-10-16 14:48:51,581 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.numerical.lnorm.LNormDistanceFactory
+2025-10-16 14:48:51,587 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.numerical.lnorm.LNormDistanceFactory
+2025-10-16 14:48:51,589 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.numerical.lnorm.LNormDistanceFactory
+2025-10-16 14:48:51,592 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.numerical.cosine.CosineDistanceFactory
+2025-10-16 14:48:51,595 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.numerical.cosine.CosineDistanceFactory
+2025-10-16 14:48:51,597 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.numerical.cosine.CosineDistanceFactory
+2025-10-16 14:48:51,599 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.numerical.cosine.CosineDistanceFactory
+2025-10-16 14:48:51,994 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.jarowinkler.JaroWinklerDistanceFactory
+2025-10-16 14:48:51,997 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.jarowinkler.JaroWinklerDistanceFactory
+2025-10-16 14:48:51,999 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.jarowinkler.JaroWinklerDistanceFactory
+2025-10-16 14:48:52,000 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.jarowinkler.JaroWinklerDistanceFactory
+2025-10-16 14:48:52,004 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.tversky.TverskyDistanceFactory
+2025-10-16 14:48:52,006 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.tversky.TverskyDistanceFactory
+2025-10-16 14:48:52,007 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.tversky.TverskyDistanceFactory
+2025-10-16 14:48:52,009 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.tversky.TverskyDistanceFactory
+2025-10-16 14:48:52,015 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.levenshtein.LevenshteinDistanceFactory
+2025-10-16 14:48:52,017 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.levenshtein.LevenshteinDistanceFactory
+2025-10-16 14:48:52,019 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.levenshtein.LevenshteinDistanceFactory
+2025-10-16 14:48:52,021 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.levenshtein.LevenshteinDistanceFactory
+2025-10-16 14:48:52,105 : DEBUG : Node Repository Initializer :  : HiLiteHandler :  :  : Adding hilite translator to handler 9c3feb87-05e3-4d69-84b1-2574df46bf32
+2025-10-16 14:48:52,242 : DEBUG : Node Repository Initializer :  : HiLiteHandler :  :  : Adding hilite translator to handler 157a89b6-bf27-48ee-8344-50580ef57f96
+2025-10-16 14:48:52,250 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.bitvector.tversky.TverskyDistanceFactory
+2025-10-16 14:48:52,255 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.bitvector.tversky.TverskyDistanceFactory
+2025-10-16 14:48:52,256 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.bitvector.tversky.TverskyDistanceFactory
+2025-10-16 14:48:52,258 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.bitvector.tversky.TverskyDistanceFactory
+2025-10-16 14:48:52,260 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.bitvector.cosine.CosineDistanceFactory
+2025-10-16 14:48:52,262 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.bitvector.cosine.CosineDistanceFactory
+2025-10-16 14:48:52,263 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.bitvector.cosine.CosineDistanceFactory
+2025-10-16 14:48:52,265 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.bitvector.cosine.CosineDistanceFactory
+2025-10-16 14:48:52,289 : DEBUG : Node Repository Initializer :  : HiLiteHandler :  :  : Adding hilite translator to handler 60e30db9-abe7-46ef-80c2-1626bc2a2a8f
+2025-10-16 14:48:52,373 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.EuclideanDistanceMeasureFactory
+2025-10-16 14:48:52,375 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.EuclideanDistanceMeasureFactory
+2025-10-16 14:48:52,378 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.EuclideanDistanceMeasureFactory
+2025-10-16 14:48:52,380 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.EuclideanDistanceMeasureFactory
+2025-10-16 14:48:52,383 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.CosineDistanceMeasureFactory
+2025-10-16 14:48:52,385 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.CosineDistanceMeasureFactory
+2025-10-16 14:48:52,387 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.CosineDistanceMeasureFactory
+2025-10-16 14:48:52,388 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.CosineDistanceMeasureFactory
+2025-10-16 14:48:52,390 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.PNormDistanceMeasureFactory
+2025-10-16 14:48:52,392 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.PNormDistanceMeasureFactory
+2025-10-16 14:48:52,394 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.PNormDistanceMeasureFactory
+2025-10-16 14:48:52,396 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.PNormDistanceMeasureFactory
+2025-10-16 14:48:52,398 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.ManhattanDistanceMeasureFactory
+2025-10-16 14:48:52,400 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.ManhattanDistanceMeasureFactory
+2025-10-16 14:48:52,401 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.ManhattanDistanceMeasureFactory
+2025-10-16 14:48:52,403 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.ManhattanDistanceMeasureFactory
+2025-10-16 14:48:52,439 : DEBUG : Node Repository Initializer :  : NodeSpecCache :  :  : Computing node specifications for KNIME Quick Forms
+2025-10-16 14:48:53,469 : DEBUG : Node Repository Initializer :  : MoleculeSketcherRegistry :  :  : Added molecule sketcher 'org.knime.ext.js.molecule.Ketcher_2_7_2' from 'org.knime.ext.js'
+2025-10-16 14:48:53,472 : DEBUG : Node Repository Initializer :  : NodeSpecCache :  :  : Computing node specifications for KNIME File Handling Nodes
+2025-10-16 14:48:54,014 : DEBUG : Node Repository Initializer :  : ExtensionPoints :  :  : Loading executable extensions of extension point: org.knime.database.RowFilter
+2025-10-16 14:48:54,028 : DEBUG : Node Repository Initializer :  : ExtensionPoints :  :  : Executable extension initializer has been created
+2025-10-16 14:48:54,028 : DEBUG : Node Repository Initializer :  : ExtensionPoints :  :  : Executable is instance of MSAccessRowFilterInitializer
+2025-10-16 14:48:54,045 : DEBUG : Node Repository Initializer :  : ExtensionPoints :  :  : Loading extensions of extension point: org.knime.database.DBType
+2025-10-16 14:48:54,061 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=h2, name=H2, description=null)
+2025-10-16 14:48:54,062 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=msaccess, name=Microsoft Access, description=null)
+2025-10-16 14:48:54,065 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2025-10-16 14:48:54,065 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=mysql, name=MySQL, description=null)
+2025-10-16 14:48:54,065 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=postgres, name=PostgreSQL, description=null)
+2025-10-16 14:48:54,066 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=sqlite, name=SQLite, description=null)
+2025-10-16 14:48:54,066 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=db2, name=IBM Db2, description=null)
+2025-10-16 14:48:54,068 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=oracle, name=Oracle, description=null)
+2025-10-16 14:48:54,069 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=saphana, name=SAP HANA, description=null)
+2025-10-16 14:48:54,069 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=teradata, name=Teradata, description=null)
+2025-10-16 14:48:54,070 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2025-10-16 14:48:54,077 : DEBUG : Node Repository Initializer :  : ExtensionPoints :  :  : Executable extension initializer has been created
+2025-10-16 14:48:54,077 : DEBUG : Node Repository Initializer :  : ExtensionPoints :  :  : Executable is instance of SQLiteRowFilterInitializer
+2025-10-16 14:48:54,086 : DEBUG : Node Repository Initializer :  : ExtensionPoints :  :  : Executable extension initializer has been created
+2025-10-16 14:48:54,086 : DEBUG : Node Repository Initializer :  : ExtensionPoints :  :  : Executable is instance of OracleRowFilterInitializer
+2025-10-16 14:48:54,127 : DEBUG : Node Repository Initializer :  : MicrosoftAuthenticationPlugin :  :  : Failed to initialize the JAX-RS 1.x RuntimeDelegate. Provided error message: java.lang.ClassNotFoundException: com.sun.ws.rs.ext.RuntimeDelegateImpl cannot be found by javax.ws.rs.jsr311-api_1.1.1
+2025-10-16 14:48:54,360 : INFO  : main :  : StringHistory :  :  : History file 'C:\IPCA\ISI25_TP01_27975_27966\27966 - Knime\data\Int\.metadata\knime\history_database_drivers.txt' does not exist.
+2025-10-16 14:48:54,360 : INFO  : main :  : StringHistory :  :  : History file 'C:\IPCA\ISI25_TP01_27975_27966\27966 - Knime\data\Int\.metadata\knime\history_database_urls.txt' does not exist.
+2025-10-16 14:48:54,362 : DEBUG : main :  : DatabaseConnectionSettings :  :  : Settings database timeout to 15 seconds
+2025-10-16 14:48:54,363 : DEBUG : main :  : DatabaseConnectionSettings :  :  : Database concurrency (sync via database connection) is true.
+2025-10-16 14:48:54,365 : DEBUG : main :  : KNIMECorePlugin :  :  : Setting KNIME max thread count to 24
+2025-10-16 14:48:54,365 : DEBUG : main :  : KNIMECorePlugin :  :  : Setting KNIME temp dir to "C:\Users\paulo\AppData\Local\Temp"
+2025-10-16 14:49:05,723 : WARN  : ModalContext :  : Node : SQLite Connector : 3:41 : DB Connection no longer available. Go to advanced settings to enable connection restoration.
+2025-10-16 14:52:51,277 : WARN  : comm-pool-thread-2 :  : Node : DB Writer : 3:46 : Database connection does not exist. Please reset the corresponding connector node.
+2025-10-16 14:52:51,285 : WARN  : comm-pool-thread-2 :  : Node : DB Writer : 3:45 : Database connection does not exist. Please reset the corresponding connector node.
+2025-10-16 14:52:51,320 : WARN  : comm-pool-thread-2 :  : Node : DB Writer : 3:47 : Database connection does not exist. Please reset the corresponding connector node.
+2025-10-16 14:52:51,345 : WARN  : comm-pool-thread-2 :  : Node : DB Writer : 3:42 : Database connection does not exist. Please reset the corresponding connector node.
+2025-10-16 14:52:51,547 : WARN  : comm-pool-thread-2 :  : Node : DB Writer : 3:45 : Database connection does not exist. Please reset the corresponding connector node.
+2025-10-16 14:52:51,551 : WARN  : comm-pool-thread-2 :  : Node : DB Writer : 3:47 : Database connection does not exist. Please reset the corresponding connector node.
+2025-10-16 14:52:51,554 : WARN  : comm-pool-thread-2 :  : Node : DB Writer : 3:46 : Database connection does not exist. Please reset the corresponding connector node.
+2025-10-16 14:52:51,558 : WARN  : comm-pool-thread-2 :  : Node : DB Writer : 3:42 : Database connection does not exist. Please reset the corresponding connector node.
+2025-10-16 14:53:46,241 : WARN  : KNIME-Worker-1-XPath 3:61:28 :  : Node : DB Writer : 3:46 : Database connection does not exist. Please reset the corresponding connector node.
+2025-10-16 14:53:46,355 : WARN  : KNIME-Worker-5-Duplicate Row Filter 3:61:30 :  : Node : DB Writer : 3:46 : Database connection does not exist. Please reset the corresponding connector node.
+2025-10-16 14:53:46,376 : WARN  : KNIME-Worker-2-Math Formula 3:61:10 :  : Node : DB Writer : 3:45 : Database connection does not exist. Please reset the corresponding connector node.
+2025-10-16 14:53:46,381 : WARN  : KNIME-Worker-2-Math Formula 3:61:10 :  : Node : DB Writer : 3:42 : Database connection does not exist. Please reset the corresponding connector node.
+2025-10-16 14:53:46,396 : WARN  : KNIME-Worker-4-Math Formula 3:61:32 :  : Node : DB Writer : 3:47 : Database connection does not exist. Please reset the corresponding connector node.
+2025-10-16 14:53:46,692 : WARN  : KNIME-Worker-3-XPath 3:61:16 :  : Node : DB Writer : 3:42 : Database connection does not exist. Please reset the corresponding connector node.
+2025-10-16 14:53:46,893 : WARN  : KNIME-Worker-4-Duplicate Row Filter 3:61:38 :  : Node : DB Writer : 3:42 : Database connection does not exist. Please reset the corresponding connector node.
+2025-10-16 14:53:46,936 : WARN  : KNIME-Worker-1-Sorter 3:61:39 :  : Node : DB Writer : 3:42 : Database connection does not exist. Please reset the corresponding connector node.
+2025-10-16 14:54:06,809 : ERROR : KNIME-Worker-5-SQLite Connector 3:41 :  : NodeStateChangeListener : SQLite Connector : 3:41 : Caught an exception while notifying node state listeners, skipping throwing to preserve the state change
+java.lang.NullPointerException: Cannot invoke "org.eclipse.ui.IWorkbenchWindow.getShell()" because the return value of "org.eclipse.ui.IWorkbench.getActiveWorkbenchWindow()" is null
+	at org.knime.ui.java.api.NodeAPI.getAppBoundsAsAWTRec(NodeAPI.java:171)
+	at org.knime.ui.java.api.PortAPI.lambda$2(PortAPI.java:116)
+	at org.knime.gateway.api.util.CoreUtil$1.stateChanged(CoreUtil.java:798)
+	at org.knime.core.node.workflow.NodeStateChangeListener.callStateChanged(NodeStateChangeListener.java:83)
+	at org.knime.core.node.workflow.NodeContainer.notifyStateChangeListeners(NodeContainer.java:958)
+	at org.knime.core.node.workflow.NodeContainer.setInternalState(NodeContainer.java:1030)
+	at org.knime.core.node.workflow.NativeNodeContainer.setInternalState(NativeNodeContainer.java:235)
+	at org.knime.core.node.workflow.NodeContainer.setInternalState(NodeContainer.java:1004)
+	at org.knime.core.node.workflow.NativeNodeContainer.performStateTransitionEXECUTED(NativeNodeContainer.java:556)
+	at org.knime.core.node.workflow.WorkflowManager.doAfterExecution(WorkflowManager.java:3741)
+	at org.knime.core.node.workflow.NodeContainer.notifyParentExecuteFinished(NodeContainer.java:689)
+	at org.knime.core.node.workflow.NodeExecutionJob$AfterRunRunnable.run(NodeExecutionJob.java:385)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at org.knime.core.util.ThreadPool.runInvisible(ThreadPool.java:656)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:223)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:120)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:125)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:252)
+2025-10-16 14:57:28,799 : WARN  : KNIME-Worker-10-Send Email 3:63:48 :  : Node : Send Email : 3:63:48 : Execution canceled
+2025-10-16 15:12:06,543 : WARN  : Thread-131477 :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.piechart.PieChartNodeFactory/PieChart.html; line: 0)
+2025-10-16 15:12:24,429 : WARN  : Thread-134350 :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.piechart.PieChartNodeFactory/PieChart.html; line: 0)
+2025-10-16 15:13:22,051 : WARN  : comm-pool-thread-5 :  : Node : Bar Chart : 3:64 : Table contains no compatible (numeric) frequency columns
+2025-10-16 15:13:41,270 : WARN  : Thread-143282 :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.barchart.BarChartNodeFactory/BarChart.html; line: 0)
+2025-10-16 15:13:51,182 : WARN  : Thread-144533 :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.piechart.PieChartNodeFactory/PieChart.html; line: 0)
+2025-10-16 15:13:53,896 : WARN  : Thread-145079 :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.barchart.BarChartNodeFactory/BarChart.html; line: 0)
+2025-10-16 15:14:54,582 : WARN  : Thread-153603 :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.lineplot.LinePlotNodeFactory/LinePlot.html; line: 0)
+2025-10-16 15:15:02,293 : ERROR : Thread-155059 :  : KnimeBrowserView :  :  : Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'length') (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.lineplot.LinePlotNodeFactory/assets/compareObjects-NpOVKUO8.js; line: 1)
+2025-10-16 15:15:07,872 : ERROR : Thread-156109 :  : KnimeBrowserView :  :  : Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'length') (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.lineplot.LinePlotNodeFactory/assets/compareObjects-NpOVKUO8.js; line: 1)
+2025-10-16 15:15:36,887 : WARN  : Thread-160530 :  : KnimeBrowserView :  :  : The specified value "NaN" cannot be parsed, or is out of range. (source: https://org.knime.core.ui.dialog/uiext/defaultdialog/dist/NumberInput-s4GX8KNu-C_04jou_.js; line: 117)
+2025-10-16 15:16:32,281 : WARN  : Thread-170681 :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.piechart.PieChartNodeFactory/PieChart.html; line: 0)
+2025-10-16 15:16:34,217 : WARN  : Thread-171284 :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.piechart.PieChartNodeFactory/PieChart.html; line: 0)
+2025-10-16 15:16:39,191 : WARN  : Thread-172197 :  : CEFNodeView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.piechart.PieChartNodeFactory/PieChart.html; line: 0)
+2025-10-16 15:17:30,133 : WARN  : comm-pool-thread-8 :  : Node : Bar Chart : 3:66 : The selected category column "CUSTOMERNAME" does not exist in the table
+2025-10-16 15:17:32,440 : WARN  : Thread-178525 :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.piechart.PieChartNodeFactory/PieChart.html; line: 0)
+2025-10-16 15:17:41,882 : WARN  : Thread-181035 :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.barchart.BarChartNodeFactory/BarChart.html; line: 0)
+2025-10-16 15:18:42,162 : WARN  : Thread-195228 :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.barchart.BarChartNodeFactory/BarChart.html; line: 0)
+2025-10-16 15:19:11,624 : WARN  : Thread-200552 :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.barchart.BarChartNodeFactory/BarChart.html; line: 0)
+2025-10-16 15:19:14,661 : WARN  : comm-pool-thread-9 :  : Node : Bar Chart : 3:67 : The selected category column "STATE" does not exist in the table
+2025-10-16 15:19:22,460 : WARN  : Thread-202670 :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.barchart.BarChartNodeFactory/BarChart.html; line: 0)
+2025-10-16 15:19:40,104 : WARN  : Thread-206511 :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.barchart.BarChartNodeFactory/BarChart.html; line: 0)
+2025-10-16 15:27:45,993 : WARN  : Thread-232104 :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.barchart.BarChartNodeFactory/BarChart.html; line: 0)
+2025-10-16 15:27:48,745 : WARN  : Thread-232853 :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.barchart.BarChartNodeFactory/BarChart.html; line: 0)
+2025-10-16 15:27:51,543 : WARN  : Thread-233287 :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.piechart.PieChartNodeFactory/PieChart.html; line: 0)
+2025-10-16 15:27:54,110 : WARN  : Thread-233731 :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.barchart.BarChartNodeFactory/BarChart.html; line: 0)
+2025-10-16 17:14:50,335 : WARN  : Thread-367794 :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.piechart.PieChartNodeFactory/PieChart.html; line: 0)
+2025-10-16 17:15:48,832 : WARN  : Thread-370056 :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.barchart.BarChartNodeFactory/BarChart.html; line: 0)
+2025-10-16 17:17:06,035 : WARN  : Thread-372727 :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.barchart.BarChartNodeFactory/BarChart.html; line: 0)
+2025-10-16 17:17:47,736 : WARN  : Thread-374230 :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.barchart.BarChartNodeFactory/BarChart.html; line: 0)
