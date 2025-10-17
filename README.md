@@ -28,7 +28,7 @@ O projeto foi desenvolvido e documentado utilizando as seguintes ferramentas:
 * **Knime**.
 * **Pentaho Data Integration (PDI) 9.4** (Kettle).
 * **Git** para controlo de versão.
-
+```bash
 ISI25_TP01_27975_27966/
 ├── README.md
 ├── doc/
@@ -46,7 +46,7 @@ ISI25_TP01_27975_27966/
 │       ├── output/     # Dados de saída
 │       └── int/        # Transformações e jobs usados para o ETL (Data Integration)
 
-
+```
 ## 4. Execução do Projeto (Pentaho PDI)
 
 O processo de ETL é orquestrado pelo Job principal e deve ser executado através do Pentaho Data Integration.
