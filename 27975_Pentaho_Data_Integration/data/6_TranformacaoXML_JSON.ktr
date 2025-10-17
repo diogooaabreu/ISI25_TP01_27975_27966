@@ -474,6 +474,171 @@
       <include_subfolders>N</include_subfolders>
     </file>
     <fields>
+      <field>
+        <name>SALES</name>
+        <xpath>SALES</xpath>
+        <element_type>node</element_type>
+        <result_type>valueof</result_type>
+        <type>Number</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>CUSTOMERNAME</name>
+        <xpath>CUSTOMERNAME</xpath>
+        <element_type>node</element_type>
+        <result_type>valueof</result_type>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>PRODUCTCODE</name>
+        <xpath>PRODUCTCODE</xpath>
+        <element_type>node</element_type>
+        <result_type>valueof</result_type>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>QTR_ID</name>
+        <xpath>QTR_ID</xpath>
+        <element_type>node</element_type>
+        <result_type>valueof</result_type>
+        <type>Integer</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>MONTH_ID</name>
+        <xpath>MONTH_ID</xpath>
+        <element_type>node</element_type>
+        <result_type>valueof</result_type>
+        <type>Integer</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>YEAR_ID</name>
+        <xpath>YEAR_ID</xpath>
+        <element_type>node</element_type>
+        <result_type>valueof</result_type>
+        <type>Integer</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>TERRITORY</name>
+        <xpath>TERRITORY</xpath>
+        <element_type>node</element_type>
+        <result_type>valueof</result_type>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>ORDERNUMBER</name>
+        <xpath>ORDERNUMBER</xpath>
+        <element_type>node</element_type>
+        <result_type>valueof</result_type>
+        <type>Integer</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>QUANTITYORDERED</name>
+        <xpath>QUANTITYORDERED</xpath>
+        <element_type>node</element_type>
+        <result_type>valueof</result_type>
+        <type>Integer</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>STATUS</name>
+        <xpath>STATUS</xpath>
+        <element_type>node</element_type>
+        <result_type>valueof</result_type>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
+      <field>
+        <name>DEALSIZE</name>
+        <xpath>DEALSIZE</xpath>
+        <element_type>node</element_type>
+        <result_type>valueof</result_type>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+      </field>
     </fields>
     <limit>0</limit>
     <loopxpath>Rows/Row</loopxpath>
@@ -516,14 +681,14 @@
     </partitioning>
     <outputValue>outputValue</outputValue>
     <jsonBloc>data</jsonBloc>
-    <nrRowsInBloc>1</nrRowsInBloc>
+    <nrRowsInBloc/>
     <operation_type>writetofile</operation_type>
     <compatibility_mode>N</compatibility_mode>
     <encoding>UTF-8</encoding>
     <addtoresult>N</addtoresult>
     <file>
       <name>${Internal.Entry.Current.Directory}\output\factsalessite</name>
-      <extention>js</extention>
+      <extention>json</extention>
       <append>N</append>
       <split>N</split>
       <haspartno>N</haspartno>
@@ -534,6 +699,50 @@
       <servlet_output>N</servlet_output>
     </file>
     <fields>
+      <field>
+        <name>SALES</name>
+        <element>SALES</element>
+      </field>
+      <field>
+        <name>CUSTOMERNAME</name>
+        <element>CUSTOMERNAME</element>
+      </field>
+      <field>
+        <name>PRODUCTCODE</name>
+        <element>PRODUCTCODE</element>
+      </field>
+      <field>
+        <name>QTR_ID</name>
+        <element>QTR_ID</element>
+      </field>
+      <field>
+        <name>MONTH_ID</name>
+        <element>MONTH_ID</element>
+      </field>
+      <field>
+        <name>YEAR_ID</name>
+        <element>YEAR_ID</element>
+      </field>
+      <field>
+        <name>TERRITORY</name>
+        <element>TERRITORY</element>
+      </field>
+      <field>
+        <name>ORDERNUMBER</name>
+        <element>ORDERNUMBER</element>
+      </field>
+      <field>
+        <name>QUANTITYORDERED</name>
+        <element>QUANTITYORDERED</element>
+      </field>
+      <field>
+        <name>STATUS</name>
+        <element>STATUS</element>
+      </field>
+      <field>
+        <name>DEALSIZE</name>
+        <element>DEALSIZE</element>
+      </field>
     </fields>
     <attributes/>
     <cluster_schema/>
