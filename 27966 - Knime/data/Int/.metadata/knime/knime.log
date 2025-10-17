@@ -1339,3 +1339,248 @@ java.lang.NullPointerException: Cannot invoke "org.eclipse.ui.IWorkbenchWindow.g
 2025-10-16 17:15:48,832 : WARN  : Thread-370056 :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.barchart.BarChartNodeFactory/BarChart.html; line: 0)
 2025-10-16 17:17:06,035 : WARN  : Thread-372727 :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.barchart.BarChartNodeFactory/BarChart.html; line: 0)
 2025-10-16 17:17:47,736 : WARN  : Thread-374230 :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.barchart.BarChartNodeFactory/BarChart.html; line: 0)
+2025-10-17 12:16:50,836 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2025-10-17 12:16:50,842 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2025-10-17 12:16:50,842 : INFO  : main :  : NodeLogger :  :  : # Welcome to KNIME Analytics Platform v5.7.0.v202509011500 (Build September 09, 2025)   #
+2025-10-17 12:16:50,842 : INFO  : main :  : NodeLogger :  :  : # Based on Eclipse, http://www.eclipse.org                                              #
+2025-10-17 12:16:50,846 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2025-10-17 12:16:50,846 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2025-10-17 12:16:50,846 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2025-10-17 12:16:50,846 : INFO  : main :  : NodeLogger :  :  : # Copyright by KNIME AG, Zurich, Switzerland and others.                                #
+2025-10-17 12:16:50,846 : INFO  : main :  : NodeLogger :  :  : # Website: http://www.knime.com                                                         #
+2025-10-17 12:16:50,846 : INFO  : main :  : NodeLogger :  :  : # E-mail: contact@knime.com                                                             #
+2025-10-17 12:16:50,846 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2025-10-17 12:16:50,846 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2025-10-17 12:16:50,846 : INFO  : main :  : NodeLogger :  :  : # For more details see the KNIME log file:                                              #
+2025-10-17 12:16:50,846 : INFO  : main :  : NodeLogger :  :  : # C:\IPCA\ISI25_TP01_27975_27966\27966 - Knime\data\Int\.metadata\knime\knime.log
+2025-10-17 12:16:50,846 : INFO  : main :  : NodeLogger :  :  : #---------------------------------------------------------------------------------------#
+2025-10-17 12:16:50,880 : INFO  : main :  : NodeLogger :  :  : # logging date=sexta out. 17 12:16:50 WEST 2025
+2025-10-17 12:16:50,880 : INFO  : main :  : NodeLogger :  :  : # java.version=17.0.5
+2025-10-17 12:16:50,880 : INFO  : main :  : NodeLogger :  :  : # java.vm.version=17.0.5+8
+2025-10-17 12:16:50,880 : INFO  : main :  : NodeLogger :  :  : # java.vendor=Eclipse Adoptium
+2025-10-17 12:16:50,880 : INFO  : main :  : NodeLogger :  :  : # os.name=Windows 11
+2025-10-17 12:16:50,880 : INFO  : main :  : NodeLogger :  :  : # os.arch=amd64
+2025-10-17 12:16:50,880 : INFO  : main :  : NodeLogger :  :  : # number of CPUs=12
+2025-10-17 12:16:50,880 : INFO  : main :  : NodeLogger :  :  : # assertions=off
+2025-10-17 12:16:50,899 : INFO  : main :  : NodeLogger :  :  : # host=Paulinho4k
+2025-10-17 12:16:50,901 : INFO  : main :  : NodeLogger :  :  : # username=paulo
+2025-10-17 12:16:50,901 : INFO  : main :  : NodeLogger :  :  : # max mem=8112MB
+2025-10-17 12:16:50,906 : INFO  : main :  : NodeLogger :  :  : # application=org.knime.product.KNIME_APPLICATION
+2025-10-17 12:16:50,960 : INFO  : main :  : NodeLogger :  :  : # KNID=11-7e5f67b417ba1764-01-ee61f9aa0e724fbb
+2025-10-17 12:16:50,960 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2025-10-17 12:16:50,964 : DEBUG : main :  : KNIMELogger :  :  : 12 messages were logged before logging was initialized; see below...
+2025-10-17 12:10:49,571 : DEBUG : main :  : EclipseProxyServiceInitializer :  :  : (1/3) Opened OSGi service tracker for 'org.eclipse.core.net.proxy.IProxyService'
+2025-10-17 12:10:49,753 : DEBUG : main :  : ApplicationHealth :  :  : Registering JMX bean for org.knime.core:type=Execution,name=GlobalPool
+2025-10-17 12:10:49,753 : DEBUG : main :  : ApplicationHealth :  :  : Registering JMX bean for org.knime.core:type=Execution,name=NodeStates
+2025-10-17 12:10:49,757 : DEBUG : main :  : ApplicationHealth :  :  : Registering JMX bean for org.knime.core:type=Memory,name=ObjectInstances
+2025-10-17 12:10:49,773 : DEBUG : main :  : IEarlyStartup :  :  : Running application "org.knime.product.KNIME_APPLICATION"
+2025-10-17 12:10:49,773 : DEBUG : main :  : IEarlyStartup :  :  : Moving from stage <none> to stage EARLIEST
+2025-10-17 12:10:49,778 : DEBUG : main :  : IEarlyStartup :  :  : Executing startup hook `org.knime.core.node.logging.JavaUtilLoggingAdapter#run()` at stage EARLIEST
+2025-10-17 12:10:49,786 : DEBUG : main :  : IEarlyStartup :  :  : Executing startup hook `org.knime.js.cef.CEFEarlyStartup#run()` at stage EARLIEST
+2025-10-17 12:10:51,807 : DEBUG : main :  : KNIMEApplication :  :  : Checking for instance location
+2025-10-17 12:16:50,327 : DEBUG : main :  : KNIMEApplication :  :  : Instance location set
+2025-10-17 12:16:50,587 : DEBUG : main :  : IEarlyStartup :  :  : Moving from stage EARLIEST to stage AFTER_PROFILES_SET
+2025-10-17 12:16:50,587 : DEBUG : main :  : IEarlyStartup :  :  : Executing startup hook `org.knime.core.node.logging.KNIMELogger$EarlyStartupInitializer#run()` at stage AFTER_PROFILES_SET
+2025-10-17 12:16:50,964 : DEBUG : main :  : KNIMELogger :  :  : End of buffered log messages
+2025-10-17 12:16:50,964 : DEBUG : main :  : IEarlyStartup :  :  : Executing startup hook `org.knime.core.eclipseUtil.EclipseProxyServiceInitializer#run()` at stage AFTER_PROFILES_SET
+2025-10-17 12:16:52,478 : DEBUG : main :  : NativeProxyProviderWrapper :  :  : Invoked default constructor in class "class org.eclipse.core.internal.net.ProxyManager" via reflectionto forcibly create new instance
+2025-10-17 12:16:52,482 : DEBUG : main :  : NativeProxyProviderWrapper :  :  : Forcibly set field "preferenceManager" in class "class org.eclipse.core.internal.net.ProxyManager" to "org.eclipse.core.internal.net.PreferenceManager@7b9e25bd" via reflection
+2025-10-17 12:16:52,486 : DEBUG : main :  : NativeProxyProviderWrapper :  :  : Forcibly set field "nativeProxyProvider" in class "class org.eclipse.core.internal.net.ProxyManager" to "org.knime.core.eclipseUtil.NativeProxyProviderWrapper@559991f5" via reflection
+2025-10-17 12:16:52,486 : DEBUG : main :  : EclipseProxyServiceInitializer :  :  : (3/3) Successfully installed proxy support
+2025-10-17 12:16:52,486 : DEBUG : main :  : EclipseProxyServiceInitializer :  :  : (2/3) Initialized OSGi service 'org.eclipse.core.net.proxy.IProxyService'
+2025-10-17 12:16:52,490 : DEBUG : main :  : IEarlyStartup :  :  : Executing startup hook `org.knime.core.internal.MountTableInitializerEarlyStartup#run()` at stage AFTER_PROFILES_SET
+2025-10-17 12:16:54,352 : DEBUG : main :  : WorkbenchMountTable :  :  : Mounted Explorer Temp Space 'knime-temp-space' - com.knime.explorer.tempspace
+2025-10-17 12:16:54,473 : DEBUG : main :  : IEarlyStartup :  :  : Executing startup hook `org.knime.ui.java.OnEarlyStartup#run()` at stage AFTER_PROFILES_SET
+2025-10-17 12:16:54,581 : DEBUG : KNIME-Worker-0 :  : NodeFactoryProvider :  :  : Duplicate node factory id: org.knime.base.node.preproc.filter.column.FilterColumnNodeFactory
+2025-10-17 12:16:54,581 : DEBUG : KNIME-Worker-0 :  : NodeFactoryProvider :  :  : Duplicate node factory id: org.knime.base.node.preproc.joiner.NewJoinerNodeFactory
+2025-10-17 12:16:54,586 : DEBUG : KNIME-Worker-0 :  : NodeFactoryProvider :  :  : Duplicate node factory id: org.knime.base.node.preproc.split.SplitNodeFactory
+2025-10-17 12:16:54,590 : DEBUG : KNIME-Worker-0 :  : NodeFactoryProvider :  :  : Duplicate node factory id: org.knime.base.filehandling.filemetainfo.FileMetaInfoNodeFactory
+2025-10-17 12:16:54,592 : DEBUG : KNIME-Worker-0 :  : NodeFactoryProvider :  :  : Duplicate node factory id: org.knime.distmatrix.knn.KnnDistNodeFactory
+2025-10-17 12:16:54,602 : DEBUG : KNIME-Worker-0 :  : NodeFactoryProvider :  :  : Collected NodeFactory extensions... found 1007 nodes (337 deprecated, 20 hidden) in 0,1s
+2025-10-17 12:16:55,486 : DEBUG : KNIME-Worker-0 :  : NodeFactoryProvider :  :  : Collected NodeSetFactory extensions... found 3 node sets with 25 nodes in 0,9s
+2025-10-17 12:16:56,218 : DEBUG : Node Repository Initializer :  : NodeSpecCache :  :  : Computing node specifications for KNIME AP Core feature
+2025-10-17 12:16:57,023 : DEBUG : Node Repository Initializer :  : NodeSpecCache :  :  : Computing node specifications for KNIME Distance Matrix Extension
+2025-10-17 12:16:57,146 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.base.node.mine.treeensemble2.distance.RandomForestDistanceFactory'
+2025-10-17 12:16:57,154 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distmatrix.calculate.measure.MatrixDistanceFactory'
+2025-10-17 12:16:57,159 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.base.distance.measure.OldDistanceWrapperDistanceFactory'
+2025-10-17 12:16:57,164 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.string.levenshtein.LevenshteinDistanceFactory'
+2025-10-17 12:16:57,167 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.string.tversky.TverskyDistanceFactory'
+2025-10-17 12:16:57,170 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.bitvector.cosine.CosineDistanceFactory'
+2025-10-17 12:16:57,172 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.bitvector.tversky.TverskyDistanceFactory'
+2025-10-17 12:16:57,174 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.base.distance.bytevector.CosineDistanceMeasureFactory'
+2025-10-17 12:16:57,178 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.base.distance.bytevector.EuclideanDistanceMeasureFactory'
+2025-10-17 12:16:57,178 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.base.distance.bytevector.ManhattanDistanceMeasureFactory'
+2025-10-17 12:16:57,178 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.base.distance.bytevector.PNormDistanceMeasureFactory'
+2025-10-17 12:16:57,187 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.numerical.lnorm.LNormDistanceFactory'
+2025-10-17 12:16:57,191 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.numerical.cosine.CosineDistanceFactory'
+2025-10-17 12:16:57,195 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.jsnippet.JSnippetDistanceFactory'
+2025-10-17 12:16:57,199 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.jsnippet.aggregated.AggregatedDistanceFactory'
+2025-10-17 12:16:57,199 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.mahalanobis.MahalanobisDistanceFactory'
+2025-10-17 12:16:57,207 : DEBUG : Node Repository Initializer :  : DistanceMeasureRepository :  :  : added factory: 'org.knime.distance.measure.string.jarowinkler.JaroWinklerDistanceFactory'
+2025-10-17 12:16:57,625 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.EuclideanDistanceMeasureFactory
+2025-10-17 12:16:57,655 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.EuclideanDistanceMeasureFactory
+2025-10-17 12:16:57,663 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.EuclideanDistanceMeasureFactory
+2025-10-17 12:16:57,663 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.EuclideanDistanceMeasureFactory
+2025-10-17 12:16:57,668 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.CosineDistanceMeasureFactory
+2025-10-17 12:16:57,671 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.CosineDistanceMeasureFactory
+2025-10-17 12:16:57,671 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.CosineDistanceMeasureFactory
+2025-10-17 12:16:57,675 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.CosineDistanceMeasureFactory
+2025-10-17 12:16:57,675 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.PNormDistanceMeasureFactory
+2025-10-17 12:16:57,679 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.PNormDistanceMeasureFactory
+2025-10-17 12:16:57,679 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.PNormDistanceMeasureFactory
+2025-10-17 12:16:57,683 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.PNormDistanceMeasureFactory
+2025-10-17 12:16:57,687 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.ManhattanDistanceMeasureFactory
+2025-10-17 12:16:57,687 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.ManhattanDistanceMeasureFactory
+2025-10-17 12:16:57,687 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.ManhattanDistanceMeasureFactory
+2025-10-17 12:16:57,692 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.base.distance.bytevector.ManhattanDistanceMeasureFactory
+2025-10-17 12:16:58,004 : DEBUG : Node Repository Initializer :  : HiLiteHandler :  :  : Adding hilite translator to handler f756258f-a65d-41b7-b88e-47a82c6ff0c4
+2025-10-17 12:16:58,115 : DEBUG : Node Repository Initializer :  : HiLiteHandler :  :  : Adding hilite translator to handler a038f6b5-c684-444f-a492-0818c7ac3656
+2025-10-17 12:16:58,277 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.jarowinkler.JaroWinklerDistanceFactory
+2025-10-17 12:16:58,282 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.jarowinkler.JaroWinklerDistanceFactory
+2025-10-17 12:16:58,282 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.jarowinkler.JaroWinklerDistanceFactory
+2025-10-17 12:16:58,286 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.jarowinkler.JaroWinklerDistanceFactory
+2025-10-17 12:16:58,286 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.tversky.TverskyDistanceFactory
+2025-10-17 12:16:58,292 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.tversky.TverskyDistanceFactory
+2025-10-17 12:16:58,292 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.tversky.TverskyDistanceFactory
+2025-10-17 12:16:58,294 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.tversky.TverskyDistanceFactory
+2025-10-17 12:16:58,296 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.levenshtein.LevenshteinDistanceFactory
+2025-10-17 12:16:58,298 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.levenshtein.LevenshteinDistanceFactory
+2025-10-17 12:16:58,300 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.levenshtein.LevenshteinDistanceFactory
+2025-10-17 12:16:58,302 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.string.levenshtein.LevenshteinDistanceFactory
+2025-10-17 12:16:58,327 : DEBUG : Node Repository Initializer :  : HiLiteHandler :  :  : Adding hilite translator to handler 9d0b78f1-f3bc-4933-8102-ae3dbbfc764f
+2025-10-17 12:16:58,501 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.bitvector.tversky.TverskyDistanceFactory
+2025-10-17 12:16:58,501 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.bitvector.tversky.TverskyDistanceFactory
+2025-10-17 12:16:58,505 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.bitvector.tversky.TverskyDistanceFactory
+2025-10-17 12:16:58,505 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.bitvector.tversky.TverskyDistanceFactory
+2025-10-17 12:16:58,510 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.bitvector.cosine.CosineDistanceFactory
+2025-10-17 12:16:58,512 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.bitvector.cosine.CosineDistanceFactory
+2025-10-17 12:16:58,514 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.bitvector.cosine.CosineDistanceFactory
+2025-10-17 12:16:58,514 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.bitvector.cosine.CosineDistanceFactory
+2025-10-17 12:16:58,534 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.numerical.lnorm.LNormDistanceFactory
+2025-10-17 12:16:58,539 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.numerical.lnorm.LNormDistanceFactory
+2025-10-17 12:16:58,543 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.numerical.lnorm.LNormDistanceFactory
+2025-10-17 12:16:58,543 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.numerical.lnorm.LNormDistanceFactory
+2025-10-17 12:16:58,547 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.numerical.cosine.CosineDistanceFactory
+2025-10-17 12:16:58,551 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.numerical.cosine.CosineDistanceFactory
+2025-10-17 12:16:58,553 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.numerical.cosine.CosineDistanceFactory
+2025-10-17 12:16:58,557 : DEBUG : Node Repository Initializer :  : DistanceMeasureDescriptionFactory :  :  : Loading description for factory: class org.knime.distance.measure.numerical.cosine.CosineDistanceFactory
+2025-10-17 12:16:58,890 : DEBUG : Node Repository Initializer :  : NodeSpecCache :  :  : Computing node specifications for KNIME Quick Forms
+2025-10-17 12:17:00,296 : DEBUG : Node Repository Initializer :  : MoleculeSketcherRegistry :  :  : Added molecule sketcher 'org.knime.ext.js.molecule.Ketcher_2_7_2' from 'org.knime.ext.js'
+2025-10-17 12:17:00,296 : DEBUG : Node Repository Initializer :  : NodeSpecCache :  :  : Computing node specifications for KNIME File Handling Nodes
+2025-10-17 12:17:00,963 : DEBUG : Node Repository Initializer :  : ExtensionPoints :  :  : Loading executable extensions of extension point: org.knime.database.RowFilter
+2025-10-17 12:17:00,996 : DEBUG : Node Repository Initializer :  : ExtensionPoints :  :  : Executable extension initializer has been created
+2025-10-17 12:17:00,996 : DEBUG : Node Repository Initializer :  : ExtensionPoints :  :  : Executable is instance of MSAccessRowFilterInitializer
+2025-10-17 12:17:01,013 : DEBUG : Node Repository Initializer :  : ExtensionPoints :  :  : Loading extensions of extension point: org.knime.database.DBType
+2025-10-17 12:17:01,021 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=h2, name=H2, description=null)
+2025-10-17 12:17:01,021 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=msaccess, name=Microsoft Access, description=null)
+2025-10-17 12:17:01,025 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2025-10-17 12:17:01,025 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=mysql, name=MySQL, description=null)
+2025-10-17 12:17:01,025 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=postgres, name=PostgreSQL, description=null)
+2025-10-17 12:17:01,025 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=sqlite, name=SQLite, description=null)
+2025-10-17 12:17:01,025 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=db2, name=IBM Db2, description=null)
+2025-10-17 12:17:01,025 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=oracle, name=Oracle, description=null)
+2025-10-17 12:17:01,029 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=saphana, name=SAP HANA, description=null)
+2025-10-17 12:17:01,029 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=teradata, name=Teradata, description=null)
+2025-10-17 12:17:01,029 : DEBUG : Node Repository Initializer :  : DBTypeRegistry :  :  : Register database type: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2025-10-17 12:17:01,038 : DEBUG : Node Repository Initializer :  : ExtensionPoints :  :  : Executable extension initializer has been created
+2025-10-17 12:17:01,038 : DEBUG : Node Repository Initializer :  : ExtensionPoints :  :  : Executable is instance of SQLiteRowFilterInitializer
+2025-10-17 12:17:01,066 : DEBUG : Node Repository Initializer :  : ExtensionPoints :  :  : Executable extension initializer has been created
+2025-10-17 12:17:01,066 : DEBUG : Node Repository Initializer :  : ExtensionPoints :  :  : Executable is instance of OracleRowFilterInitializer
+2025-10-17 12:17:01,306 : DEBUG : Node Repository Initializer :  : MicrosoftAuthenticationPlugin :  :  : Failed to initialize the JAX-RS 1.x RuntimeDelegate. Provided error message: java.lang.ClassNotFoundException: com.sun.ws.rs.ext.RuntimeDelegateImpl cannot be found by javax.ws.rs.jsr311-api_1.1.1
+2025-10-17 12:17:02,040 : DEBUG : Node Repository Initializer :  : NodeSpecCache :  :  : Computing node specifications for KNIME File Handling Core
+2025-10-17 12:17:02,059 : DEBUG : Node Repository Initializer :  : NodeSpecCache :  :  : Computing node specifications for KNIME JavaScript Views
+2025-10-17 12:17:02,830 : DEBUG : Node Repository Initializer :  : NodeSpecCache :  :  : Computing node specifications for KNIME Math Expression (JEP)
+2025-10-17 12:17:02,941 : DEBUG : Node Repository Initializer :  : NodeSpecCache :  :  : Computing node specifications for KNIME SVG Support
+2025-10-17 12:17:03,162 : DEBUG : Node Repository Initializer :  : SvgPluginActivator :  :  : Added SVG export option to node view class
+2025-10-17 12:17:03,369 : DEBUG : Node Repository Initializer :  : NodeSpecCache :  :  : Computing node specifications for KNIME REST Client Extension
+2025-10-17 12:17:03,724 : DEBUG : Node Repository Initializer :  : NodeSpecCache :  :  : Computing node specifications for KNIME Reporting
+2025-10-17 12:17:04,078 : DEBUG : Node Repository Initializer :  : NodeSpecCache :  :  : Computing node specifications for KNIME Connectors for Common Databases
+2025-10-17 12:17:04,135 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file 'C:\IPCA\ISI25_TP01_27975_27966\27966 - Knime\data\Int\.metadata\knime\history_database_drivers.txt' does not exist.
+2025-10-17 12:17:04,135 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file 'C:\IPCA\ISI25_TP01_27975_27966\27966 - Knime\data\Int\.metadata\knime\history_database_urls.txt' does not exist.
+2025-10-17 12:17:04,135 : DEBUG : Node Repository Initializer :  : DatabaseConnectionSettings :  :  : Settings database timeout to 15 seconds
+2025-10-17 12:17:04,139 : DEBUG : Node Repository Initializer :  : DatabaseConnectionSettings :  :  : Database concurrency (sync via database connection) is true.
+2025-10-17 12:17:04,143 : DEBUG : Node Repository Initializer :  : DatabaseDriverLoader :  :  : Could not load JDBC ODBC driver class 'sun.jdbc.odbc.JdbcOdbcDriver'. Class has been removed in Java 8.
+2025-10-17 12:17:04,145 : DEBUG : Node Repository Initializer :  : DatabaseDriverLoader :  :  : Load driver from file: C:\Program Files\KNIME\plugins\org.knime.database.connectors_5.6.0.v202507151410\lib\jtds-1.3.1.jar
+2025-10-17 12:17:04,193 : DEBUG : Node Repository Initializer :  : DatabaseDriverLoader :  :  : Database driver net.sourceforge.jtds.jdbc.Driver loaded successful from file C:\Program Files\KNIME\plugins\org.knime.database.connectors_5.6.0.v202507151410\lib\jtds-1.3.1.jar. Driver info: Driver class name: net.sourceforge.jtds.jdbc.Driver major version: 1 minor version: 3 jdbc compliant: false
+2025-10-17 12:17:04,193 : DEBUG : Node Repository Initializer :  : DatabaseDriverLoader :  :  : Adding driver to buildin map: net.sourceforge.jtds.jdbc.Driver
+2025-10-17 12:17:04,314 : DEBUG : Node Repository Initializer :  : DatabaseDriverLoader :  :  : Load driver from file: C:\Program Files\KNIME\plugins\org.knime.database.connectors_5.6.0.v202507151410\lib\postgresql-9.4-1201.jdbc41.jar
+2025-10-17 12:17:04,348 : DEBUG : Node Repository Initializer :  : DatabaseDriverLoader :  :  : Database driver org.postgresql.Driver loaded successful from file C:\Program Files\KNIME\plugins\org.knime.database.connectors_5.6.0.v202507151410\lib\postgresql-9.4-1201.jdbc41.jar. Driver info: Driver class name: org.postgresql.Driver major version: 9 minor version: 4 jdbc compliant: false
+2025-10-17 12:17:04,348 : DEBUG : Node Repository Initializer :  : DatabaseDriverLoader :  :  : Adding driver to buildin map: org.postgresql.Driver
+2025-10-17 12:17:04,774 : DEBUG : Node Repository Initializer :  : NodeSpecCache :  :  : Computing node specifications for KNIME Timeseries nodes
+2025-10-17 12:17:04,825 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file 'C:\IPCA\ISI25_TP01_27975_27966\27966 - Knime\data\Int\.metadata\knime\history_string2date-formats.txt' does not exist.
+2025-10-17 12:17:04,946 : DEBUG : Node Repository Initializer :  : NodeSpecCache :  :  : Computing node specifications for KNIME Server Client
+2025-10-17 12:17:04,996 : DEBUG : Node Repository Initializer :  : NodeSpecCache :  :  : Computing node specifications for KNIME Reporting Nodes
+2025-10-17 12:17:05,017 : DEBUG : Node Repository Initializer :  : NodeSpecCache :  :  : Computing node specifications for KNIME JSON-Processing
+2025-10-17 12:17:06,373 : DEBUG : Node Repository Initializer :  : DataCellToJavaConverterRegistry :  :  : Registered DataCellToJavaConverterFactory from DataValueAccessMethod annotation for org.knime.core.data.IntValue to java.lang.Integer
+2025-10-17 12:17:06,375 : DEBUG : Node Repository Initializer :  : DataCellToJavaConverterRegistry :  :  : Registered DataCellToJavaConverterFactory from DataValueAccessMethod annotation for org.knime.core.data.LongValue to java.lang.Long
+2025-10-17 12:17:06,375 : DEBUG : Node Repository Initializer :  : DataCellToJavaConverterRegistry :  :  : Registered DataCellToJavaConverterFactory from DataValueAccessMethod annotation for org.knime.core.data.DoubleValue to java.lang.Double
+2025-10-17 12:17:06,375 : DEBUG : Node Repository Initializer :  : DataCellToJavaConverterRegistry :  :  : Registered DataCellToJavaConverterFactory from DataValueAccessMethod annotation for org.knime.core.data.BooleanValue to java.lang.Boolean
+2025-10-17 12:17:06,375 : DEBUG : Node Repository Initializer :  : DataCellToJavaConverterRegistry :  :  : Registered DataCellToJavaConverterFactory from DataValueAccessMethod annotation for org.knime.core.data.vector.bitvector.BitVectorValue to java.lang.String
+2025-10-17 12:17:06,376 : DEBUG : Node Repository Initializer :  : DataCellToJavaConverterRegistry :  :  : Registered DataCellToJavaConverterFactory from DataValueAccessMethod annotation for org.knime.core.data.xml.XMLValue to org.w3c.dom.Document
+2025-10-17 12:17:06,376 : DEBUG : Node Repository Initializer :  : DataCellToJavaConverterRegistry :  :  : Registered DataCellToJavaConverterFactory from DataValueAccessMethod annotation for org.knime.core.data.StringValue to java.lang.String
+2025-10-17 12:17:06,376 : DEBUG : Node Repository Initializer :  : DataCellToJavaConverterRegistry :  :  : Registered DataCellToJavaConverterFactory from DataValueAccessMethod annotation for org.knime.core.data.blob.BinaryObjectDataValue to java.io.InputStream
+2025-10-17 12:17:06,376 : DEBUG : Node Repository Initializer :  : DataCellToJavaConverterRegistry :  :  : Registered DataCellToJavaConverterFactory from DataValueAccessMethod annotation for org.knime.core.data.uri.URIDataValue to java.lang.String
+2025-10-17 12:17:06,376 : DEBUG : Node Repository Initializer :  : DataCellToJavaConverterRegistry :  :  : Registered DataCellToJavaConverterFactory from DataValueAccessMethod annotation for org.knime.base.data.xml.SvgValue to org.w3c.dom.svg.SVGDocument
+2025-10-17 12:17:06,378 : DEBUG : Node Repository Initializer :  : DataCellToJavaConverterRegistry :  :  : Registered DataCellToJavaConverterFactory from DataValueAccessMethod annotation for org.knime.filehandling.core.data.location.FSLocationValue to org.knime.filehandling.core.connections.FSLocation
+2025-10-17 12:17:06,378 : DEBUG : Node Repository Initializer :  : DataCellToJavaConverterRegistry :  :  : Registered DataCellToJavaConverterFactory from DataValueAccessMethod annotation for org.knime.core.data.time.localtime.LocalTimeValue to java.time.LocalTime
+2025-10-17 12:17:06,378 : DEBUG : Node Repository Initializer :  : DataCellToJavaConverterRegistry :  :  : Registered DataCellToJavaConverterFactory from DataValueAccessMethod annotation for org.knime.core.data.time.localdate.LocalDateValue to java.time.LocalDate
+2025-10-17 12:17:06,378 : DEBUG : Node Repository Initializer :  : DataCellToJavaConverterRegistry :  :  : Registered DataCellToJavaConverterFactory from DataValueAccessMethod annotation for org.knime.core.data.time.localdatetime.LocalDateTimeValue to java.time.LocalDateTime
+2025-10-17 12:17:06,378 : DEBUG : Node Repository Initializer :  : DataCellToJavaConverterRegistry :  :  : Registered DataCellToJavaConverterFactory from DataValueAccessMethod annotation for org.knime.core.data.time.zoneddatetime.ZonedDateTimeValue to java.time.ZonedDateTime
+2025-10-17 12:17:06,378 : DEBUG : Node Repository Initializer :  : DataCellToJavaConverterRegistry :  :  : Registered DataCellToJavaConverterFactory from DataValueAccessMethod annotation for org.knime.core.data.time.duration.DurationValue to java.time.Duration
+2025-10-17 12:17:06,378 : DEBUG : Node Repository Initializer :  : DataCellToJavaConverterRegistry :  :  : Registered DataCellToJavaConverterFactory from DataValueAccessMethod annotation for org.knime.core.data.time.period.PeriodValue to java.time.Period
+2025-10-17 12:17:06,380 : DEBUG : Node Repository Initializer :  : DataCellToJavaConverterRegistry :  :  : Found ConverterProvider extension: org.knime.core.data.vector.bytevector.ByteVectorValueToIntStreamConverterFactory(ByteVectorValue,interface java.util.stream.IntStream,IntStream (values in [0-255]))
+2025-10-17 12:17:06,380 : DEBUG : Node Repository Initializer :  : DataCellToJavaConverterRegistry :  :  : Found ConverterProvider extension: org.knime.core.data.vector.bytevector.ByteVectorValueToPrimitiveIntArrayConverterFactory(ByteVectorValue,class [I,int[] (values in [0-255]))
+2025-10-17 12:17:06,382 : DEBUG : Node Repository Initializer :  : DataCellToJavaConverterRegistry :  :  : Found ConverterProvider extension: org.knime.core.data.json.JsonValueToJavaConverterFactory(JSONValue,interface jakarta.json.JsonValue,JsonValue)
+2025-10-17 12:17:06,430 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: int to Number (Integer)
+2025-10-17 12:17:06,430 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.lang.String to Number (Integer)
+2025-10-17 12:17:06,430 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.lang.String to Number (Float)
+2025-10-17 12:17:06,430 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: long to Number (Float)
+2025-10-17 12:17:06,430 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: float to Number (Float)
+2025-10-17 12:17:06,430 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: double to Number (Float)
+2025-10-17 12:17:06,432 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: int to Number (Float)
+2025-10-17 12:17:06,432 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: boolean to Boolean
+2025-10-17 12:17:06,432 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.lang.String to Boolean
+2025-10-17 12:17:06,434 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.lang.String to Number (Long Integer)
+2025-10-17 12:17:06,434 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: int to Number (Long Integer)
+2025-10-17 12:17:06,434 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: long to Number (Long Integer)
+2025-10-17 12:17:06,434 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.lang.String to Bit Vector (Sparse)
+2025-10-17 12:17:06,434 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.lang.String to Bit Vector
+2025-10-17 12:17:06,436 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.io.InputStream to XML
+2025-10-17 12:17:06,436 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: org.w3c.dom.Document to XML
+2025-10-17 12:17:06,436 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.lang.String to XML
+2025-10-17 12:17:06,436 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.io.InputStream to XML
+2025-10-17 12:17:06,436 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.io.InputStream to Image (PNG)
+2025-10-17 12:17:06,438 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.io.InputStream to Binary Object
+2025-10-17 12:17:06,438 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: [B to Binary Object
+2025-10-17 12:17:06,438 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.lang.String to Model (PMML)
+2025-10-17 12:17:06,438 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.io.InputStream to Model (PMML)
+2025-10-17 12:17:06,438 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.lang.String to String
+2025-10-17 12:17:06,438 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.io.Reader to String
+2025-10-17 12:17:06,438 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.io.InputStream to String
+2025-10-17 12:17:06,440 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.lang.String to URI
+2025-10-17 12:17:06,440 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.io.Reader to Image (SVG)
+2025-10-17 12:17:06,440 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.io.InputStream to Image (SVG)
+2025-10-17 12:17:06,440 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.lang.String to Image (SVG)
+2025-10-17 12:17:06,440 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: org.knime.filehandling.core.connections.FSLocation to Path
+2025-10-17 12:17:06,440 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.time.LocalTime to Time
+2025-10-17 12:17:06,440 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.lang.String to Time
+2025-10-17 12:17:06,442 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.time.LocalDate to Date
+2025-10-17 12:17:06,442 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.lang.String to Date
+2025-10-17 12:17:06,442 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.time.LocalDateTime to Date&time (Local)
+2025-10-17 12:17:06,442 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.lang.String to Date&time (Local)
+2025-10-17 12:17:06,442 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.time.ZonedDateTime to Date&time (Zoned)
+2025-10-17 12:17:06,445 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.lang.String to Date&time (Zoned)
+2025-10-17 12:17:06,445 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.time.Duration to Duration (Time-based)
+2025-10-17 12:17:06,445 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.lang.String to Duration (Time-based)
+2025-10-17 12:17:06,445 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.time.Period to Duration (Date-based)
+2025-10-17 12:17:06,445 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.lang.String to Duration (Date-based)
+2025-10-17 12:17:06,447 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: jakarta.json.JsonValue to JSON
+2025-10-17 12:17:06,447 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.io.Reader to JSON
+2025-10-17 12:17:06,447 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.io.InputStream to JSON
+2025-10-17 12:17:06,447 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.lang.String to JSON
+2025-10-17 12:17:06,447 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Registered JavaToDataCellConverterFactory from DataCellFactoryMethod annotation for: java.lang.String to HTML
+2025-10-17 12:17:06,449 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Found ConverterProvider extension: org.eclipse.core.internal.registry.ExtensionHandle@1723
+2025-10-17 12:17:06,451 : DEBUG : Node Repository Initializer :  : JavaToDataCellConverterRegistry :  :  : Found ConverterProvider extension: org.eclipse.core.internal.registry.ExtensionHandle@1723
+2025-10-17 12:17:13,459 : DEBUG : main :  : KNIMECorePlugin :  :  : Setting KNIME max thread count to 24
+2025-10-17 12:17:13,459 : DEBUG : main :  : KNIMECorePlugin :  :  : Setting KNIME temp dir to "C:\Users\paulo\AppData\Local\Temp"
+2025-10-17 12:17:39,864 : WARN  : ModalContext :  : Node : SQLite Connector : 3:62:41 : DB Connection no longer available. Go to advanced settings to enable connection restoration.
