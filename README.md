@@ -28,6 +28,8 @@ O projeto foi desenvolvido e documentado utilizando as seguintes ferramentas:
 * **Knime**.
 * **Pentaho Data Integration (PDI) 9.4** (Kettle).
 * **Git** para controlo de versão.
+  
+O repositório está organizado na pasta raiz tp01-<número de aluno>/ e segue a seguinte estrutura:
 ```bash
 ISI25_TP01_27975_27966/
 ├── README.md
