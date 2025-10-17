@@ -58,7 +58,7 @@ O Job principal (`job.kjb`) executa as transformações na seguinte sequência:
 2.  `Transformação de Criação de Tabelas`.
 3.  `Transformação de Ordenar Dados nas Tabelas`.
 4.  `Transformação do campo data em MM/dd/yyyy`.
-5.  `Transformação do campo data em dd/mm/yyyy`.
+5.  `Transformação da tabela "FactSales" de XML para JSON`.
 
 ### 4.3. Passos de Execução
 
