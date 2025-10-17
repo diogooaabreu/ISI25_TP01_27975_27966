@@ -29,23 +29,23 @@ O projeto foi desenvolvido e documentado utilizando as seguintes ferramentas:
 * **Pentaho Data Integration (PDI) 9.4** (Kettle).
 * **Git** para controlo de versão.
 
-## 3. Organização do Repositório
+ISI25_TP01_27975_27966/
+├── README.md
+├── doc/
+│   └── ISI25_TP01_27975_27966_doc.pdf
+│
+├── 27975_Pentaho_Data_Integration/
+│   └── data/           # Transformações e jobs usados para o ETL (Data Integration)
+│       ├── input/      # Dados de entrada
+│       └── output/     # Dados de saída
+│
+├── 27966_Knime/
+│   ├── ProjetoKnime/   # API (Node.js)
+│   └── data/
+│       ├── input/      # Dados de entrada
+│       ├── output/     # Dados de saída
+│       └── int/        # Transformações e jobs usados para o ETL (Data Integration)
 
-O repositório está organizado na pasta raiz `tp01-<número de aluno>/` e segue a seguinte estrutura:
-
--ISI25_TP01_27975_27966/
-         - README.md
-         - doc/ISI25_TP01_27975_27966_doc.pdf
-         - 27975_Pentaho_Data_Integration/
-         - data           -      transformações e  jobs usados para o ETL  (data-integration)
-         - data/input     -      dados de entrada
-         - data/output/   -      dados de saída
-         -
-         - 27966_Knime/
-         - ProjetoKnime/  -      Api (nodejs)
-         - data/int/      -      transformações e  jobs usados para o ETL  (data-integration)
-         - data/input/    -      dados de entrada
-         - data/output/   -      dados de saída
 
 ## 4. Execução do Projeto (Pentaho PDI)
 
