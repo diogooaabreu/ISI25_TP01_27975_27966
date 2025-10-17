@@ -1,0 +1,2 @@
+C:\IPCA\ISI25_TP01_27975_27966\27966 - Knime\data\Int\Order.sqlite
+C:\IPCA\ISI25_TP01_27975_27966\27966 - Knime\data\Int\Order0.sqlite

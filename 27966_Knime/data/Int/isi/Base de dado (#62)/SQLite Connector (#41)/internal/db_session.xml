@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="db_session">
+    <config key="Session Info">
+        <entry key="version" type="xint" value="7"/>
+        <entry key="sessionID" type="xstring" value="a4febd30-c9fa-4cb4-b7a3-fcde34fdfa23"/>
+        <entry key="dbTypeId" type="xstring" value="sqlite"/>
+        <entry key="dialectId" type="xstring" value="sqlite"/>
+        <entry key="dbURL" type="xstring" value="jdbc:sqlite:C:\IPCA\ISI25_TP01_27975_27966\27966 - Knime\data\Int\Order.sqlite"/>
+    </config>
+    <config key="Driver Definition">
+        <entry key="driverId" type="xstring" value="built-in-sqlite-3.45.2.0"/>
+        <entry key="driverName" type="xstring" value="Driver for SQLite v.3.45.2.0"/>
+        <entry key="driverVersion" type="xstring" value="3.45.0"/>
+        <entry key="driverClass" type="xstring" value="org.sqlite.JDBC"/>
+        <entry key="driverDescription" type="xstring" value=""/>
+        <entry key="driverOrigin" type="xstring" value="EXTENSION"/>
+        <entry key="deprecated" type="xboolean" value="false"/>
+    </config>
+    <config key="Attributes"/>
+</config>

@@ -28,19 +28,27 @@ O projeto foi desenvolvido e documentado utilizando as seguintes ferramentas:
 * **Knime**.
 * **Pentaho Data Integration (PDI) 9.4** (Kettle).
 * **Git** para controlo de versão.
+  
+O repositório está organizado na pasta raiz tp01-<número de aluno>/ e segue a seguinte estrutura:
+```bash
+ISI25_TP01_27975_27966/
+├── README.md
+├── doc/
+│   └── ISI25_TP01_27975_27966_doc.pdf
+│
+├── 27975_Pentaho_Data_Integration/
+│   └── data/           # Transformações e jobs usados para o ETL (Data Integration)
+│       ├── input/      # Dados de entrada
+│       └── output/     # Dados de saída
+│
+├── 27966_Knime/
+│   ├── ProjetoKnime/   # API (Node.js)
+│   └── data/
+│       ├── input/      # Dados de entrada
+│       ├── output/     # Dados de saída
+│       └── int/        # Transformações e jobs usados para o ETL (Data Integration)
 
-## 3. Organização do Repositório
-
-O repositório está organizado na pasta raiz `tp01-<número de aluno>/` e segue a seguinte estrutura:
-
--ISI25_TP01_27975_27966/
-         - README.md
-         - doc/ISI25_TP01_27975_27966_doc.pdf
-         - numeroaluno_PlataformaUsada/ (27966 - Knime ou 27975_Pentaho_Data_Integration)
-         - dataint/       -      transformações e  jobs usados para o ETL  (data-integration)
-         - data/input/    -      ficheiros com os dados de entrada
-         - data/output/   -      dados de saída... para onde devem ser encaminhados os ficheiros de saída...  
-
+```
 ## 4. Execução do Projeto (Pentaho PDI)
 
 O processo de ETL é orquestrado pelo Job principal e deve ser executado através do Pentaho Data Integration.
@@ -58,7 +66,7 @@ O Job principal (`job.kjb`) executa as transformações na seguinte sequência:
 2.  `Transformação de Criação de Tabelas`.
 3.  `Transformação de Ordenar Dados nas Tabelas`.
 4.  `Transformação do campo data em MM/dd/yyyy`.
-5.  `Transformação do campo data em dd/mm/yyyy`.
+5.  `Transformação da tabela "FactSales" de XML para JSON`.
 
 ### 4.3. Passos de Execução
 

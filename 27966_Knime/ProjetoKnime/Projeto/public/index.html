@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gráfico - Dados do SQLite</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 50px auto;
+      text-align: center;
+    }
+    canvas {
+      margin-top: 40px;
+    }
+    .chart-container {
+      margin-bottom: 60px;
+    }
+  </style>
+</head>
+<body>
+  <div class="chart-container">
+    <h1>Estado das Encomendas</h1>
+    <canvas id="grafico-encomendas"></canvas>
+  </div>
+
+  <div class="chart-container">
+    <h1>Tamanho das Encomendas (DEALSIZE)</h1>
+    <canvas id="grafico-tamanho-encomendas"></canvas>
+  </div>
+
+  <script>
+    // Primeiro gráfico (Status)
+    async function carregarGrafico() {
+      try {
+        const resposta = await fetch("/api/dados");
+        const dados = await resposta.json();
+        const registros = dados.data;
+
+        const labels = registros.map(d => d.STATUS);
+        const valores = registros.map(d => d.Total_Pedidos);
+
+        new Chart(document.getElementById("grafico-encomendas"), {
+          type: "bar",
+          data: {
+            labels,
+            datasets: [
+              {
+                label: "Total de Pedidos por Status",
+                data: valores,
+                backgroundColor: "rgba(54, 162, 235, 0.6)",
+                borderColor: "rgba(54, 162, 235, 1)",
+                borderWidth: 1
+              }
+            ]
+          },
+          options: {
+            responsive: true,
+            scales: { y: { beginAtZero: true } }
+          }
+        });
+      } catch (erro) {
+        console.error("Erro ao carregar dados:", erro);
+        document.body.innerHTML += "<p style='color:red;'>Erro ao carregar os dados.</p>";
+      }
+    }
+
+    // Segundo gráfico (DEALSIZE) - Gráfico de Pizza
+    async function carregarGraficoTamanho() {
+      try {
+        const resposta = await fetch("/api/dados-tamanho");
+        const dados = await resposta.json();
+        const registros = dados.data;
+
+        const labels = registros.map(d => d.DEALSIZE);
+        const valores = registros.map(d => d.Total);
+
+        // Cores diferentes para cada fatia do gráfico
+        const cores = [
+          'rgba(255, 99, 132, 0.6)',
+          'rgba(54, 162, 235, 0.6)',
+          'rgba(255, 206, 86, 0.6)',
+          'rgba(75, 192, 192, 0.6)',
+          'rgba(153, 102, 255, 0.6)'
+        ];
+
+        new Chart(document.getElementById("grafico-tamanho-encomendas"), {
+          type: "pie", // Alterado para "pie" (pizza)
+          data: {
+            labels,
+            datasets: [
+              {
+                label: "Distribuição por Tamanho",
+                data: valores,
+                backgroundColor: cores,
+                borderColor: cores.map(cor => cor.replace('0.6', '1')),
+                borderWidth: 1
+              }
+            ]
+          },
+          options: {
+            responsive: true,
+            plugins: {
+              legend: {
+                position: 'bottom'
+              },
+              title: {
+                display: true,
+                text: 'Distribuição dos Tamanhos de Encomenda'
+              }
+            }
+          }
+        });
+      } catch (erro) {
+        console.error("Erro ao carregar dados do tamanho:", erro);
+        document.body.innerHTML += "<p style='color:red;'>Erro ao carregar os dados do tamanho.</p>";
+      }
+    }
+
+    // Carregar ambos os gráficos
+    carregarGrafico();
+    carregarGraficoTamanho();
+  </script>
+</body>
+</html>
