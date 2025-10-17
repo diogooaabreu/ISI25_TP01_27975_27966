@@ -822,6 +822,7 @@
     <fields>
       <field>
         <name>ORDERDATE</name>
+        <rename/>
       </field>
       <select_unspecified>N</select_unspecified>
       <meta>
