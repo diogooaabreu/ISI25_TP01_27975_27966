@@ -75,7 +75,7 @@
             <config key="byNameSettings"/>
             <config key="byTypeSettings"/>
         </config>
-        <entry key="actionOnTableExisting" type="xstring" value="APPEND_ROWS"/>
+        <entry key="actionOnTableExisting" type="xstring" value="REMOVE_TABLE"/>
     </config>
     <config key="variables"/>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
@@ -106,7 +106,7 @@
             <entry key="index" type="xint" value="2"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.database.port.DBDataPortObjectSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.database.port.DBDataPortObject"/>
-            <entry key="port_object_summary" type="xstring" value="SQLite 48051ec1-2627-4c97-8259-fdb9ed8174ff"/>
+            <entry key="port_object_summary" type="xstring" value="SQLite a4febd30-c9fa-4cb4-b7a3-fcde34fdfa23"/>
             <entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
             <entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
             <entry key="port_dir_location" type="xstring" value="port_2"/>
@@ -114,6 +114,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="fc3df658-9ab1-4a2c-91b9-cc1e72e8fc71"/>
+        <entry key="file_store_id" type="xstring" value="ccc59e9e-560a-486d-943a-64c45b3e04bf"/>
     </config>
 </config>

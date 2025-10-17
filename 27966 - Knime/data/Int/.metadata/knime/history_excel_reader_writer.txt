@@ -1,6 +1,0 @@
-C:\IPCA\ISI25_TP01_27975_27966\27966 - Knime\data\Output\Address.xlsx
-C:\IPCA\ISI25_TP01_27975_27966\27966 - Knime\data\Output\Product.xlsx
-C:\IPCA\ISI25_TP01_27975_27966\27966 - Knime\data\Output\Customer.xlsx
-C:\IPCA\ISI25_TP01_27975_27966\27966 - Knime\data\Output\Address.xls
-C:\IPCA\ISI25_TP01_27975_27966\27966 - Knime\data\Output\Order.xlsx
-C:\IPCA\ISI25_TP01_27975_27966\27966 - Knime\data\Output\ISIDB.xlsx
